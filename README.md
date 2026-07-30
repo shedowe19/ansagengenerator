@@ -62,7 +62,15 @@ Die Web-Ausgabe liegt unter `build/web/`.
 
 Der private GitHub-Quellstand versioniert die kompakte ZIP64-Offlinebibliothek gezielt mit **Git LFS**. Lokale Flutter-/Gradle-Caches, IDE-Dateien, maschinenbezogene SDK-Pfade, historische Debug-Builds sowie die privaten WAV-Rohschnitte bleiben ausgeschlossen.
 
-Die aktuelle APK und das gebaute Webpaket werden als Release-Artefakte bereitgestellt. `.github/workflows/windows-exe.yml` baut unter `windows-latest` den vollständigen Windows-x64-Releaseordner und stellt ihn nach erfolgreichem Lauf als herunterladbares Actions-Artefakt bereit. Eine Windows-App besteht aus der `Ansagengenerator.exe` **und** den begleitenden DLLs/Assets; daher ist stets der komplette Artefaktordner zu verwenden.
+Die aktuelle APK und das gebaute Webpaket werden als Release-Artefakte bereitgestellt. Jeder Push auf `main` und jeder manuelle Lauf von `.github/workflows/windows-exe.yml` startet den zentralen Workflow **Build all targets** auf GitHub. Er baut und archiviert nach derselben gemeinsamen Analyse/Test-Gate:
+
+- Web-Release inklusive Chromium-Range-/Ogg-/WAV-Regressionstest,
+- Android-Debug-APK mit Signaturprüfung,
+- Linux-x64-Bundle,
+- Windows-x64-Distribution,
+- macOS-App-Bundle der jeweils aktuellen GitHub-macOS-Runner-Architektur sowie ein unsigniertes iOS-Release-Bundle.
+
+Die GitHub-Artefakte bleiben 14 Tage abrufbar. Die Windows-Anwendung besteht aus der `Ansagengenerator.exe` **und** den begleitenden DLLs/Assets; daher ist stets der komplette Artefaktordner zu verwenden. Das iOS-Bundle wird ohne Codesignatur gebaut und benötigt für eine Installation später ein separat autorisiertes Apple-Signing.
 
 ## Verifizierter Stand
 

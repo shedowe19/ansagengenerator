@@ -1,4 +1,4 @@
-name: Windows EXE
+name: Build all targets
 
 on:
   push:
@@ -10,43 +10,157 @@ permissions:
   contents: read
 
 concurrency:
-  group: windows-exe-${{ github.workflow }}-${{ github.ref }}
+  group: build-all-targets-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  FLUTTER_CHANNEL: stable
+  ARTIFACT_RETENTION_DAYS: 14
+
 jobs:
-  build:
-    name: Build Windows x64 release
-    runs-on: windows-latest
+  quality-and-web:
+    name: Quality checks and Web
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout source and LFS data
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           lfs: true
 
       - name: Install Flutter stable
         uses: subosito/flutter-action@fd55f4c5af5b953cc57a2be44cb082c8f6635e8e # v2.21.0
         with:
-          channel: stable
+          channel: ${{ env.FLUTTER_CHANNEL }}
           cache: true
 
-      - name: Enable Windows desktop
-        shell: pwsh
-        run: flutter config --enable-windows-desktop
+      - name: Resolve dependencies
+        run: flutter pub get
+
+      - name: Analyze and test
+        run: |
+          flutter analyze
+          flutter test
+
+      - name: Build and exercise Web release
+        run: bash tool/test_web_offline_audio.sh
+
+      - name: Upload Web release
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ansagengenerator-web
+          path: build/web/
+          if-no-files-found: error
+          retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
+
+  android:
+    name: Android APK
+    needs: quality-and-web
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source and LFS data
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          lfs: true
+
+      - name: Install JDK 21
+        uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Install Flutter stable
+        uses: subosito/flutter-action@fd55f4c5af5b953cc57a2be44cb082c8f6635e8e # v2.21.0
+        with:
+          channel: ${{ env.FLUTTER_CHANNEL }}
+          cache: true
+
+      - name: Resolve dependencies
+        run: flutter pub get
+
+      - name: Build debug APK
+        run: flutter build apk --debug
+
+      - name: Verify APK signature
+        shell: bash
+        run: |
+          apksigner="$(find "$ANDROID_HOME/build-tools" -type f -name apksigner | sort -V | tail -n1)"
+          test -n "$apksigner"
+          "$apksigner" verify --verbose build/app/outputs/flutter-apk/app-debug.apk
+
+      - name: Upload Android APK
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ansagengenerator-android-debug-apk
+          path: build/app/outputs/flutter-apk/app-debug.apk
+          if-no-files-found: error
+          retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
+
+  linux:
+    name: Linux x64 bundle
+    needs: quality-and-web
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source and LFS data
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          lfs: true
+
+      - name: Install Linux desktop prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes clang cmake ninja-build pkg-config libgtk-3-dev
+
+      - name: Install Flutter stable
+        uses: subosito/flutter-action@fd55f4c5af5b953cc57a2be44cb082c8f6635e8e # v2.21.0
+        with:
+          channel: ${{ env.FLUTTER_CHANNEL }}
+          cache: true
+
+      - name: Resolve dependencies
+        run: flutter pub get
+
+      - name: Build Linux x64 bundle
+        run: |
+          flutter config --enable-linux-desktop
+          flutter build linux --release
+
+      - name: Upload Linux x64 bundle
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ansagengenerator-linux-x64
+          path: build/linux/x64/release/bundle/
+          if-no-files-found: error
+          retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
+
+  windows:
+    name: Windows x64 distribution
+    needs: quality-and-web
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout source and LFS data
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          lfs: true
+
+      - name: Install Flutter stable
+        uses: subosito/flutter-action@fd55f4c5af5b953cc57a2be44cb082c8f6635e8e # v2.21.0
+        with:
+          channel: ${{ env.FLUTTER_CHANNEL }}
+          cache: true
 
       - name: Resolve dependencies
         shell: pwsh
         run: flutter pub get
 
-      - name: Analyze and test
-        shell: pwsh
-        run: |
-          flutter analyze
-          flutter test
-
       - name: Build Windows x64 release
         shell: pwsh
-        run: flutter build windows --release
+        run: |
+          flutter config --enable-windows-desktop
+          flutter build windows --release
 
       - name: Upload complete Windows distribution
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -54,4 +168,49 @@ jobs:
           name: ansagengenerator-windows-x64
           path: build/windows/x64/runner/Release/
           if-no-files-found: error
-          retention-days: 30
+          retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
+
+  apple:
+    name: macOS and unsigned iOS
+    needs: quality-and-web
+    # macos-latest follows GitHub's currently supported hosted macOS image.
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout source and LFS data
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          lfs: true
+
+      - name: Install Flutter stable
+        uses: subosito/flutter-action@fd55f4c5af5b953cc57a2be44cb082c8f6635e8e # v2.21.0
+        with:
+          channel: ${{ env.FLUTTER_CHANNEL }}
+          cache: true
+
+      - name: Resolve dependencies
+        run: flutter pub get
+
+      - name: Build macOS x64 release
+        run: |
+          flutter config --enable-macos-desktop
+          flutter build macos --release
+
+      - name: Build unsigned iOS release
+        run: flutter build ios --release --no-codesign
+
+      - name: Upload macOS x64 application bundle
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ansagengenerator-macos-x64
+          path: build/macos/Build/Products/Release/
+          if-no-files-found: error
+          retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
+
+      - name: Upload unsigned iOS application bundle
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ansagengenerator-ios-unsigned
+          path: build/ios/iphoneos/Runner.app/
+          if-no-files-found: error
+          retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
