@@ -2,8 +2,9 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:audio_decoder/audio_decoder.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:ffmpeg_kit_flutter_new_audio/ffmpeg_kit.dart';
+import 'package:ffmpeg_kit_flutter_new_audio/return_code.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -37,7 +38,6 @@ class NativeOfflineAudioLibrary {
   static const _tailLength = 65557;
   static const _pcmSampleRate = 48000;
   static const _pcmChannels = 1;
-  static const _pcmBitDepth = 16;
 
   final File? _archiveFileOverride;
   final Directory? _cacheDirectoryOverride;
@@ -263,14 +263,35 @@ class NativeOfflineAudioLibrary {
     }
   }
 
-  static Future<String> _decodeToPcmWav(String inputPath, String outputPath) =>
-      AudioDecoder.convertToWav(
-        inputPath,
-        outputPath,
-        sampleRate: _pcmSampleRate,
-        channels: _pcmChannels,
-        bitDepth: _pcmBitDepth,
+  static Future<String> _decodeToPcmWav(
+    String inputPath,
+    String outputPath,
+  ) async {
+    final session = await FFmpegKit.executeWithArguments(<String>[
+      '-hide_banner',
+      '-loglevel',
+      'error',
+      '-y',
+      '-i',
+      inputPath,
+      '-map',
+      '0:a:0',
+      '-vn',
+      '-ac',
+      '$_pcmChannels',
+      '-ar',
+      '$_pcmSampleRate',
+      '-c:a',
+      'pcm_s16le',
+      outputPath,
+    ]);
+    if (!ReturnCode.isSuccess(await session.getReturnCode())) {
+      throw StateError(
+        'FFmpeg konnte den Offline-Clip nicht nach WAV konvertieren.',
       );
+    }
+    return outputPath;
+  }
 
   static File _fileUnder(Directory root, List<String> segments) =>
       File(_joinPath(root.path, segments));

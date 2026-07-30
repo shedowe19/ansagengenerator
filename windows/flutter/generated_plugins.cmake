@@ -3,8 +3,8 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
-  audio_decoder
   audioplayers_windows
+  ffmpeg_kit_flutter_new_audio
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST

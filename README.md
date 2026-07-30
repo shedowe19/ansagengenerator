@@ -20,10 +20,10 @@ Eigenständiger Flutter-Port des manuellen InTrain-Ansagengenerators. Der unver�
 |---|---|---|
 | Android | **lokal gebaut und signaturgeprüft** | vollständig; ZIP64-Bridge und WAV-Export aktiv |
 | Web | **vollständig funktionsfähig, Release und Chromium geprüft** | vollständige normale ZIP64-Offlinebibliothek, kuratierte Im-Zug-Assets, Blob-Wiedergabe und lokaler WAV-Download; benötigt einen Range-fähigen Webhost |
-| Linux | GitHub-CI-Bundle | direkter ZIP64-Adapter; WAV-Export über GStreamer (Build: GTK- und GStreamer-Entwicklungsdateien, Runtime: GStreamer-Opus-Plugins) |
-| Windows | GitHub-CI-Bundle mit nativer Runtime-Gate | direkter ZIP64-Adapter, Wiedergabe über audioplayers und WAV-Export über Windows Media Foundation |
-| macOS | GitHub-CI-App-Bundle | direkter ZIP64-Adapter und WAV-Export über AVFoundation |
-| iOS | unsigniertes GitHub-CI-Bundle | direkter ZIP64-Adapter und WAV-Export über AVFoundation; Installation benötigt separat autorisiertes Apple-Signing |
+| Linux | GitHub-CI-Bundle | ZIP64; FFmpegKit Audio zu PCM-WAV; JSON-GLib und GStreamer erforderlich |
+| Windows | GitHub-CI-Bundle mit Runtime-Gate | ZIP64; FFmpegKit Audio zu PCM-WAV; Wiedergabe mit audioplayers |
+| macOS | GitHub-CI-App-Bundle | ZIP64; FFmpegKit Audio zu PCM-WAV; Wiedergabe mit audioplayers |
+| iOS | unsigniertes GitHub-CI-Bundle (iOS 14+) | ZIP64; FFmpegKit Audio zu PCM-WAV; Apple-Signing nötig |
 
 Die Web-Version liest den ZIP64-Endbereich (65.557 Byte), das 7.634.699-Byte-Zentralverzeichnis und anschließend ausschließlich die gerade benötigten Ogg/Opus-Clips. Blob-URLs werden als LRU bis 16 MiB im Arbeitsspeicher gehalten und beim Verdrängen beziehungsweise Beenden freigegeben. Damit gibt es keinen Vollimport, keine Entpackung und keinen unkontrollierten 467-MB-Speicherverbrauch.
 
@@ -69,7 +69,7 @@ Die aktuelle APK und das gebaute Webpaket werden als Release-Artefakte bereitges
 
 - Web-Release inklusive Chromium-Range-/Ogg-/WAV-Regressionstest,
 - Android-Debug-APK mit Signaturprüfung,
-- Linux-x64-Bundle; CI baut gegen GStreamer, Zielsysteme benötigen die üblichen GStreamer- und Opus-Runtimepakete,
+- Linux-x64-Bundle mit SHA-256-geprüftem FFmpegKit-Audio und GStreamer/JSON-GLib-Voraussetzungen,
 - Windows-x64-Distribution inklusive nativer Runtime-Prüfung: ZIP64-Clip extrahieren, Medienquelle öffnen und echte PCM-WAV exportieren,
 - macOS-App-Bundle der jeweils aktuellen GitHub-macOS-Runner-Architektur sowie ein unsigniertes iOS-Release-Bundle.
 
@@ -81,7 +81,7 @@ Die GitHub-Artefakte bleiben 14 Tage abrufbar. Die Windows-Anwendung besteht aus
 - 32 Unit-/Widget- und ZIP64-Regressionstests: grün, einschließlich eines echten Zugriffs auf das ZIP64-LFS-Archiv
 - Chromium-Browsertest: reale HTTP-Range-Abrufe, Blob-Quelle, Ogg/Opus-Decodierung und WAV-Downloadpfad grün
 - Android SDK 36 / JDK 21: geprüft
-- Debug-APK: Paket `de.shedowe.ansagengenerator`, Version `1.20.7` (Build 29), Android API 24–36, v2-signiert
+- Debug-APK: Paket `de.shedowe.ansagengenerator`, Version `1.20.7` (Build 30), Android API 24–36, v2-signiert
 - Offlinearchiv: SHA-256 `80ada82a559fa5a40085cfd7c10aeae483991be68ec4ca0073150755489e4214`; im APK und Web-Release genau einmal unkomprimiert abgelegt
 - Web-Release: erfolgreich gebaut; Browseroberfläche, Suche und vollständiger Offline-Audio-/WAV-Pfad verifiziert
 - Die finale Windows-Medienquellen- und WAV-Exportprüfung ist als GitHub-Windows-Integrationstest Teil des zentralen Workflows und wird pro Push erneut ausgeführt.

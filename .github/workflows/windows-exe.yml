@@ -117,6 +117,7 @@ jobs:
             ninja-build \
             pkg-config \
             libgtk-3-dev \
+            libjson-glib-dev \
             libgstreamer1.0-dev \
             libgstreamer-plugins-base1.0-dev \
             gstreamer1.0-plugins-base \
@@ -133,10 +134,27 @@ jobs:
       - name: Resolve dependencies
         run: flutter pub get
 
+      - name: Fetch verified FFmpegKit Audio runtime
+        run: |
+          set -euo pipefail
+          url='https://github.com/sk3llo/ffmpeg_kit_flutter/releases/download/8.1.2-audio/ffmpeg-kit-linux-x86_64-audio-8.1.2.tar.gz'
+          expected_sha256='6b01c49cf90d19193317cba84752f2b76150fa4c49b387dbd7f2f237c57b3cfb'
+          runtime_root="$RUNNER_TEMP/ffmpeg-kit-audio-8.1.2"
+          archive="$RUNNER_TEMP/ffmpeg-kit-linux-x86_64-audio-8.1.2.tar.gz"
+          curl --fail --location --retry 3 --retry-all-errors --connect-timeout 20 -o "$archive" "$url"
+          printf '%s  %s\n' "$expected_sha256" "$archive" | sha256sum --check --status
+          mkdir -p "$runtime_root"
+          tar -xzf "$archive" -C "$runtime_root"
+          test -f "$runtime_root/ffmpeg-kit/lib/libffmpegkit.so"
+          printf 'FFMPEGKIT_LOCAL_DIR=%s\n' "$runtime_root/ffmpeg-kit" >> "$GITHUB_ENV"
+
       - name: Build Linux x64 bundle
         run: |
           flutter config --enable-linux-desktop
           flutter build linux --release
+
+      - name: Add third-party notices to Linux bundle
+        run: cp THIRD_PARTY_NOTICES.md build/linux/x64/release/bundle/
 
       - name: Upload Linux x64 bundle
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -167,6 +185,25 @@ jobs:
         shell: pwsh
         run: flutter pub get
 
+      - name: Fetch verified FFmpegKit Audio runtime
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $url = 'https://github.com/sk3llo/ffmpeg_kit_flutter/releases/download/8.1.2-audio/ffmpeg-kit-windows-x86_64-audio-8.1.2.zip'
+          $expectedSha256 = 'dcd9eabb067a3ef34ae8e7c1d01bf06592714978496e3b03c9015d2dc21ea94d'
+          $runtimeRoot = Join-Path $env:RUNNER_TEMP 'ffmpeg-kit-audio-8.1.2'
+          $archive = Join-Path $env:RUNNER_TEMP 'ffmpeg-kit-windows-x86_64-audio-8.1.2.zip'
+          Invoke-WebRequest -Uri $url -OutFile $archive
+          $actualSha256 = (Get-FileHash -Algorithm SHA256 -LiteralPath $archive).Hash.ToLowerInvariant()
+          if ($actualSha256 -ne $expectedSha256) {
+            throw "FFmpegKit SHA-256 mismatch: expected $expectedSha256, got $actualSha256"
+          }
+          Expand-Archive -LiteralPath $archive -DestinationPath $runtimeRoot -Force
+          if (-not (Test-Path (Join-Path $runtimeRoot 'bin/libffmpegkit.dll'))) {
+            throw 'FFmpegKit bundle does not contain bin/libffmpegkit.dll'
+          }
+          "FFMPEGKIT_LOCAL_DIR=$runtimeRoot" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
       - name: Exercise Windows offline audio runtime
         shell: pwsh
         run: |
@@ -181,6 +218,10 @@ jobs:
         run: |
           flutter config --enable-windows-desktop
           flutter build windows --release
+
+      - name: Add third-party notices to Windows distribution
+        shell: pwsh
+        run: Copy-Item THIRD_PARTY_NOTICES.md build/windows/x64/runner/Release/THIRD_PARTY_NOTICES.md
 
       - name: Upload complete Windows distribution
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
@@ -218,6 +259,11 @@ jobs:
 
       - name: Build unsigned iOS release
         run: flutter build ios --release --no-codesign
+
+      - name: Add third-party notices to Apple bundles
+        run: |
+          cp THIRD_PARTY_NOTICES.md build/macos/Build/Products/Release/*.app/Contents/Resources/
+          cp THIRD_PARTY_NOTICES.md build/ios/iphoneos/Runner.app/
 
       - name: Upload macOS application bundle
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2

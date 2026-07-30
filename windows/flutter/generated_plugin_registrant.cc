@@ -6,12 +6,12 @@
 
 #include "generated_plugin_registrant.h"
 
-#include <audio_decoder/audio_decoder_plugin_c_api.h>
 #include <audioplayers_windows/audioplayers_windows_plugin.h>
+#include <ffmpeg_kit_flutter_new_audio/f_fmpeg_kit_flutter_plugin.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
-  AudioDecoderPluginCApiRegisterWithRegistrar(
-      registry->GetRegistrarForPlugin("AudioDecoderPluginCApi"));
   AudioplayersWindowsPluginRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("AudioplayersWindowsPlugin"));
+  FFmpegKitFlutterPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("FFmpegKitFlutterPlugin"));
 }
