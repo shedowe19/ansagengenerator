@@ -1,0 +1,95 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'de.shedowe.ansagengenerator'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'de.shedowe.ansagengenerator'
+        minSdk 23
+        targetSdk 35
+        versionCode 21
+        versionName '1.20'
+    }
+
+    aaptOptions {
+        noCompress 'zip'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+def bundledOfflineArchives = [
+        [file: file('src/main/assets/offline/ansagengenerator-offline-opus-data.zip'), size: 467116673L, sha256: '80ada82a559fa5a40085cfd7c10aeae483991be68ec4ca0073150755489e4214']
+]
+def bundledArchiveDigest = { File archive ->
+    def digest = java.security.MessageDigest.getInstance('SHA-256')
+    archive.withInputStream { stream ->
+        byte[] buffer = new byte[1024 * 1024]
+        int read
+        while ((read = stream.read(buffer)) != -1) digest.update(buffer, 0, read)
+    }
+    digest.digest().collect { String.format('%02x', it & 0xff) }.join()
+}
+def inTrainAssetManifest = file('src/main/assets/inzug/inzug_opus_manifest.json')
+tasks.register('verifyBundledOfflineArchive') {
+    inputs.files(bundledOfflineArchives.collect { it.file })
+    doLast {
+        bundledOfflineArchives.each { archive ->
+            if (!archive.file.isFile()) throw new GradleException("Eingebetteter Offline-Teil fehlt: ${archive.file}")
+            if (archive.file.length() != archive.size) throw new GradleException("Eingebetteter Offline-Teil hat nicht die erwartete Release-Größe: ${archive.file.name}")
+            if (bundledArchiveDigest(archive.file) != archive.sha256) throw new GradleException("Eingebetteter Offline-Teil hat nicht die erwartete Release-Prüfsumme: ${archive.file.name}")
+        }
+    }
+}
+tasks.register('verifyBundledInTrainAssets') {
+    inputs.file(inTrainAssetManifest)
+    inputs.file(file('src/main/assets/inzug/inzug_station_mapping.json'))
+    doLast {
+        if (!inTrainAssetManifest.isFile()) throw new GradleException("Im-Zug-Opus-Manifest fehlt: ${inTrainAssetManifest}")
+        def manifest = new groovy.json.JsonSlurper().parse(inTrainAssetManifest)
+        if (manifest.schema_version != 2 || manifest.format != 'ogg-opus' || manifest.bitrate != '32k' || manifest.entry_count != 98 || manifest.station_count != 85 || manifest.text_count != 13) {
+            throw new GradleException("Im-Zug-Opus-Manifest hat unerwartete Werte.")
+        }
+        def mappingFile = file('src/main/assets/inzug/inzug_station_mapping.json')
+        if (!mappingFile.isFile()) throw new GradleException("Im-Zug-Stationzuordnung fehlt: ${mappingFile}")
+        def mappings = new groovy.json.JsonSlurper().parse(mappingFile)
+        if (!(mappings instanceof List) || mappings.size() != 85) throw new GradleException("Im-Zug-Stationzuordnung hat unerwartete Zählwerte.")
+        def seenMappingFilepaths = new HashSet<String>()
+        def mappedCuratedStationTargets = new HashSet<String>()
+        mappings.each { mapping ->
+            if (!(mapping.filepath instanceof String) || mapping.filepath.trim().isEmpty() || !seenMappingFilepaths.add(mapping.filepath)) throw new GradleException("Ungültige oder doppelte Im-Zug-Dateizuordnung.")
+            if (!(mapping.clip instanceof String) || !mapping.clip.matches('station_name_[a-z0-9_]+\\.opus')) throw new GradleException("Ungültiger Im-Zug-Opus-Stationclip: ${mapping.clip}")
+            File stationAsset = file("src/main/assets/inzug/station_name_only/${mapping.clip}")
+            if (!stationAsset.isFile()) throw new GradleException("Im-Zug-Stationclip fehlt: ${stationAsset}")
+            mappedCuratedStationTargets.add(("station_name_only/${mapping.clip}").toString())
+        }
+        def seenTargets = new HashSet<String>()
+        manifest.entries.each { entry ->
+            if (!(entry.target instanceof String) || entry.target.trim().isEmpty()) throw new GradleException("Im-Zug-Opus-Asset ohne Zielpfad.")
+            if (!(entry.target_sha256 instanceof String) || entry.target_sha256.size() != 64) throw new GradleException("Im-Zug-Opus-Asset ohne gültigen Hash: ${entry.target}")
+            if (!(entry.target_audio instanceof Map) || entry.target_audio.codec != 'opus' || entry.target_audio.channels != 1) throw new GradleException("Im-Zug-Asset ist kein Mono-Opus: ${entry.target}")
+            if (!String.valueOf(entry.target).endsWith('.opus')) throw new GradleException("Im-Zug-Asset ohne Opus-Endung: ${entry.target}")
+            if (!seenTargets.add(entry.target)) throw new GradleException("Doppelter Im-Zug-Opus-Zielpfad: ${entry.target}")
+            File asset = file("src/main/assets/inzug/${entry.target}")
+            if (!asset.isFile()) throw new GradleException("Im-Zug-Opus-Asset fehlt: ${asset}")
+            if (bundledArchiveDigest(asset) != entry.target_sha256) throw new GradleException("Im-Zug-Opus-Asset hat eine falsche Prüfsumme: ${asset.name}")
+            if (entry.kind == 'station' && !mappedCuratedStationTargets.contains(String.valueOf(entry.target))) throw new GradleException("Kuratiertes Opus-Stationsasset hat keine Im-Zug-Stationzuordnung: ${entry.target}")
+        }
+        if (seenTargets.size() != 98) throw new GradleException("Im-Zug-Opus-Assetanzahl ist unvollständig.")
+        if (!fileTree('src/main/assets/inzug').matching { include '**/*.wav' }.isEmpty()) throw new GradleException("WAV-Dateien dürfen nicht mehr als Im-Zug-APK-Assets enthalten sein.")
+    }
+}
+tasks.named('preBuild').configure {
+    dependsOn(tasks.named('verifyBundledOfflineArchive'))
+    dependsOn(tasks.named('verifyBundledInTrainAssets'))
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+}

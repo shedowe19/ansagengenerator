@@ -1,0 +1,558 @@
+[
+  {
+    "station": "Cottbus",
+    "raw": "Cottbus Hbf",
+    "filepath": "8010073.wav",
+    "clip": "station_name_cottbus_hbf.opus",
+    "start": "7.990",
+    "end": "9.710"
+  },
+  {
+    "station": "Guben",
+    "raw": "Guben",
+    "filepath": "8010357.wav",
+    "clip": "station_name_guben.opus",
+    "start": "29.490",
+    "end": "29.970"
+  },
+  {
+    "station": "Eisenhüttenstadt",
+    "raw": "Eisenhüttenstadt",
+    "filepath": "8011471.wav",
+    "clip": "station_name_eisenhuettenstadt.opus",
+    "start": "43.210",
+    "end": "44.510"
+  },
+  {
+    "station": "Frankfurt(Oder)",
+    "raw": "Frankfurt (Oder)",
+    "filepath": "8010113.wav",
+    "clip": "station_name_frankfurt_oder.opus",
+    "start": "57.280",
+    "end": "58.240"
+  },
+  {
+    "station": "Berkenbrück",
+    "raw": "Berkenbrück",
+    "filepath": "8011154.wav",
+    "clip": "station_name_berkenbrueck.opus",
+    "start": "126.900",
+    "end": "127.760"
+  },
+  {
+    "station": "Fürstenwalde (Spree)",
+    "raw": "Fürstenwalde (Spree)",
+    "filepath": "8010120.wav",
+    "clip": "station_name_fuerstenwalde_spree.opus",
+    "start": "141.590",
+    "end": "143.230"
+  },
+  {
+    "station": "Fangschleuse",
+    "raw": "Fangschleuse",
+    "filepath": "8011533.wav",
+    "clip": "station_name_fangschleuse.opus",
+    "start": "156.550",
+    "end": "157.470"
+  },
+  {
+    "station": "Erkner",
+    "raw": "Erkner",
+    "filepath": "8013477.wav",
+    "clip": "station_name_erkner.opus",
+    "start": "183.510",
+    "end": "184.570"
+  },
+  {
+    "station": "Berlin Ostkreuz",
+    "raw": "Berlin Ostkreuz",
+    "filepath": "8089028.wav",
+    "clip": "station_name_berlin_ostkreuz.opus",
+    "start": "196.920",
+    "end": "199.290"
+  },
+  {
+    "station": "Berlin Ostbahnhof",
+    "raw": "Berlin Ostbahnhof",
+    "filepath": "8010255.wav",
+    "clip": "station_name_berlin_ostbahnhof.opus",
+    "start": "211.400",
+    "end": "213.870"
+  },
+  {
+    "station": "Berlin Alexanderplatz",
+    "raw": "Berlin Alexanderplatz",
+    "filepath": "8089001.wav",
+    "clip": "station_name_berlin_alexanderplatz.opus",
+    "start": "227.690",
+    "end": "230.180"
+  },
+  {
+    "station": "Berlin-Friedrichstraße",
+    "raw": "Berlin Friedrichstraße",
+    "filepath": "8011306.wav",
+    "clip": "station_name_berlin_friedrichstrasse.opus",
+    "start": "245.880",
+    "end": "248.240"
+  },
+  {
+    "station": "Berlin Hbf",
+    "raw": "Berlin Hbf",
+    "filepath": "8011160.wav",
+    "clip": "station_name_berlin_hbf.opus",
+    "start": "263.160",
+    "end": "265.560"
+  },
+  {
+    "station": "Berlin Zoologischer Garten",
+    "raw": "Berlin Zoologischer Garten",
+    "filepath": "8010406.wav",
+    "clip": "station_name_berlin_zoologischer_garten.opus",
+    "start": "279.200",
+    "end": "281.600"
+  },
+  {
+    "station": "Werder (Havel)",
+    "raw": "Werder (Havel)",
+    "filepath": "8010373.wav",
+    "clip": "station_name_werder_havel.opus",
+    "start": "370.470",
+    "end": "371.570"
+  },
+  {
+    "station": "Brandenburg Hbf",
+    "raw": "Brandenburg Hbf",
+    "filepath": "8010060.wav",
+    "clip": "station_name_brandenburg_hbf.opus",
+    "start": "386.260",
+    "end": "388.140"
+  },
+  {
+    "station": "Kirchmöser",
+    "raw": "Kirchmöser",
+    "filepath": "8012011.wav",
+    "clip": "station_name_kirchmoeser.opus",
+    "start": "402.770",
+    "end": "403.640"
+  },
+  {
+    "station": "Wusterwitz",
+    "raw": "Wusterwitz",
+    "filepath": "8013365.wav",
+    "clip": "station_name_wusterwitz.opus",
+    "start": "428.770",
+    "end": "429.730"
+  },
+  {
+    "station": "Genthin",
+    "raw": "Genthin",
+    "filepath": "8010123.wav",
+    "clip": "station_name_genthin.opus",
+    "start": "445.720",
+    "end": "446.380"
+  },
+  {
+    "station": "Güsen(b Genthin)",
+    "raw": "Güsen",
+    "filepath": "8010151.wav",
+    "clip": "station_name_guesen.opus",
+    "start": "461.860",
+    "end": "462.300"
+  },
+  {
+    "station": "Burg (b Magdeburg)",
+    "raw": "Burg",
+    "filepath": "8011294.wav",
+    "clip": "station_name_burg.opus",
+    "start": "477.490",
+    "end": "478.250"
+  },
+  {
+    "station": "Magdeburg-Neustadt",
+    "raw": "Magdeburg-Neustadt",
+    "filepath": "8010226.wav",
+    "clip": "station_name_magdeburg_neustadt.opus",
+    "start": "492.570",
+    "end": "494.050"
+  },
+  {
+    "station": "Magdeburg Hbf",
+    "raw": "Magdeburg Hbf",
+    "filepath": "8010224.wav",
+    "clip": "station_name_magdeburg_hbf.opus",
+    "start": "508.720",
+    "end": "510.580"
+  },
+  {
+    "station": "Büttgen",
+    "raw": "Büttgen",
+    "filepath": "8001261.wav",
+    "clip": "station_name_buettgen.opus"
+  },
+  {
+    "station": "Düsseldorf Hbf",
+    "raw": "Düsseldorf Hauptbahnhof",
+    "filepath": "8000085.wav",
+    "clip": "station_name_duesseldorf_hbf.opus"
+  },
+  {
+    "station": "Düsseldorf-Bilk",
+    "raw": "Düsseldorf-Bilk",
+    "filepath": "8001585.wav",
+    "clip": "station_name_duesseldorf_bilk.opus"
+  },
+  {
+    "station": "Düsseldorf-Flingern",
+    "raw": "Düsseldorf-Flingern",
+    "filepath": "8001598.wav",
+    "clip": "station_name_duesseldorf_flingern.opus"
+  },
+  {
+    "station": "Düsseldorf Friedrichstadt",
+    "raw": "Düsseldorf-Friedrichstadt",
+    "filepath": "8001579.wav",
+    "clip": "station_name_duesseldorf_friedrichstadt.opus"
+  },
+  {
+    "station": "Düsseldorf-Gerresheim",
+    "raw": "Düsseldorf-Gerresheim",
+    "filepath": "8001590.wav",
+    "clip": "station_name_duesseldorf_gerresheim.opus"
+  },
+  {
+    "station": "Düsseldorf-Hamm",
+    "raw": "Düsseldorf-Hamm",
+    "filepath": "8001597.wav",
+    "clip": "station_name_duesseldorf_hamm.opus"
+  },
+  {
+    "station": "Düsseldorf Völklinger Straße",
+    "raw": "Düsseldorf-Völklinger Straße",
+    "filepath": "8001603.wav",
+    "clip": "station_name_duesseldorf_voelklinger_strasse.opus"
+  },
+  {
+    "station": "Erkrath",
+    "raw": "Erkrath",
+    "filepath": "8001841.wav",
+    "clip": "station_name_erkrath.opus"
+  },
+  {
+    "station": "Hochdahl",
+    "raw": "Erkrath-Hochdahl",
+    "filepath": "8002868.wav",
+    "clip": "station_name_hochdahl.opus"
+  },
+  {
+    "station": "Hochdahl-Millrath",
+    "raw": "Erkrath-Millrath",
+    "filepath": "8002869.wav",
+    "clip": "station_name_hochdahl_millrath.opus"
+  },
+  {
+    "station": "Gruiten",
+    "raw": "Haan-Gruiten",
+    "filepath": "8000138.wav",
+    "clip": "station_name_haan_gruiten.opus"
+  },
+  {
+    "station": "Kleinenbroich",
+    "raw": "Kleinenbroich",
+    "filepath": "8003321.wav",
+    "clip": "station_name_kleinenbroich.opus"
+  },
+  {
+    "station": "Korschenbroich",
+    "raw": "Korschenbroich",
+    "filepath": "8003412.wav",
+    "clip": "station_name_korschenbroich.opus"
+  },
+  {
+    "station": "Mönchengladbach Hbf",
+    "raw": "Mönchengladbach Hauptbahnhof",
+    "filepath": "8000253.wav",
+    "clip": "station_name_moenchengladbach_hbf.opus"
+  },
+  {
+    "station": "Mönchengladbach-Lürrip",
+    "raw": "Mönchengladbach-Lürrip",
+    "filepath": "8001745.wav",
+    "clip": "station_name_moenchengladbach_luerrip.opus"
+  },
+  {
+    "station": "Neuss Am Kaiser",
+    "raw": "Neuss Am Kaiser",
+    "filepath": "8004320.wav",
+    "clip": "station_name_neuss_am_kaiser.opus"
+  },
+  {
+    "station": "Neuss Hbf",
+    "raw": "Neuss Hauptbahnhof",
+    "filepath": "8000274.wav",
+    "clip": "station_name_neuss_hbf.opus"
+  },
+  {
+    "station": "Neuss Rheinparkcenter",
+    "raw": "Neuss Rheinpark-Center",
+    "filepath": "8004316.wav",
+    "clip": "station_name_neuss_rheinparkcenter.opus"
+  },
+  {
+    "station": "Wuppertal Hbf",
+    "raw": "Wuppertal Hauptbahnhof",
+    "filepath": "8000266.wav",
+    "clip": "station_name_wuppertal_hbf.opus"
+  },
+  {
+    "station": "Wuppertal-Sonnborn",
+    "raw": "Wuppertal Sonnborn",
+    "filepath": "8006618.wav",
+    "clip": "station_name_wuppertal_sonnborn.opus"
+  },
+  {
+    "station": "Wuppertal-Steinbeck",
+    "raw": "Wuppertal Steinbeck",
+    "filepath": "8006619.wav",
+    "clip": "station_name_wuppertal_steinbeck.opus"
+  },
+  {
+    "station": "Wuppertal Zoologischer Garten",
+    "raw": "Wuppertal Zoologischer Garten",
+    "filepath": "8006623.wav",
+    "clip": "station_name_wuppertal_zoologischer_garten.opus"
+  },
+  {
+    "station": "Wuppertal-Barmen",
+    "raw": "Wuppertal-Barmen",
+    "filepath": "8006596.wav",
+    "clip": "station_name_wuppertal_barmen.opus"
+  },
+  {
+    "station": "Wuppertal-Unterbarmen",
+    "raw": "Wuppertal-Unterbarmen",
+    "filepath": "8006620.wav",
+    "clip": "station_name_wuppertal_unterbarmen.opus"
+  },
+  {
+    "station": "Wuppertal-Vohwinkel",
+    "raw": "Wuppertal-Vohwinkel",
+    "filepath": "8006718.wav",
+    "clip": "station_name_wuppertal_vohwinkel.opus"
+  },
+  {
+    "station": "Gevelsberg Hbf",
+    "raw": "Gevelsberg Hauptbahnhof",
+    "filepath": "8002267.wav",
+    "clip": "station_name_gevelsberg_hbf.opus"
+  },
+  {
+    "station": "Gevelsberg West",
+    "raw": "Gevelsberg West",
+    "filepath": "8002268.wav",
+    "clip": "station_name_gevelsberg_west.opus"
+  },
+  {
+    "station": "Gevelsberg-Kipp",
+    "raw": "Gevelsberg-Kipp",
+    "filepath": "8002509.wav",
+    "clip": "station_name_gevelsberg_kipp.opus"
+  },
+  {
+    "station": "Gevelsberg-Knapp",
+    "raw": "Gevelsberg-Knapp",
+    "filepath": "8001943.wav",
+    "clip": "station_name_gevelsberg_knapp.opus"
+  },
+  {
+    "station": "Hagen-Heubing",
+    "raw": "Hagen-Heubing",
+    "filepath": "8002512.wav",
+    "clip": "station_name_hagen_heubing.opus"
+  },
+  {
+    "station": "Hagen-Wehringhausen",
+    "raw": "Hagen-Wehringhausen",
+    "filepath": "8006712.wav",
+    "clip": "station_name_hagen_wehringhausen.opus"
+  },
+  {
+    "station": "Hagen-Westerbauer",
+    "raw": "Hagen-Westerbauer",
+    "filepath": "8004440.wav",
+    "clip": "station_name_hagen_westerbauer.opus"
+  },
+  {
+    "station": "Schwelm",
+    "raw": "Schwelm",
+    "filepath": "8000033.wav",
+    "clip": "station_name_schwelm.opus"
+  },
+  {
+    "station": "Schwelm West",
+    "raw": "Schwelm West",
+    "filepath": "8005488.wav",
+    "clip": "station_name_schwelm_west.opus"
+  },
+  {
+    "station": "Wuppertal-Langerfeld",
+    "raw": "Wuppertal-Langerfeld",
+    "filepath": "8006607.wav",
+    "clip": "station_name_wuppertal_langerfeld.opus"
+  },
+  {
+    "station": "Wuppertal-Oberbarmen",
+    "raw": "Wuppertal-Oberbarmen",
+    "filepath": "8006719.wav",
+    "clip": "station_name_wuppertal_oberbarmen.opus"
+  },
+  {
+    "station": "Hagen Hbf",
+    "raw": "Hagen Hauptbahnhof",
+    "filepath": "8000142.wav",
+    "clip": "station_name_hagen_hbf.opus"
+  },
+  {
+    "station": "Bad Oeynhausen",
+    "raw": "Bad Oeynhausen",
+    "filepath": "8000732.wav",
+    "clip": "station_name_bad_oeynhausen.opus"
+  },
+  {
+    "station": "Bielefeld Hbf",
+    "raw": "Bielefeld Hbf",
+    "filepath": "8000036.wav",
+    "clip": "station_name_bielefeld_hbf.opus"
+  },
+  {
+    "station": "Bochum Hbf",
+    "raw": "Bochum Hbf",
+    "filepath": "8000041.wav",
+    "clip": "station_name_bochum_hbf.opus"
+  },
+  {
+    "station": "Dormagen",
+    "raw": "Dormagen",
+    "filepath": "8001506.wav",
+    "clip": "station_name_dormagen.opus"
+  },
+  {
+    "station": "Dortmund Hbf",
+    "raw": "Dortmund Hbf",
+    "filepath": "8000080.wav",
+    "clip": "station_name_dortmund_hbf.opus"
+  },
+  {
+    "station": "Duisburg Hbf",
+    "raw": "Duisburg Hbf",
+    "filepath": "8000086.wav",
+    "clip": "station_name_duisburg_hbf.opus"
+  },
+  {
+    "station": "Düsseldorf Flughafen",
+    "raw": "Düsseldorf Flughafen",
+    "filepath": "8000082.wav",
+    "clip": "station_name_duesseldorf_flughafen.opus"
+  },
+  {
+    "station": "Essen Hbf",
+    "raw": "Essen Hbf",
+    "filepath": "8000098.wav",
+    "clip": "station_name_essen_hbf.opus"
+  },
+  {
+    "station": "Gütersloh Hbf",
+    "raw": "Gütersloh Hbf",
+    "filepath": "8002461.wav",
+    "clip": "station_name_guetersloh_hbf.opus"
+  },
+  {
+    "station": "Hamm(Westf)",
+    "raw": "Hamm (Westf)",
+    "filepath": "8000149.wav",
+    "clip": "station_name_hamm_westf.opus"
+  },
+  {
+    "station": "Heessen",
+    "raw": "Heessen",
+    "filepath": "8002680.wav",
+    "clip": "station_name_heessen.opus"
+  },
+  {
+    "station": "Herford",
+    "raw": "Herford",
+    "filepath": "8000162.wav",
+    "clip": "station_name_herford.opus"
+  },
+  {
+    "station": "Kamen",
+    "raw": "Kamen",
+    "filepath": "8003168.wav",
+    "clip": "station_name_kamen.opus"
+  },
+  {
+    "station": "Köln Hbf",
+    "raw": "Köln Hbf",
+    "filepath": "8000207.wav",
+    "clip": "station_name_koeln_hbf.opus"
+  },
+  {
+    "station": "Köln/Bonn Flughafen",
+    "raw": "Köln/Bonn Flughafen",
+    "filepath": "8003330.wav",
+    "clip": "station_name_koeln_bonn_flughafen.opus"
+  },
+  {
+    "station": "Löhne (Westf)",
+    "raw": "Löhne (Westf)",
+    "filepath": "8000233.wav",
+    "clip": "station_name_loehne_westf.opus"
+  },
+  {
+    "station": "Minden (Westf)",
+    "raw": "Minden (Westf)",
+    "filepath": "8000252.wav",
+    "clip": "station_name_minden_westf.opus"
+  },
+  {
+    "station": "Mülheim (Ruhr) Hbf",
+    "raw": "Mülheim (Ruhr) Hbf",
+    "filepath": "8000259.wav",
+    "clip": "station_name_muelheim_ruhr_hbf.opus"
+  },
+  {
+    "station": "Neubeckum",
+    "raw": "Neubeckum",
+    "filepath": "8004251.wav",
+    "clip": "station_name_neubeckum.opus"
+  },
+  {
+    "station": "Oelde",
+    "raw": "Oelde",
+    "filepath": "8004626.wav",
+    "clip": "station_name_oelde.opus"
+  },
+  {
+    "station": "Porta Westfalica",
+    "raw": "Porta Westfalica",
+    "filepath": "8004868.wav",
+    "clip": "station_name_porta_westfalica.opus"
+  },
+  {
+    "station": "Rheda-Wiedenbrück",
+    "raw": "Rheda-Wiedenbrück",
+    "filepath": "8000315.wav",
+    "clip": "station_name_rheda_wiedenbrueck.opus"
+  },
+  {
+    "station": "Wattenscheid",
+    "raw": "Wattenscheid",
+    "filepath": "8006226.wav",
+    "clip": "station_name_wattenscheid.opus"
+  },
+  {
+    "station": "Ahlen (Westf)",
+    "raw": "Ahlen (Westf)",
+    "filepath": "8000441.wav",
+    "clip": "station_name_ahlen_westf.opus"
+  }
+]

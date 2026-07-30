@@ -1,0 +1,2079 @@
+{
+  "schema_version": 2,
+  "purpose": "Curated Rhein-Ruhr original-voice in-train assets for the native playlist.",
+  "format": "ogg-opus",
+  "bitrate": "32k",
+  "processing": "Boundary-preserving Ogg/Opus transcode only: 16 kHz mono input, no trimming, denoising or loudness processing.",
+  "entry_count": 98,
+  "station_count": 85,
+  "text_count": 13,
+  "source_wav_bytes": 5867348,
+  "opus_bytes": 771891,
+  "entries": [
+    {
+      "source": "station_name_only/station_name_ahlen_westf.wav",
+      "target": "station_name_only/station_name_ahlen_westf.opus",
+      "kind": "station",
+      "source_sha256": "03b0a818f965b2e8ea01994112e76c53615dd64378ae0be1ef5567b839328a7e",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.829063
+      },
+      "target_sha256": "fe5c930d7bc46de73a0398ac41bcb223132cc9403578353892cd1a0f859eb119",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.835563
+      }
+    },
+    {
+      "source": "station_name_only/station_name_bad_oeynhausen.wav",
+      "target": "station_name_only/station_name_bad_oeynhausen.opus",
+      "kind": "station",
+      "source_sha256": "ceb8fead2832cac133543a8f3ba7db36444f5b89574be65794e44698b814b740",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.205063
+      },
+      "target_sha256": "a8abcbd04939716c9f9d20b0699ea5f609cad5df95fca1d801612665adcff1e5",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.211563
+      }
+    },
+    {
+      "source": "station_name_only/station_name_berkenbrueck.wav",
+      "target": "station_name_only/station_name_berkenbrueck.opus",
+      "kind": "station",
+      "source_sha256": "6a0c9ae82856dbd8e5697ef85a50cee51c242cde72e7a919c265fbc7cfc646fa",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.86
+      },
+      "target_sha256": "a61724fdf39690632988302ba2271e01659d9efa59667cfcd0d4333ca2071c82",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.8665
+      }
+    },
+    {
+      "source": "station_name_only/station_name_berlin_alexanderplatz.wav",
+      "target": "station_name_only/station_name_berlin_alexanderplatz.opus",
+      "kind": "station",
+      "source_sha256": "61ac3b1df34c6c523b9af7eefdf2db94a1f68b945b166408a98448e7655f79fd",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.49
+      },
+      "target_sha256": "c0877e8ab01778d4da42ec5c6f7e9c3f8ab1e3c8389ea81d7d55da601760cdf9",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.4965
+      }
+    },
+    {
+      "source": "station_name_only/station_name_berlin_friedrichstrasse.wav",
+      "target": "station_name_only/station_name_berlin_friedrichstrasse.opus",
+      "kind": "station",
+      "source_sha256": "f6cb8d26394ece295ba4c1a8820824fbb8d40790bb2c927e8f043662ed0b964c",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.36
+      },
+      "target_sha256": "c33e7c3b8750b4f0b45a1ce255a40786b4fa1ccc5f3296389d197a4c29831546",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.3665
+      }
+    },
+    {
+      "source": "station_name_only/station_name_berlin_hbf.wav",
+      "target": "station_name_only/station_name_berlin_hbf.opus",
+      "kind": "station",
+      "source_sha256": "ea960caeedef8469aae33a04864ed7a9f78595c32b82dc822d6be5b9ae6a0cf0",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.4
+      },
+      "target_sha256": "e5c8c6f66729b2706905ce283beeabad9d1348c3e510138fa875a36095a4485f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.4065
+      }
+    },
+    {
+      "source": "station_name_only/station_name_berlin_ostbahnhof.wav",
+      "target": "station_name_only/station_name_berlin_ostbahnhof.opus",
+      "kind": "station",
+      "source_sha256": "1e50a8c2c2a1b9c17391f7a8789d4b58bfb7d475e3340121b7d1cc2547809099",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.47
+      },
+      "target_sha256": "8a8663da6ab513649497c3036347af6901c34e474dc9a0d50546d8cbd735b37b",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.4765
+      }
+    },
+    {
+      "source": "station_name_only/station_name_berlin_ostkreuz.wav",
+      "target": "station_name_only/station_name_berlin_ostkreuz.opus",
+      "kind": "station",
+      "source_sha256": "140e876394b6dafdbce68000fafd7a80ae305d316f2c9b95533a921433e86f1c",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.37
+      },
+      "target_sha256": "7f41ca178ad3d8750320931b36bbe2c8577a859ea937d3ef59611af20342fc92",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.3765
+      }
+    },
+    {
+      "source": "station_name_only/station_name_berlin_zoologischer_garten.wav",
+      "target": "station_name_only/station_name_berlin_zoologischer_garten.opus",
+      "kind": "station",
+      "source_sha256": "ce215b588df4a8a6df2591524062a545db98f277128259061780e8713a7a2447",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.4
+      },
+      "target_sha256": "a361e4d9ee34a9126d33b5f9ffca30b22f523ca1883210451c444451858d7c9f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.4065
+      }
+    },
+    {
+      "source": "station_name_only/station_name_bielefeld_hbf.wav",
+      "target": "station_name_only/station_name_bielefeld_hbf.opus",
+      "kind": "station",
+      "source_sha256": "3909eb2f78e722bc7748f8e3ded5644b91817ad460116d3327a8b67f467a5a16",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.936688
+      },
+      "target_sha256": "1d41f793ba8ab9ae0e3f738634fb8f1a4e41f3d073b4660fe0dc3860afc92003",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.943188
+      }
+    },
+    {
+      "source": "station_name_only/station_name_bochum_hbf.wav",
+      "target": "station_name_only/station_name_bochum_hbf.opus",
+      "kind": "station",
+      "source_sha256": "5d4690cc9c91700a075a542bced0628ebc3c26ac60183232e2d574e985a4f72b",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.829063
+      },
+      "target_sha256": "8a7201bcf3edcd8e5e38e92b0dd0e6579b19548d2b20c7f8cbf2708b19a89614",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.835563
+      }
+    },
+    {
+      "source": "station_name_only/station_name_brandenburg_hbf.wav",
+      "target": "station_name_only/station_name_brandenburg_hbf.opus",
+      "kind": "station",
+      "source_sha256": "9d6e7df510d5a353eb07d05709c9412ba3064bcf88ff8273b808db5461a9ce5f",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.88
+      },
+      "target_sha256": "14b5ee7594283ed7ec857ece37da71a3d7ae6378388c6383bb07749771e17ecc",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.8865
+      }
+    },
+    {
+      "source": "station_name_only/station_name_buettgen.wav",
+      "target": "station_name_only/station_name_buettgen.opus",
+      "kind": "station",
+      "source_sha256": "2386707b52ba83f69d4011ae379058a066b345661daa17a55aafd785098a0653",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.7055
+      },
+      "target_sha256": "6ef98fceb372c4fe44d945c2e32e7a70723ba0586171638a4dd25f04f03c89fd",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.712
+      }
+    },
+    {
+      "source": "station_name_only/station_name_burg.wav",
+      "target": "station_name_only/station_name_burg.opus",
+      "kind": "station",
+      "source_sha256": "d4693c98e0f9400be1625d53c88d888c9106131840a37909fd4f2d859e6437bc",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.76
+      },
+      "target_sha256": "a63cc97d45b2633da60960ba8e7876736253418746324940268397b6a00fd4a8",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.7665
+      }
+    },
+    {
+      "source": "station_name_only/station_name_cottbus_hbf.wav",
+      "target": "station_name_only/station_name_cottbus_hbf.opus",
+      "kind": "station",
+      "source_sha256": "bd20c744d61a78edb92bd214c965226049c68aca6f10ed7a6df8760c6c5e439c",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.72
+      },
+      "target_sha256": "dbfc1982a91b5a56e53adcab624d5f380ecd98079e047848a759953c12363c49",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.7265
+      }
+    },
+    {
+      "source": "station_name_only/station_name_dormagen.wav",
+      "target": "station_name_only/station_name_dormagen.opus",
+      "kind": "station",
+      "source_sha256": "3b787e863607244763ac5f129e90133acc5494bb693076e484c001ce37dcd1c2",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.793313
+      },
+      "target_sha256": "644f19ebd192519418f14be75a4b86a809c29cb79765e3e44b8a1eff2d665e7f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.799813
+      }
+    },
+    {
+      "source": "station_name_only/station_name_dortmund_hbf.wav",
+      "target": "station_name_only/station_name_dortmund_hbf.opus",
+      "kind": "station",
+      "source_sha256": "6e1db3f958a0399bba4d2a2bd156137df051a436f13a6160c207a3ac54d67780",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.915125
+      },
+      "target_sha256": "a587e768f1ffe7c9c425ed9502dda0ba2d679240f682585fdcedd5b6bf882b34",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.921625
+      }
+    },
+    {
+      "source": "station_name_only/station_name_duesseldorf_bilk.wav",
+      "target": "station_name_only/station_name_duesseldorf_bilk.opus",
+      "kind": "station",
+      "source_sha256": "3d87a2f03d5fecd02c92c47cd382fe8762e46e8545c1375264fd9abe8f4d1784",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.62
+      },
+      "target_sha256": "e26f109838d886a919c883c5170350d1f6f75ca78e4566921ff7d3cb4c7d619c",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.6265
+      }
+    },
+    {
+      "source": "station_name_only/station_name_duesseldorf_flingern.wav",
+      "target": "station_name_only/station_name_duesseldorf_flingern.opus",
+      "kind": "station",
+      "source_sha256": "9cd8764dec78966bcde78fc53febbb74a5f05af7a2bc76106d54322793b316ae",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.691875
+      },
+      "target_sha256": "e00e78ab4d957e289b79425dcaa62a41d85d5822140c07173ecee18abca4c1b7",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.698375
+      }
+    },
+    {
+      "source": "station_name_only/station_name_duesseldorf_flughafen.wav",
+      "target": "station_name_only/station_name_duesseldorf_flughafen.opus",
+      "kind": "station",
+      "source_sha256": "08455d2aebe7c800c9067e4718d5c73c4420cf371389b580aec6d13843e9ec13",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.829063
+      },
+      "target_sha256": "c9fc42348ae71ad58a255d660b6180ed4777714dbe8bef882e17721e02b11e53",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.835563
+      }
+    },
+    {
+      "source": "station_name_only/station_name_duesseldorf_friedrichstadt.wav",
+      "target": "station_name_only/station_name_duesseldorf_friedrichstadt.opus",
+      "kind": "station",
+      "source_sha256": "47d6d2f96a65185cdb41ed2aba7c995bb076475aee38420d14ab6b9607bf54de",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.142625
+      },
+      "target_sha256": "3eca41a7c5f1248d067be405069fb1def4f7450e557d3d3b7500dc04fa9813d4",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.149125
+      }
+    },
+    {
+      "source": "station_name_only/station_name_duesseldorf_gerresheim.wav",
+      "target": "station_name_only/station_name_duesseldorf_gerresheim.opus",
+      "kind": "station",
+      "source_sha256": "6cf1ed10aef9b73f8bd1218e5e9b78fc1fff42cc92096c58ea16a2fbb82c0e9a",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.933563
+      },
+      "target_sha256": "42cf974c67eb1d70bf61c9926be6bd36a55dc092d8c58fba60eda5bd01058929",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.940063
+      }
+    },
+    {
+      "source": "station_name_only/station_name_duesseldorf_hamm.wav",
+      "target": "station_name_only/station_name_duesseldorf_hamm.opus",
+      "kind": "station",
+      "source_sha256": "4ebe99324414df9c7c7328af853ebf26236060172718cdabd9bbd92566502af7",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.437125
+      },
+      "target_sha256": "17efc69f3d239b68d24361623a9739795141cfc6c0518a13b9040c6b159ab498",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.443625
+      }
+    },
+    {
+      "source": "station_name_only/station_name_duesseldorf_hbf.wav",
+      "target": "station_name_only/station_name_duesseldorf_hbf.opus",
+      "kind": "station",
+      "source_sha256": "4d1ab8eaf259526eb5adba90e1d3362603b1e4ec631c368693835b128bc526d1",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.06575
+      },
+      "target_sha256": "45f86243054e1fad1671bba5a997591bb9c8ac159dd297963a8f49797df0e413",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.07225
+      }
+    },
+    {
+      "source": "station_name_only/station_name_duesseldorf_voelklinger_strasse.wav",
+      "target": "station_name_only/station_name_duesseldorf_voelklinger_strasse.opus",
+      "kind": "station",
+      "source_sha256": "9ba390144cb0aadda4e390cd9e56d1b0577d76af2a334db72bfa157775ef6863",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.27325
+      },
+      "target_sha256": "046da8d0bedf9f447a8f7c608d07ce6e677c375d79c4c0ff863651b8607b8234",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.27975
+      }
+    },
+    {
+      "source": "station_name_only/station_name_duisburg_hbf.wav",
+      "target": "station_name_only/station_name_duisburg_hbf.opus",
+      "kind": "station",
+      "source_sha256": "69cb276d506620a72fbc508c573403f50f7b4d95c782460ca51abbd52abba1a9",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.850625
+      },
+      "target_sha256": "ab5dea2423d0eff29fb376e2edfbb38daa80a9d309306e6002fbb20b1a12ccec",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.857125
+      }
+    },
+    {
+      "source": "station_name_only/station_name_eisenhuettenstadt.wav",
+      "target": "station_name_only/station_name_eisenhuettenstadt.opus",
+      "kind": "station",
+      "source_sha256": "8cade5f8f18819ac195b2b3869b7fb990c1686b9d3687af961aa656f312e1b4d",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.3
+      },
+      "target_sha256": "c0a8a475539524cabba76d603d27cd7f2dcc6efb1294435da32c99b63d5605f4",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.3065
+      }
+    },
+    {
+      "source": "station_name_only/station_name_erkner.wav",
+      "target": "station_name_only/station_name_erkner.opus",
+      "kind": "station",
+      "source_sha256": "4ce4271b28bf3d0c35647019b14aeb3a2caa7817e53d9d09c088f16f1540dfe7",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.06
+      },
+      "target_sha256": "f24bde59dd236bd93e855fabde1f3b13685e6d85fe7c6ebde73b25a7f1464d1a",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.0665
+      }
+    },
+    {
+      "source": "station_name_only/station_name_erkrath.wav",
+      "target": "station_name_only/station_name_erkrath.opus",
+      "kind": "station",
+      "source_sha256": "e7251e316dc293ed17663a745f5b525155f34e29c380375cdb3707ea05f378be",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.878875
+      },
+      "target_sha256": "19a8909a06acecd741d68926f0d449cd36a83b65142ec309bf6112466f8865ca",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.885375
+      }
+    },
+    {
+      "source": "station_name_only/station_name_essen_hbf.wav",
+      "target": "station_name_only/station_name_essen_hbf.opus",
+      "kind": "station",
+      "source_sha256": "33b65603284a111ccc77bd502d7c8c2310481d6d66749f597a71bd80ac673d83",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.592313
+      },
+      "target_sha256": "bcf3de79312882d6f3aeea73127b8e99402cf5725ecb6f10d5e389b3497a8b52",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.598813
+      }
+    },
+    {
+      "source": "station_name_only/station_name_fangschleuse.wav",
+      "target": "station_name_only/station_name_fangschleuse.opus",
+      "kind": "station",
+      "source_sha256": "f498b69f7a04bc7eba9212b47aec515ab48f7dd85eb5293c0071197a65825752",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.92
+      },
+      "target_sha256": "e73540efa40e4dc159480a90f9f996e226f95e14a359337b2f9ee45c9a4d0fd5",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.9265
+      }
+    },
+    {
+      "source": "station_name_only/station_name_frankfurt_oder.wav",
+      "target": "station_name_only/station_name_frankfurt_oder.opus",
+      "kind": "station",
+      "source_sha256": "68234b8e6a44fc2c4e4036a8acb2345793ec3ee9071052cac3cdcba9b2a3bcdc",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.96
+      },
+      "target_sha256": "d4ce6df1f0e6f864b0cdb0b89ac69cba3257c40bef1703d078a9a8f36cabbe7a",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.9665
+      }
+    },
+    {
+      "source": "station_name_only/station_name_fuerstenwalde_spree.wav",
+      "target": "station_name_only/station_name_fuerstenwalde_spree.opus",
+      "kind": "station",
+      "source_sha256": "c153652ecb14bcad3438b5572141242732f00d3f56d9fb138bb1a1d0ec041306",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.64
+      },
+      "target_sha256": "ca254af28b11a843a696a2eb29cf75f0f09abfcb5f62a9e7704ef7b28f8148e2",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.6465
+      }
+    },
+    {
+      "source": "station_name_only/station_name_genthin.wav",
+      "target": "station_name_only/station_name_genthin.opus",
+      "kind": "station",
+      "source_sha256": "6674ddbb74b80a7d3a3e46a8cd71922afdf7b6eb8be7cf4d55c5ba7b2a52ef53",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.66
+      },
+      "target_sha256": "3c22b9f8c7d389f22ea3b150bf3064ce1698c98536fe96c87d5c2b6dd6f5564f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.6665
+      }
+    },
+    {
+      "source": "station_name_only/station_name_gevelsberg_hbf.wav",
+      "target": "station_name_only/station_name_gevelsberg_hbf.opus",
+      "kind": "station",
+      "source_sha256": "fcdeaae06ca104d06e99b7edb2d446bc4ac10bf6aca98fb458350e70e0f80546",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.05275
+      },
+      "target_sha256": "d6c161e5ad03c218d55e24b1df87fe790c69c931c1530f1285c274a362a78b91",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.05925
+      }
+    },
+    {
+      "source": "station_name_only/station_name_gevelsberg_kipp.wav",
+      "target": "station_name_only/station_name_gevelsberg_kipp.opus",
+      "kind": "station",
+      "source_sha256": "1ac506d5dca807f253db337ec0c8d4c3f63329d96bfdf3f228083fefb5de334c",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.329375
+      },
+      "target_sha256": "68d9e8e4e2685704d799f3415c3706f16e9b3754ae2ab303266b1283898996a5",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.335875
+      }
+    },
+    {
+      "source": "station_name_only/station_name_gevelsberg_knapp.wav",
+      "target": "station_name_only/station_name_gevelsberg_knapp.opus",
+      "kind": "station",
+      "source_sha256": "ac20b6fbd16ef1abd59b92114f3fda2fb08ab1e0d136a1e07f63c0ce38dcffda",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.407563
+      },
+      "target_sha256": "fbdee54c43b90a06e66d075d143e35f933b0b5959c612db3eaab8ea5427dea5f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.414063
+      }
+    },
+    {
+      "source": "station_name_only/station_name_gevelsberg_west.wav",
+      "target": "station_name_only/station_name_gevelsberg_west.opus",
+      "kind": "station",
+      "source_sha256": "4f5dd912a95595f17207749accc9d086eb0ba605f724232083abdfc7df418410",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.5835
+      },
+      "target_sha256": "8ffc4e39223d40b882c7b77443efdb8b4923f6eec178746a72350151cf3882ac",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.59
+      }
+    },
+    {
+      "source": "station_name_only/station_name_guben.wav",
+      "target": "station_name_only/station_name_guben.opus",
+      "kind": "station",
+      "source_sha256": "8ed6eaf26cc0ff513700baf8eba02ce870d8b5062e9a5a809caf39293a648882",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.48
+      },
+      "target_sha256": "7c06bf3be414fe637e78a328a35018dfaaa4865b7806fad0f559526596678f69",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.4865
+      }
+    },
+    {
+      "source": "station_name_only/station_name_guesen.wav",
+      "target": "station_name_only/station_name_guesen.opus",
+      "kind": "station",
+      "source_sha256": "469d50c5883b5ebc3569c1111f6847d09c8d8312b22a29a662435974c5beb4d5",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.44
+      },
+      "target_sha256": "27bb2238e57c6a8c5286cd663b2dd8d1549fbcbaa9d40f648fd0d378a079c3bf",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.4465
+      }
+    },
+    {
+      "source": "station_name_only/station_name_guetersloh_hbf.wav",
+      "target": "station_name_only/station_name_guetersloh_hbf.opus",
+      "kind": "station",
+      "source_sha256": "5c577448f09b693f576b8ff5e44ffe5bbe1ba3346fd3aeb1b8c98881c636b049",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.02275
+      },
+      "target_sha256": "be761d0c159615af54cfe00934aa9c5ad1266bb1bb89e42a42321159f8289c83",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.02925
+      }
+    },
+    {
+      "source": "station_name_only/station_name_haan_gruiten.wav",
+      "target": "station_name_only/station_name_haan_gruiten.opus",
+      "kind": "station",
+      "source_sha256": "5a30726e7779a9125046fe45a2c653cb80590ed4b2bbed90e31b2af5fa731be8",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.900875
+      },
+      "target_sha256": "d3a4ddee5b2843911164f12af7d385536134bfa3046394734699c553eb00b696",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.907375
+      }
+    },
+    {
+      "source": "station_name_only/station_name_hagen_hbf.wav",
+      "target": "station_name_only/station_name_hagen_hbf.opus",
+      "kind": "station",
+      "source_sha256": "dc7e21d5c1d361689f2ca4f074be7a0389d8388220243ef6e0122692ac2e9a20",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.749938
+      },
+      "target_sha256": "d541bb5d8295f14166eac9924d43d9135bd82429cfc33c2fb90c84a2e036ea4e",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.756438
+      }
+    },
+    {
+      "source": "station_name_only/station_name_hagen_heubing.wav",
+      "target": "station_name_only/station_name_hagen_heubing.opus",
+      "kind": "station",
+      "source_sha256": "dcece5096377798e6a20af44d7e8f8ee7fb07cf9e9d2d62914a0117bc9e8f731",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.348938
+      },
+      "target_sha256": "53933bd3dc9875a280c6583c6c77233fb851770d1416dd711e1924e493be36c3",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.355438
+      }
+    },
+    {
+      "source": "station_name_only/station_name_hagen_wehringhausen.wav",
+      "target": "station_name_only/station_name_hagen_wehringhausen.opus",
+      "kind": "station",
+      "source_sha256": "11410c2ce2faed967802bee41a152df3edda845797354923cab0c5312a4d2c5d",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.7595
+      },
+      "target_sha256": "8de23a2d0c65bdae6035ede35d8298985eb6dae3e7b1ac2323af4fadf0257efe",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.766
+      }
+    },
+    {
+      "source": "station_name_only/station_name_hagen_westerbauer.wav",
+      "target": "station_name_only/station_name_hagen_westerbauer.opus",
+      "kind": "station",
+      "source_sha256": "a00525c3bb823a9ad3fac3fbd85ae26e7ab4aad3a6e2a687c35b3d119468d7ee",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.720375
+      },
+      "target_sha256": "1e3892228365a1a554419c13806b0eeab2e99d078621b975742cd33e062c949c",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.726875
+      }
+    },
+    {
+      "source": "station_name_only/station_name_hamm_westf.wav",
+      "target": "station_name_only/station_name_hamm_westf.opus",
+      "kind": "station",
+      "source_sha256": "7e42b6e670768df4d1348e862050ef048a2744012bf1e33e57f71b495776dff6",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.570875
+      },
+      "target_sha256": "721dc7fe087c3b847568d51b0247cf16246007fb4434815c1222905e079952c6",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.577375
+      }
+    },
+    {
+      "source": "station_name_only/station_name_heessen.wav",
+      "target": "station_name_only/station_name_heessen.opus",
+      "kind": "station",
+      "source_sha256": "3c638d19fab7d1341e95ddaf08cb597e1e59d24203548ae79c51e02d430b4a8f",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.645563
+      },
+      "target_sha256": "d284731b9b893d830c17d51f464f1de09e2b7d3bee162764172184fd202fc93b",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.652063
+      }
+    },
+    {
+      "source": "station_name_only/station_name_herford.wav",
+      "target": "station_name_only/station_name_herford.opus",
+      "kind": "station",
+      "source_sha256": "3d4368eb65e18aaa2557f8d96a4fe36f278ff0becd945d54f67fd02b5bcb4a8d",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.753125
+      },
+      "target_sha256": "9984c72c98df84ca50dcf797272d2368a94c1959b8e4242e35ef1d3348131245",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.759625
+      }
+    },
+    {
+      "source": "station_name_only/station_name_hochdahl.wav",
+      "target": "station_name_only/station_name_hochdahl.opus",
+      "kind": "station",
+      "source_sha256": "cab651a9d427e7c871f2a5dc867a2608b0f239944ef677e4cfc672e678b52faa",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.900875
+      },
+      "target_sha256": "f18ba5eb98ba13a37e22d4a56fd4c90e34cfc09421cd232bd9b1fb22c22b3880",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.907375
+      }
+    },
+    {
+      "source": "station_name_only/station_name_hochdahl_millrath.wav",
+      "target": "station_name_only/station_name_hochdahl_millrath.opus",
+      "kind": "station",
+      "source_sha256": "e8d2f36b86223a45f49962a2cd4e834b105c1a90c0b9b8c89a7e382edf5498b9",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.582
+      },
+      "target_sha256": "4b868b0505d50ee273b797560b3d61f7b64d63657388b3929c67b4d8e338f7c4",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.5885
+      }
+    },
+    {
+      "source": "station_name_only/station_name_kamen.wav",
+      "target": "station_name_only/station_name_kamen.opus",
+      "kind": "station",
+      "source_sha256": "e4b3770a41d6b7de997acd9beca320e3a67bf79c66cbfa853b4db31ad78a7852",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.667063
+      },
+      "target_sha256": "7cc9cafd99ff75f23f61ce21e36bbd31f4c09233c95bf3f395f393e9b1af5045",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.673563
+      }
+    },
+    {
+      "source": "station_name_only/station_name_kirchmoeser.wav",
+      "target": "station_name_only/station_name_kirchmoeser.opus",
+      "kind": "station",
+      "source_sha256": "99f2d61c75683eee3642d402e8cc7ed6f9c435b597e270c599dd37edbb70448b",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.87
+      },
+      "target_sha256": "cb2b543df72204ce2e1fd7a71e6a2e44519a3c827c72ba661d3d847018b87688",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.8765
+      }
+    },
+    {
+      "source": "station_name_only/station_name_kleinenbroich.wav",
+      "target": "station_name_only/station_name_kleinenbroich.opus",
+      "kind": "station",
+      "source_sha256": "e8291499998e20539682b23b2ecc8d3b1ac71972c8d8969fe2cc68a32a433dfa",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.02225
+      },
+      "target_sha256": "93a8b0a1d4348973ddc323b2b7536c5fcd2d755183ee9e864bbd8c45874185dc",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.02875
+      }
+    },
+    {
+      "source": "station_name_only/station_name_koeln_bonn_flughafen.wav",
+      "target": "station_name_only/station_name_koeln_bonn_flughafen.opus",
+      "kind": "station",
+      "source_sha256": "e257661338a799d926e1cd26d2afdb074b3db2db0934838c82df4b642116e6bb",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.117063
+      },
+      "target_sha256": "7d0e73219a42f22eb61522a017874485c49d097fb11ff10f6df76fe916a5cc58",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.123563
+      }
+    },
+    {
+      "source": "station_name_only/station_name_koeln_hbf.wav",
+      "target": "station_name_only/station_name_koeln_hbf.opus",
+      "kind": "station",
+      "source_sha256": "d9b6f7b73a57d02ad775cd5627f3c430ecca90e6aa1f38d31388202f07810a63",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.804063
+      },
+      "target_sha256": "c27ebb2235b76e77dce30c8b1bd4c00db32c7d7b565a085386424253a60160b1",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.810563
+      }
+    },
+    {
+      "source": "station_name_only/station_name_korschenbroich.wav",
+      "target": "station_name_only/station_name_korschenbroich.opus",
+      "kind": "station",
+      "source_sha256": "6a9e9fc15f4500d0cda94ae0a5bb29de41dd3f59aa69c3d4394983ca3ef80097",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.019063
+      },
+      "target_sha256": "dfa860ccedd914a034141acf73df798353220bb4e67675068d66950d4691d8a2",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.025563
+      }
+    },
+    {
+      "source": "station_name_only/station_name_loehne_westf.wav",
+      "target": "station_name_only/station_name_loehne_westf.opus",
+      "kind": "station",
+      "source_sha256": "281176bd2876f206b9c7556c1ca7d173d993b506d4d60e8101c9579b498620ce",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.549313
+      },
+      "target_sha256": "b8422604311d456ba74e7dd1b7a1f285c86e8eaf28e3bbdf96d78356faf7bd1e",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.555813
+      }
+    },
+    {
+      "source": "station_name_only/station_name_magdeburg_hbf.wav",
+      "target": "station_name_only/station_name_magdeburg_hbf.opus",
+      "kind": "station",
+      "source_sha256": "b90238cc0f94dfaf1e91cd8a79d776b1007aa708e66849bec49d803d7277843e",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.86
+      },
+      "target_sha256": "12500366d301c9b20a43706b73316972c516885ecb69e1d8441e2a90d218b3e2",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.8665
+      }
+    },
+    {
+      "source": "station_name_only/station_name_magdeburg_neustadt.wav",
+      "target": "station_name_only/station_name_magdeburg_neustadt.opus",
+      "kind": "station",
+      "source_sha256": "2d63f231f9e50105c0a903652e4bb61ad847c6f1d89974e03c524a9c82da8e25",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.48
+      },
+      "target_sha256": "e4d5009fb4db99a16b95dfeb024ef5099574dd5dac7632931fc7472d3e46d312",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.4865
+      }
+    },
+    {
+      "source": "station_name_only/station_name_minden_westf.wav",
+      "target": "station_name_only/station_name_minden_westf.opus",
+      "kind": "station",
+      "source_sha256": "4b6a4e3e89db9a91c6cbf6c52bca0b6a4398a62e516228c53d2a6ed2281e96b8",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.635375
+      },
+      "target_sha256": "e7307123b5f3513b45ef28e77bdd604b8450fae2a8f425c4fe3d0636ef3cb799",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.641875
+      }
+    },
+    {
+      "source": "station_name_only/station_name_moenchengladbach_hbf.wav",
+      "target": "station_name_only/station_name_moenchengladbach_hbf.opus",
+      "kind": "station",
+      "source_sha256": "875bea00e1535033517b3a521129f2f0cf44f304e0a26c65e1d5e23977872ef9",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.351625
+      },
+      "target_sha256": "5ffc7b767d4c34514c0a07b2dad806495039ac0d090883fe4db5d6614c6c1d08",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.358125
+      }
+    },
+    {
+      "source": "station_name_only/station_name_moenchengladbach_luerrip.wav",
+      "target": "station_name_only/station_name_moenchengladbach_luerrip.opus",
+      "kind": "station",
+      "source_sha256": "a1226b2fc9fbc636301761a6c9e8ee75a8d86b53533498a52b29eee699528130",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.750625
+      },
+      "target_sha256": "bd66810dc99abbcc3ff7fdf826fed41ead7c81959b3162f4b6ddae55d513ce9f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.757125
+      }
+    },
+    {
+      "source": "station_name_only/station_name_muelheim_ruhr_hbf.wav",
+      "target": "station_name_only/station_name_muelheim_ruhr_hbf.opus",
+      "kind": "station",
+      "source_sha256": "85eaa1b869d1c971d30a527ecbcaa7cf5d018511f58a076b27f428e1b5f72216",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.560688
+      },
+      "target_sha256": "3c0d4c4ee09790e1a3b52d705502abb8473311f63d8c82887b3a98b3f3bce72e",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.567188
+      }
+    },
+    {
+      "source": "station_name_only/station_name_neubeckum.wav",
+      "target": "station_name_only/station_name_neubeckum.opus",
+      "kind": "station",
+      "source_sha256": "ba0ba685b2e9ff943661e5f8e1176b5815fd073492643637ea3720d2b77a1df3",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.011375
+      },
+      "target_sha256": "e06515cf484cab17d7b8bdad9dbcdc2c72ce284a0c2d60ee020374a61a71bd0c",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.017875
+      }
+    },
+    {
+      "source": "station_name_only/station_name_neuss_am_kaiser.wav",
+      "target": "station_name_only/station_name_neuss_am_kaiser.opus",
+      "kind": "station",
+      "source_sha256": "3c04f8b8bb033cf768adc4eec1654dd6961eec3ff3811a2356d1022aec28f681",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.593875
+      },
+      "target_sha256": "4e742e9905ee035edc3e5320a9d17213b5144a195e33aca5b39c8a5c7a7fef55",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.600375
+      }
+    },
+    {
+      "source": "station_name_only/station_name_neuss_hbf.wav",
+      "target": "station_name_only/station_name_neuss_hbf.opus",
+      "kind": "station",
+      "source_sha256": "1c70c9b2150f5db74796f6bc4bb65935aed3794f49159f6889838d97514a97cc",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.872125
+      },
+      "target_sha256": "609ae200ffac9b561c8a14aa25309859db5b97bd8fb385a7a0797a169a0b1720",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.878625
+      }
+    },
+    {
+      "source": "station_name_only/station_name_neuss_rheinparkcenter.wav",
+      "target": "station_name_only/station_name_neuss_rheinparkcenter.opus",
+      "kind": "station",
+      "source_sha256": "3f9c8b969df37f4eac6657163f14d45f504e4b4743a2a7be1a830b95af9f45d5",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.090375
+      },
+      "target_sha256": "7e3f7349a618d6abc600ba9d0e032c12cfa0b33c7dc9f8a14cee011399a4a288",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.096875
+      }
+    },
+    {
+      "source": "station_name_only/station_name_oelde.wav",
+      "target": "station_name_only/station_name_oelde.opus",
+      "kind": "station",
+      "source_sha256": "5f22517e62673ad24e03f294260cde0ffb95e0da3564808f3b5e9ed70190aa8d",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.473375
+      },
+      "target_sha256": "4958804a5f8a31f0cf8e9e3fa54658fc44ce23763de85db11d1f7e1cc482fd84",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.479875
+      }
+    },
+    {
+      "source": "station_name_only/station_name_porta_westfalica.wav",
+      "target": "station_name_only/station_name_porta_westfalica.opus",
+      "kind": "station",
+      "source_sha256": "2f261522cfc74c540c3f8ce0535a1e814aa44f3f80574150381f95c869cb91f3",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.592375
+      },
+      "target_sha256": "868082a47cc14423460b98cf1db6f979c41fb0e4cef2c28234574532799bf151",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.598875
+      }
+    },
+    {
+      "source": "station_name_only/station_name_rheda_wiedenbrueck.wav",
+      "target": "station_name_only/station_name_rheda_wiedenbrueck.opus",
+      "kind": "station",
+      "source_sha256": "630354d2167b235877c43ad2309e2f7d469467b7a1ae266d4b5b4d9f9502a370",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.44175
+      },
+      "target_sha256": "e8bbe05bdcfb768049270e3c26d171ce460a22abab48bcc9a17f22ae202320df",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.44825
+      }
+    },
+    {
+      "source": "station_name_only/station_name_schwelm.wav",
+      "target": "station_name_only/station_name_schwelm.opus",
+      "kind": "station",
+      "source_sha256": "98f257ea163bba09d38841db0b422944dc6cebe8380b5040fa841e733a779671",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.742938
+      },
+      "target_sha256": "80afc7677051dc2981271231826bd6232b5e58423bc7b36d3873f29575aac714",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.749438
+      }
+    },
+    {
+      "source": "station_name_only/station_name_schwelm_west.wav",
+      "target": "station_name_only/station_name_schwelm_west.opus",
+      "kind": "station",
+      "source_sha256": "5ddf8aed57ae36c18790e777fab3272f2684e3aa8b6e88e855cbab666d941bb0",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.427125
+      },
+      "target_sha256": "469c5212b99294717136a046294986fdaef9ced29cd9c2e4dfb8612a771d2c4c",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.433625
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wattenscheid.wav",
+      "target": "station_name_only/station_name_wattenscheid.opus",
+      "kind": "station",
+      "source_sha256": "5647b7ef8f1a7da26560d926cfeed2ddb6b88a8de1e25694c832b673e9ff283c",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.946813
+      },
+      "target_sha256": "fc5bb4671ddb7d82cd2a6be4773295c48c368cfb6c4f88ee6ba7f58581d86f95",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.953313
+      }
+    },
+    {
+      "source": "station_name_only/station_name_werder_havel.wav",
+      "target": "station_name_only/station_name_werder_havel.opus",
+      "kind": "station",
+      "source_sha256": "50cd4a9a5fec0b6071aead42e2c2a3f0d5f2e29f0ab84d4553ddc2d6be352e0b",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.1
+      },
+      "target_sha256": "235f115bfb394d33ffe629aa3d9b8be8f86505b0adb08d086909fd391d6424a4",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.1065
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wuppertal_barmen.wav",
+      "target": "station_name_only/station_name_wuppertal_barmen.opus",
+      "kind": "station",
+      "source_sha256": "3f69b5105be6a034c65a4c1cbe01e30dae1602625f83b44cc3e1e792bba0179d",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.660563
+      },
+      "target_sha256": "b9fa49fbac01a71a762817c7fbe229b0aaeadd6afd58d0adf7a5f4cbc969790f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.667063
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wuppertal_hbf.wav",
+      "target": "station_name_only/station_name_wuppertal_hbf.opus",
+      "kind": "station",
+      "source_sha256": "27462fb5b51b1256e621252c2ba895c0867d3420e0c63e4becb90110b8b9747b",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.307063
+      },
+      "target_sha256": "2e4f1132c8b3e5c22cf9f3a3068f12232c959b95ad9ed248af0750a6ef32a242",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.313563
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wuppertal_langerfeld.wav",
+      "target": "station_name_only/station_name_wuppertal_langerfeld.opus",
+      "kind": "station",
+      "source_sha256": "a9c19b0f4c7bf9d7f6dfeeb80f7f642f6561eac198d141792d1653a607cfed04",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.033188
+      },
+      "target_sha256": "febe36b61c76ae27cd55bf861cef8606e41f84c147be558f75713ba28a7be83f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.039688
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wuppertal_oberbarmen.wav",
+      "target": "station_name_only/station_name_wuppertal_oberbarmen.opus",
+      "kind": "station",
+      "source_sha256": "c32d4908ea95b4aab25f089775291d7ea7685a29268d4948373c6acc091254f6",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.837688
+      },
+      "target_sha256": "b2933f997ddcbe4e2b8c2768d71c6b7e392adb4f767b4564c5ac1ef713feb9aa",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.844188
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wuppertal_sonnborn.wav",
+      "target": "station_name_only/station_name_wuppertal_sonnborn.opus",
+      "kind": "station",
+      "source_sha256": "b39188460b90cfa887488a41a1700c5248f8597562642067935572368b2305c4",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.087313
+      },
+      "target_sha256": "5b511c0ac69e2c1b48a39584a7f99d1a4b4e260ebeac5e72db82d20f2f885891",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.093813
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wuppertal_steinbeck.wav",
+      "target": "station_name_only/station_name_wuppertal_steinbeck.opus",
+      "kind": "station",
+      "source_sha256": "94a971dd9247ea11d9bbaaf546d60aedf1b84c3713d1b4d9d60b86281aae9109",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.75775
+      },
+      "target_sha256": "aa7b9606526447a0d02187b0581bfe129d9cc8ac43f068f5ae47158dee0bc0bb",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.76425
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wuppertal_unterbarmen.wav",
+      "target": "station_name_only/station_name_wuppertal_unterbarmen.opus",
+      "kind": "station",
+      "source_sha256": "7d9b474c23007f1d4e29c5fcaf0fa84725fdb35152cb217b35f1199d5bc0b057",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.504813
+      },
+      "target_sha256": "37b93bd56dc3d3f57c5c16fe5ecfc59f985e7ec858fa61e0481cb675fc152e7c",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.511313
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wuppertal_vohwinkel.wav",
+      "target": "station_name_only/station_name_wuppertal_vohwinkel.opus",
+      "kind": "station",
+      "source_sha256": "5ec391ab51e82d94274e4042c4df5de7ffc05da617352cf684d15f5c580bc58b",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.911563
+      },
+      "target_sha256": "c0c4bee10071d877dd2464c390734f41acd52daf9292bb6fc73da40ae78e3d31",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.918063
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wuppertal_zoologischer_garten.wav",
+      "target": "station_name_only/station_name_wuppertal_zoologischer_garten.opus",
+      "kind": "station",
+      "source_sha256": "0e492044cbe1faab485bf8e95f8b4d93623aa39cdb7e34aef320b3bd06e717d8",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.7465
+      },
+      "target_sha256": "fd7d8bdbe7a8cdeb0594c3c53b1173d42b4640c2bf5d930fef51bef8cf380ddc",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.753
+      }
+    },
+    {
+      "source": "station_name_only/station_name_wusterwitz.wav",
+      "target": "station_name_only/station_name_wusterwitz.opus",
+      "kind": "station",
+      "source_sha256": "e19d21939701bc0919a045e5a0a31c2857f90285d2ddbd9cac35b5c270360a01",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 0.96
+      },
+      "target_sha256": "bcbe00bc37ae324e62f215cca9649cde777bcbd9cca45ffcc940fb2c72ba841d",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 0.9665
+      }
+    },
+    {
+      "source": "text/ausstieg_fahrtrichtung_links.wav",
+      "target": "text/ausstieg_fahrtrichtung_links.opus",
+      "kind": "text",
+      "source_sha256": "5a499eb438454f9590eb7a60196e71c5c7dedd0a4c2aebd4e710c5917a868db3",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.66
+      },
+      "target_sha256": "6f1cedf5d6f94d8dff9e3505813e3395569b899500257f922c78a7fa24afcd86",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.6665
+      }
+    },
+    {
+      "source": "text/ausstieg_fahrtrichtung_rechts.wav",
+      "target": "text/ausstieg_fahrtrichtung_rechts.opus",
+      "kind": "text",
+      "source_sha256": "d7ce57becb3e1e75dedde55be3a3bd5931ae464fa0135d9fed6c8e5bc4d880a6",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.91
+      },
+      "target_sha256": "ef5031409d3aa71119a190d35c0a90699f9fb7688976fb204d1d54487f91f1be",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.9165
+      }
+    },
+    {
+      "source": "text/dieser_zug_endet_dort.wav",
+      "target": "text/dieser_zug_endet_dort.opus",
+      "kind": "text",
+      "source_sha256": "94b43b8c8f238f474e7be8ec343a456450ba74bde99d2f11108cf3a08cc95911",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.55
+      },
+      "target_sha256": "111214fa2f05ebc1ea3da4ed13bb1b6fa27861291407311bbb39ece04233736f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.5565
+      }
+    },
+    {
+      "source": "text/fahrgaeste_bitte_alle_aussteigen.wav",
+      "target": "text/fahrgaeste_bitte_alle_aussteigen.opus",
+      "kind": "text",
+      "source_sha256": "6bd96b67435ebb8fa0540e5a185977263af28976e2b2ea8ef9a6d69689f1febe",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.05
+      },
+      "target_sha256": "3c8d52581a68d6303a89f741a72a33299fd9dfab2072ab3b46a46617ae167c27",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.0565
+      }
+    },
+    {
+      "source": "text/gong_start.wav",
+      "target": "text/gong_start.opus",
+      "kind": "text",
+      "source_sha256": "2957388228a1b1f9e4baac1e433dcb271c8f0d12af2127e2e86ad1fe4bc84cc1",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.44
+      },
+      "target_sha256": "8174d8a329053651e54b53e811864b32b01a96f3b1309fab382e26a6711a5296",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.4465
+      }
+    },
+    {
+      "source": "text/hinweis_bahnsteigkante.wav",
+      "target": "text/hinweis_bahnsteigkante.opus",
+      "kind": "text",
+      "source_sha256": "8f3f4c32f0612b8798dcf1f6b1579047a6deb03642ad96e0ed071d06e6d7e6ba",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 5.602875
+      },
+      "target_sha256": "8ac36758cf1f10c14b70ef7d3867b01f08079b7708778bc8198a4973df085ba4",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 5.609375
+      }
+    },
+    {
+      "source": "text/hinweis_bis_zum_naechsten_mal_s_bahn_rhein_ruhr.wav",
+      "target": "text/hinweis_bis_zum_naechsten_mal_s_bahn_rhein_ruhr.opus",
+      "kind": "text",
+      "source_sha256": "d156beb88f79f9d227b7dcf9234a3bc2491e915a74ebbaf5362ff1445718f36a",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 3.309313
+      },
+      "target_sha256": "9d479439d8e53e9c4db9177ee2444a1703ce48a627016b86cedfd319f14e053a",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 3.315813
+      }
+    },
+    {
+      "source": "text/hinweis_db_regio_verabschiedung.wav",
+      "target": "text/hinweis_db_regio_verabschiedung.opus",
+      "kind": "text",
+      "source_sha256": "835f495c46f13af1b33b42e2e3b8104fd661663d7da390ebb1312387a6324f1f",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 4.16475
+      },
+      "target_sha256": "bc3c3d534196565108bccdc0cee420c7e74c9e574aad430dd8c80885a4818e96",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 4.17125
+      }
+    },
+    {
+      "source": "text/hinweis_ffp2_mask_english.wav",
+      "target": "text/hinweis_ffp2_mask_english.opus",
+      "kind": "text",
+      "source_sha256": "8a01f025d64c91fe052cf09ea93a6370636af965511a8bde12d5d0854d75738b",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 4.53
+      },
+      "target_sha256": "d9e3f3df3b55b7f385d88d458b717c980a2b0baaad9ee7e4882847903dc2ebd8",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 4.5365
+      }
+    },
+    {
+      "source": "text/hinweis_maskenpflicht_ffp2_komplett.wav",
+      "target": "text/hinweis_maskenpflicht_ffp2_komplett.opus",
+      "kind": "text",
+      "source_sha256": "c72d3075885e1d11c69a8cedb77f30f4540d21c1299a2e2f9e88a516fa731d95",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 10.94
+      },
+      "target_sha256": "e54852b0f0e7cfa3878ac6f47934be253984da7a343ccd210d40d57d2049306b",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 10.9465
+      }
+    },
+    {
+      "source": "text/hinweis_persoenliche_gegenstaende.wav",
+      "target": "text/hinweis_persoenliche_gegenstaende.opus",
+      "kind": "text",
+      "source_sha256": "7f131fb20e1d9dc8d0e9137d82d86a71e69c3533058bcd2741b59cfc4800dc58",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 5.461
+      },
+      "target_sha256": "04555d808ccd2bc29a02cc18bb93990cd14075425cd8c40b1c7a447b91b98d65",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 5.4675
+      }
+    },
+    {
+      "source": "text/hinweis_vielen_dank_und_auf_wiedersehen.wav",
+      "target": "text/hinweis_vielen_dank_und_auf_wiedersehen.opus",
+      "kind": "text",
+      "source_sha256": "b8da8a7d422a8375433c7f81517151f55daf68e7e43bd229bebe90ddf92d0deb",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 2.27325
+      },
+      "target_sha256": "b8db4442b969f6dea813e04538b3d49bc44a0713d05ccc7cd114f979b28ee4a1",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 2.27975
+      }
+    },
+    {
+      "source": "text/naechste_station.wav",
+      "target": "text/naechste_station.opus",
+      "kind": "text",
+      "source_sha256": "ab4085dd5fed75d919d381155bf4d6bf9d44dfd561ed6a8f8caa2ee0b3ce2c40",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 1.36
+      },
+      "target_sha256": "89112519ee54d0134024017683fb68330ee14796219df9cd924206bb545bcb70",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 1.3665
+      }
+    }
+  ],
+  "last_incremental_update": {
+    "plan": "intrain_user_update_20260726.json",
+    "entry_count": 27,
+    "station_count": 26,
+    "hinweis_count": 1,
+    "processing": "Boundary-preserving PCM normalization followed by deterministic Ogg/Opus transcode; no trimming, denoising or loudness processing."
+  }
+}

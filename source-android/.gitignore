@@ -1,0 +1,12 @@
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+dist/
+# Private WAV-Quellen für die reproduzierbare Im-Zug-Opus-Konvertierung (nicht in APK/Git).
+sources/inzug-wav/
+# Die kompakte ZIP64-Offlinebibliothek wird im übergeordneten Flutter-Repository
+# gezielt via Git LFS versioniert.

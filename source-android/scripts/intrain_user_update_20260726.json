@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "purpose": "User-curated replacement delivery: 26 station announcements and one separate DB Regio notice.",
+  "entries": [
+    {"source": "Köln_Hbf.wav", "target": "station_name_only/station_name_koeln_hbf.opus", "role": "station", "label": "Köln Hbf"},
+    {"source": "Köln_Bonn_Flughafen.wav", "target": "station_name_only/station_name_koeln_bonn_flughafen.opus", "role": "station", "label": "Köln/Bonn Flughafen"},
+    {"source": "Löhne__Westf_.wav", "target": "station_name_only/station_name_loehne_westf.opus", "role": "station", "label": "Löhne (Westf)"},
+    {"source": "Minden__Westf_.wav", "target": "station_name_only/station_name_minden_westf.opus", "role": "station", "label": "Minden (Westf)"},
+    {"source": "Mülheim__Ruhr__Hbf.wav", "target": "station_name_only/station_name_muelheim_ruhr_hbf.opus", "role": "station", "label": "Mülheim (Ruhr) Hbf"},
+    {"source": "Neubeckum.wav", "target": "station_name_only/station_name_neubeckum.opus", "role": "station", "label": "Neubeckum"},
+    {"source": "Neuss_Hbf.wav", "target": "station_name_only/station_name_neuss_hbf.opus", "role": "station", "label": "Neuss Hbf"},
+    {"source": "Oelde.wav", "target": "station_name_only/station_name_oelde.opus", "role": "station", "label": "Oelde"},
+    {"source": "Porta_Westfalica.wav", "target": "station_name_only/station_name_porta_westfalica.opus", "role": "station", "label": "Porta Westfalica"},
+    {"source": "Rheda-Wiedenbrück.wav", "target": "station_name_only/station_name_rheda_wiedenbrueck.opus", "role": "station", "label": "Rheda-Wiedenbrück"},
+    {"source": "Wattenscheid.wav", "target": "station_name_only/station_name_wattenscheid.opus", "role": "station", "label": "Wattenscheid"},
+    {"source": "Ahlen__Westf_.wav", "target": "station_name_only/station_name_ahlen_westf.opus", "role": "station", "label": "Ahlen (Westf)"},
+    {"source": "Bad_Oeynhausen.wav", "target": "station_name_only/station_name_bad_oeynhausen.opus", "role": "station", "label": "Bad Oeynhausen"},
+    {"source": "Bielefeld_Hbf.wav", "target": "station_name_only/station_name_bielefeld_hbf.opus", "role": "station", "label": "Bielefeld Hbf"},
+    {"source": "Bochum_Hbf.wav", "target": "station_name_only/station_name_bochum_hbf.opus", "role": "station", "label": "Bochum Hbf"},
+    {"source": "Dormagen.wav", "target": "station_name_only/station_name_dormagen.opus", "role": "station", "label": "Dormagen"},
+    {"source": "Dortmund_Hbf.wav", "target": "station_name_only/station_name_dortmund_hbf.opus", "role": "station", "label": "Dortmund Hbf"},
+    {"source": "Duisburg_Hbf.wav", "target": "station_name_only/station_name_duisburg_hbf.opus", "role": "station", "label": "Duisburg Hbf"},
+    {"source": "Düsseldorf_Hbf.wav", "target": "station_name_only/station_name_duesseldorf_hbf.opus", "role": "station", "label": "Düsseldorf Hbf"},
+    {"source": "Düsseldorf-Flughafen.wav", "target": "station_name_only/station_name_duesseldorf_flughafen.opus", "role": "station", "label": "Düsseldorf Flughafen"},
+    {"source": "Essen_Hbf.wav", "target": "station_name_only/station_name_essen_hbf.opus", "role": "station", "label": "Essen Hbf"},
+    {"source": "Gütersloh_Hbf.wav", "target": "station_name_only/station_name_guetersloh_hbf.opus", "role": "station", "label": "Gütersloh Hbf"},
+    {"source": "Hamm__Westf_.wav", "target": "station_name_only/station_name_hamm_westf.opus", "role": "station", "label": "Hamm (Westf)"},
+    {"source": "Heessen.wav", "target": "station_name_only/station_name_heessen.opus", "role": "station", "label": "Heessen"},
+    {"source": "Herford.wav", "target": "station_name_only/station_name_herford.opus", "role": "station", "label": "Herford"},
+    {"source": "Kamen.wav", "target": "station_name_only/station_name_kamen.opus", "role": "station", "label": "Kamen"},
+    {"source": "DB_Regio_Verabschiedung__Hinweis_.wav", "target": "text/hinweis_db_regio_verabschiedung.opus", "role": "hinweis", "label": "DB Regio Verabschiedung"}
+  ]
+}
