@@ -204,7 +204,7 @@ jobs:
           }
           "FFMPEGKIT_LOCAL_DIR=$runtimeRoot" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
-      - name: Exercise Windows offline audio runtime
+      - name: Verify Windows offline Opus conversion and WAV export
         shell: pwsh
         run: |
           flutter config --enable-windows-desktop
