@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 
 import '../core/in_train_sequence.dart';
 import '../data/generator_data.dart';
+import 'native_offline_audio_library.dart';
 import 'web_offline_audio_library.dart';
 
 enum PlaybackState {
@@ -23,9 +24,9 @@ extension PlaybackStateQueueContinuation on PlaybackState {
   bool get continuesQueuedPlayback => this == PlaybackState.waitingForNextStop;
 }
 
-/// Cross-platform queue player. Curated Im-Zug atoms use ordinary Flutter
-/// assets everywhere; the large historical archive is resolved through the
-/// Android bridge without loading or unpacking the whole archive.
+/// Cross-platform queue player. The browser streams individual archive clips
+/// with HTTP ranges, Android uses its native bridge, and all other native
+/// targets read the bundled ZIP64 archive directly.
 class AnnouncementAudioController extends ChangeNotifier {
   /// The Flutter asset keys in this project start at `source-android/`, not
   /// at the audioplayers default `assets/` prefix.
@@ -42,6 +43,7 @@ class AnnouncementAudioController extends ChangeNotifier {
   static const _channel = MethodChannel('de.shedowe.ansagengenerator/audio');
   final AudioPlayer _player = AudioPlayer();
   final WebOfflineAudioLibrary _webAudio = WebOfflineAudioLibrary();
+  final NativeOfflineAudioLibrary _nativeAudio = NativeOfflineAudioLibrary();
   late final StreamSubscription<void> _completion;
   final List<String> _queue = <String>[];
   int _index = 0;
@@ -98,6 +100,7 @@ class AnnouncementAudioController extends ChangeNotifier {
   Future<String> exportWav(List<String> paths) async {
     if (paths.isEmpty) throw ArgumentError('Keine Audios zum Exportieren.');
     if (kIsWeb) return _webAudio.exportWav(paths);
+    if (!_usesAndroidBridge) return _nativeAudio.exportWav(paths);
     final export = await _channel.invokeMethod<String>(
       'exportWav',
       <String, Object>{'paths': paths},
@@ -133,9 +136,13 @@ class AnnouncementAudioController extends ChangeNotifier {
 
   Future<Source> _sourceFor(String rawPath) async {
     if (rawPath.startsWith('asset:/')) {
-      return AssetSource('$assetRoot/${rawPath.substring('asset:/'.length)}');
+      if (kIsWeb || _usesAndroidBridge) {
+        return AssetSource('$assetRoot/${rawPath.substring('asset:/'.length)}');
+      }
+      return _nativeAudio.sourceForLogicalPath(rawPath);
     }
     if (kIsWeb) return _webAudio.sourceForLogicalPath(rawPath);
+    if (!_usesAndroidBridge) return _nativeAudio.sourceForLogicalPath(rawPath);
     final resolved = await _channel.invokeMethod<List<Object?>>(
       'resolveAudioPaths',
       <String, Object>{
@@ -150,6 +157,9 @@ class AnnouncementAudioController extends ChangeNotifier {
     }
     return DeviceFileSource(file);
   }
+
+  bool get _usesAndroidBridge =>
+      !kIsWeb && defaultTargetPlatform == TargetPlatform.android;
 
   void _onPlayerComplete() {
     if (_index == 0 || _queue.isEmpty) return;
@@ -178,6 +188,7 @@ class AnnouncementAudioController extends ChangeNotifier {
   void dispose() {
     _completion.cancel();
     _webAudio.dispose();
+    unawaited(_nativeAudio.dispose());
     _player.dispose();
     super.dispose();
   }

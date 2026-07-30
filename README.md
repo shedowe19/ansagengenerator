@@ -11,16 +11,19 @@ Eigenständiger Flutter-Port des manuellen InTrain-Ansagengenerators. Der unver�
 - Im-Zug-Editor: frei sortierbare und wiederholbare Bausteine, kuratierte Stationsclips und Pausen sowohl nach Stationsnamen als auch vor dem Gong der folgenden Station.
 - Lokale Vorlagen und Verlauf via `shared_preferences`.
 - Android: gezielte Clip-Extraktion aus der 467-MB-ZIP64-Offlinebibliothek in den Cache, Audio-Wiedergabe und WAV-Export.
+- Native (Windows, Linux, macOS und iOS): direkter, sicherer Zugriff auf einzelne ZIP64-Opus-Clips im ausgelieferten Flutter-Asset-Bundle – ohne Android-`MethodChannel`, Vollimport oder Netzverbindung. Der WAV-Export normalisiert die Bausteine zu 48 kHz / Mono / 16-Bit-PCM und schreibt die fertige Datei in den Dokumente-Ordner.
 - Web: ZIP64-Index und einzelne Ogg/Opus-Clips werden progressiv über HTTP-Range geladen; Browser-Wiedergabe nutzt Blob-URLs, WAV-Export den Web-Audio-Decoder und einen lokalen Download. Der Browser lädt oder entpackt niemals die 467-MB-Bibliothek vollständig.
 
 ## Plattformstatus
 
 | Ziel | Status | Offline-Audio |
 |---|---|---|
-| Android | **gebaut und verifiziert** | vollständig; ZIP64-Bridge und WAV-Export aktiv |
+| Android | **lokal gebaut und signaturgeprüft** | vollständig; ZIP64-Bridge und WAV-Export aktiv |
 | Web | **vollständig funktionsfähig, Release und Chromium geprüft** | vollständige normale ZIP64-Offlinebibliothek, kuratierte Im-Zug-Assets, Blob-Wiedergabe und lokaler WAV-Download; benötigt einen Range-fähigen Webhost |
-| Linux | erzeugtes Flutter-Ziel | Host-Build benötigt `gtk+-3.0`-Entwicklungsdateien; für normale Ansageclips fehlt ein Desktop-Datenpaket-Adapter |
-| iOS, macOS, Windows | Flutter-Zielprojekte erzeugt | auf Linux nicht nativ baubar; benötigen für die vollständige Offlinebibliothek einen jeweiligen Datenpaket-Adapter |
+| Linux | GitHub-CI-Bundle | direkter ZIP64-Adapter; WAV-Export über GStreamer (Build: GTK- und GStreamer-Entwicklungsdateien, Runtime: GStreamer-Opus-Plugins) |
+| Windows | GitHub-CI-Bundle mit nativer Runtime-Gate | direkter ZIP64-Adapter, Wiedergabe über audioplayers und WAV-Export über Windows Media Foundation |
+| macOS | GitHub-CI-App-Bundle | direkter ZIP64-Adapter und WAV-Export über AVFoundation |
+| iOS | unsigniertes GitHub-CI-Bundle | direkter ZIP64-Adapter und WAV-Export über AVFoundation; Installation benötigt separat autorisiertes Apple-Signing |
 
 Die Web-Version liest den ZIP64-Endbereich (65.557 Byte), das 7.634.699-Byte-Zentralverzeichnis und anschließend ausschließlich die gerade benötigten Ogg/Opus-Clips. Blob-URLs werden als LRU bis 16 MiB im Arbeitsspeicher gehalten und beim Verdrängen beziehungsweise Beenden freigegeben. Damit gibt es keinen Vollimport, keine Entpackung und keinen unkontrollierten 467-MB-Speicherverbrauch.
 
@@ -66,8 +69,8 @@ Die aktuelle APK und das gebaute Webpaket werden als Release-Artefakte bereitges
 
 - Web-Release inklusive Chromium-Range-/Ogg-/WAV-Regressionstest,
 - Android-Debug-APK mit Signaturprüfung,
-- Linux-x64-Bundle,
-- Windows-x64-Distribution,
+- Linux-x64-Bundle; CI baut gegen GStreamer, Zielsysteme benötigen die üblichen GStreamer- und Opus-Runtimepakete,
+- Windows-x64-Distribution inklusive nativer Runtime-Prüfung: ZIP64-Clip extrahieren, Medienquelle öffnen und echte PCM-WAV exportieren,
 - macOS-App-Bundle der jeweils aktuellen GitHub-macOS-Runner-Architektur sowie ein unsigniertes iOS-Release-Bundle.
 
 Die GitHub-Artefakte bleiben 14 Tage abrufbar. Die Windows-Anwendung besteht aus der `Ansagengenerator.exe` **und** den begleitenden DLLs/Assets; daher ist stets der komplette Artefaktordner zu verwenden. Das iOS-Bundle wird ohne Codesignatur gebaut und benötigt für eine Installation später ein separat autorisiertes Apple-Signing.
@@ -75,11 +78,12 @@ Die GitHub-Artefakte bleiben 14 Tage abrufbar. Die Windows-Anwendung besteht aus
 ## Verifizierter Stand
 
 - `flutter analyze`: ohne Befund
-- Kern-, Suche-, Im-Zug- und ZIP64-Index-Tests: grün
+- 32 Unit-/Widget- und ZIP64-Regressionstests: grün, einschließlich eines echten Zugriffs auf das ZIP64-LFS-Archiv
 - Chromium-Browsertest: reale HTTP-Range-Abrufe, Blob-Quelle, Ogg/Opus-Decodierung und WAV-Downloadpfad grün
 - Android SDK 36 / JDK 21: geprüft
-- Debug-APK: Paket `de.shedowe.ansagengenerator`, Version `1.20.6` (Build 27), Android API 24–36
+- Debug-APK: Paket `de.shedowe.ansagengenerator`, Version `1.20.7` (Build 28), Android API 24–36, v2-signiert
 - Offlinearchiv: SHA-256 `80ada82a559fa5a40085cfd7c10aeae483991be68ec4ca0073150755489e4214`; im APK und Web-Release genau einmal unkomprimiert abgelegt
 - Web-Release: erfolgreich gebaut; Browseroberfläche, Suche und vollständiger Offline-Audio-/WAV-Pfad verifiziert
+- Die finale Windows-Medienquellen- und WAV-Exportprüfung ist als GitHub-Windows-Integrationstest Teil des zentralen Workflows und wird pro Push erneut ausgeführt.
 
 > Die APK ist absichtlich eine **Debug**-APK mit Android-Debugsignatur. Für Veröffentlichung braucht es einen separat autorisierten Release-Keystore und Signaturprozess.

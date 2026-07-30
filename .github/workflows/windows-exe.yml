@@ -118,7 +118,11 @@ jobs:
             pkg-config \
             libgtk-3-dev \
             libgstreamer1.0-dev \
-            libgstreamer-plugins-base1.0-dev
+            libgstreamer-plugins-base1.0-dev \
+            gstreamer1.0-plugins-base \
+            gstreamer1.0-plugins-good \
+            xvfb \
+            xauth
 
       - name: Install Flutter stable
         uses: subosito/flutter-action@fd55f4c5af5b953cc57a2be44cb082c8f6635e8e # v2.21.0
@@ -162,6 +166,15 @@ jobs:
       - name: Resolve dependencies
         shell: pwsh
         run: flutter pub get
+
+      - name: Exercise Windows offline audio runtime
+        shell: pwsh
+        run: |
+          flutter config --enable-windows-desktop
+          flutter drive `
+            --driver=test_driver/integration_test.dart `
+            --target=integration_test/native_offline_audio_library_integration_test.dart `
+            -d windows
 
       - name: Build Windows x64 release
         shell: pwsh
