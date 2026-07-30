@@ -11,7 +11,7 @@ Eigenständiger Flutter-Port des manuellen InTrain-Ansagengenerators. Der unver�
 - Im-Zug-Editor: frei sortierbare und wiederholbare Bausteine, kuratierte Stationsclips und Pausen sowohl nach Stationsnamen als auch vor dem Gong der folgenden Station.
 - Lokale Vorlagen und Verlauf via `shared_preferences`.
 - Android: gezielte Clip-Extraktion aus der 467-MB-ZIP64-Offlinebibliothek in den Cache, Audio-Wiedergabe und WAV-Export.
-- Native (Windows, Linux, macOS und iOS): direkter, sicherer Zugriff auf einzelne ZIP64-Opus-Clips im ausgelieferten Flutter-Asset-Bundle – ohne Android-`MethodChannel`, Vollimport oder Netzverbindung. Der WAV-Export normalisiert die Bausteine zu 48 kHz / Mono / 16-Bit-PCM und schreibt die fertige Datei in den Dokumente-Ordner.
+- Native (Windows, Linux, macOS und iOS): direkter, sicherer Zugriff auf einzelne ZIP64-Opus-Clips im ausgelieferten Flutter-Asset-Bundle – ohne Android-`MethodChannel`, Vollimport oder Netzverbindung. Opus-Clips werden einmal lokal nach 48-kHz-Mono-PCM-WAV normalisiert und gecacht, damit die Windows-Wiedergabe nicht von Ogg/Opus-Unterstützung in Media Foundation abhängt. Der WAV-Export verwendet dieselben normalisierten Dateien und schreibt die fertige Datei in den Dokumente-Ordner.
 - Web: ZIP64-Index und einzelne Ogg/Opus-Clips werden progressiv über HTTP-Range geladen; Browser-Wiedergabe nutzt Blob-URLs, WAV-Export den Web-Audio-Decoder und einen lokalen Download. Der Browser lädt oder entpackt niemals die 467-MB-Bibliothek vollständig.
 
 ## Plattformstatus
@@ -81,7 +81,7 @@ Die GitHub-Artefakte bleiben 14 Tage abrufbar. Die Windows-Anwendung besteht aus
 - 32 Unit-/Widget- und ZIP64-Regressionstests: grün, einschließlich eines echten Zugriffs auf das ZIP64-LFS-Archiv
 - Chromium-Browsertest: reale HTTP-Range-Abrufe, Blob-Quelle, Ogg/Opus-Decodierung und WAV-Downloadpfad grün
 - Android SDK 36 / JDK 21: geprüft
-- Debug-APK: Paket `de.shedowe.ansagengenerator`, Version `1.20.7` (Build 28), Android API 24–36, v2-signiert
+- Debug-APK: Paket `de.shedowe.ansagengenerator`, Version `1.20.7` (Build 29), Android API 24–36, v2-signiert
 - Offlinearchiv: SHA-256 `80ada82a559fa5a40085cfd7c10aeae483991be68ec4ca0073150755489e4214`; im APK und Web-Release genau einmal unkomprimiert abgelegt
 - Web-Release: erfolgreich gebaut; Browseroberfläche, Suche und vollständiger Offline-Audio-/WAV-Pfad verifiziert
 - Die finale Windows-Medienquellen- und WAV-Exportprüfung ist als GitHub-Windows-Integrationstest Teil des zentralen Workflows und wird pro Push erneut ausgeführt.

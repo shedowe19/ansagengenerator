@@ -30,15 +30,24 @@ void main() {
           _storedZip(path: 'site/dt/test.opus', payload: opus),
         );
         final cache = Directory('${temporary.path}/cache');
+        var conversions = 0;
         final library = NativeOfflineAudioLibrary(
           archiveFile: archive,
           cacheDirectory: cache,
+          convertToWav: (inputPath, outputPath) async {
+            conversions++;
+            await File(outputPath).writeAsBytes(_pcmWav(const <int>[1, 2]));
+            return outputPath;
+          },
         );
         addTearDown(library.dispose);
 
         final source = await library.sourceForLogicalPath('dt/test.wav');
+        final cachedSource = await library.sourceForLogicalPath('dt/test.wav');
 
         expect(source, isA<DeviceFileSource>());
+        expect(cachedSource, isA<DeviceFileSource>());
+        expect(conversions, 1);
         final extracted = File('${cache.path}/clips/site/dt/test.opus');
         expect(await extracted.readAsBytes(), opus);
       },
@@ -112,10 +121,10 @@ void main() {
           'dt/test.wav',
         ]);
 
-        expect(conversion, 2);
+        expect(conversion, 1);
         final file = File(output);
         expect(file.parent.path, exportDirectory.path);
-        expect(_wavPcm(await file.readAsBytes()), <int>[1, 11, 2, 12]);
+        expect(_wavPcm(await file.readAsBytes()), <int>[1, 11, 1, 11]);
       },
     );
   });

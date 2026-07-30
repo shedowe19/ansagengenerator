@@ -45,20 +45,17 @@ class NativeOfflineAudioLibrary {
   final NativeWavConverter _convertToWav;
   final NativeAssetLoader _loadAsset;
   final Map<String, Future<File>> _materializing = <String, Future<File>>{};
+  final Map<String, Future<File>> _normalizing = <String, Future<File>>{};
 
   late final Future<File> _archiveFile = _resolveArchiveFile();
   late final Future<Directory> _cacheDirectory = _resolveCacheDirectory();
   late final Future<_NativeZipArchive> _archive = _openArchive();
 
-  /// Materializes [rawPath] once and returns a local source for audioplayers.
+  /// Returns a locally cached PCM WAV source for native playback.
   Future<Source> sourceForLogicalPath(String rawPath) async =>
-      DeviceFileSource((await materializeForPlayback(rawPath)).path);
+      DeviceFileSource((await _normalizedForPlayback(rawPath)).path);
 
-  /// Materializes one logical WAV playlist path as its physical audio file.
-  ///
-  /// This method is intentionally public for small deterministic regression
-  /// tests and for platform-specific diagnostics; callers should normally use
-  /// [sourceForLogicalPath].
+  /// Materializes one logical playlist path as its original physical file.
   Future<File> materializeForPlayback(String rawPath) {
     final normalized = rawPath.trim();
     final existing = _materializing[normalized];
@@ -66,6 +63,15 @@ class NativeOfflineAudioLibrary {
     final created = _materialize(normalized);
     _materializing[normalized] = created;
     return created.whenComplete(() => _materializing.remove(normalized));
+  }
+
+  Future<File> _normalizedForPlayback(String rawPath) {
+    final normalized = rawPath.trim();
+    final existing = _normalizing[normalized];
+    if (existing != null) return existing;
+    final created = _convertForPlayback(normalized);
+    _normalizing[normalized] = created;
+    return created.whenComplete(() => _normalizing.remove(normalized));
   }
 
   /// Converts every source clip to uniform 48 kHz mono PCM and joins it into
@@ -76,7 +82,7 @@ class NativeOfflineAudioLibrary {
       throw ArgumentError('Keine Audios zum Exportieren.');
     }
     final files = await Future.wait(
-      rawPaths.map(materializeForPlayback),
+      rawPaths.map(_normalizedForPlayback),
       eagerError: true,
     );
     final cache = await _cacheDirectory;
@@ -91,21 +97,7 @@ class NativeOfflineAudioLibrary {
         final output = File(
           '${working.path}${Platform.pathSeparator}${index.toString().padLeft(4, '0')}.wav',
         );
-        if (input.path.toLowerCase().endsWith('.wav')) {
-          await input.copy(output.path);
-        } else {
-          final converted = await _convertToWav(input.path, output.path);
-          if (converted.isEmpty) {
-            throw StateError(
-              'Der native Audiodecoder lieferte keinen WAV-Pfad.',
-            );
-          }
-          if (!await output.exists()) {
-            throw StateError(
-              'Der native Audiodecoder hat keine WAV-Datei erzeugt: $converted',
-            );
-          }
-        }
+        await input.copy(output.path);
         wavs.add(output);
       }
       final exports = await _resolveExportDirectory();
@@ -122,6 +114,24 @@ class NativeOfflineAudioLibrary {
   /// No handles are held between reads. Cached clips deliberately remain in
   /// application support storage to make subsequent announcements immediate.
   Future<void> dispose() async {}
+
+  Future<File> _convertForPlayback(String rawPath) async {
+    final input = await materializeForPlayback(rawPath);
+    final target = File('${input.path}.pcm.wav');
+    if (await target.exists()) return target;
+    await target.parent.create(recursive: true);
+    final staging = File('${target.path}.part.wav');
+    if (await staging.exists()) await staging.delete();
+    final converted = await _convertToWav(input.path, staging.path);
+    if (converted.isEmpty || !await staging.exists()) {
+      throw StateError(
+        'Der native Audiodecoder hat keine PCM-WAV-Datei erzeugt.',
+      );
+    }
+    if (await target.exists()) await target.delete();
+    await staging.rename(target.path);
+    return target;
+  }
 
   Future<File> _materialize(String rawPath) async {
     if (rawPath.startsWith('asset:/')) {
