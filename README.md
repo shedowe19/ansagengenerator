@@ -63,7 +63,11 @@ Die Web-Ausgabe liegt unter `build/web/`.
 
 ## GitHub-Auslieferung
 
-Der private GitHub-Quellstand versioniert die kompakte ZIP64-Offlinebibliothek gezielt mit **Git LFS**. Lokale Flutter-/Gradle-Caches, IDE-Dateien, maschinenbezogene SDK-Pfade, historische Debug-Builds sowie die privaten WAV-Rohschnitte bleiben ausgeschlossen.
+Der öffentliche GitHub-Quellstand versioniert die kompakte ZIP64-Offlinebibliothek gezielt mit **Git LFS**. Lokale Flutter-/Gradle-Caches, IDE-Dateien, maschinenbezogene SDK-Pfade, historische Debug-Builds sowie die privaten WAV-Rohschnitte bleiben ausgeschlossen.
+
+### GitHub Pages
+
+Die Web-App wird bei jedem erfolgreichen Pages-Workflow nach [https://shedowe19.github.io/ansagengenerator/](https://shedowe19.github.io/ansagengenerator/) ausgeliefert. Der Build setzt den Flutter-Basispfad auf `/ansagengenerator/`, enthält die vollständige Offlinebibliothek und behält den ZIP64-/HTTP-Range-Abruf bei. Die Seite und ihre Audio-Assets sind damit öffentlich abrufbar.
 
 Die aktuelle APK und das gebaute Webpaket werden als Release-Artefakte bereitgestellt. Jeder Push auf `main` und jeder manuelle Lauf von `.github/workflows/windows-exe.yml` startet den zentralen Workflow **Build all targets** auf GitHub. Er baut und archiviert nach derselben gemeinsamen Analyse/Test-Gate:
 

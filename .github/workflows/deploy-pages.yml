@@ -1,0 +1,84 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  FLUTTER_CHANNEL: stable
+  WEB_BASE_HREF: /${{ github.event.repository.name }}/
+
+jobs:
+  build:
+    name: Build Pages artifact
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source and LFS data
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          lfs: true
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
+
+      - name: Install Flutter stable
+        uses: subosito/flutter-action@fd55f4c5af5b953cc57a2be44cb082c8f6635e8e # v2.21.0
+        with:
+          channel: ${{ env.FLUTTER_CHANNEL }}
+          cache: true
+
+      - name: Analyze and test
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter test
+
+      - name: Build Pages release
+        run: |
+          flutter build web --release --pwa-strategy=none --base-href "$WEB_BASE_HREF"
+          python3 - "$WEB_BASE_HREF" <<'PY'
+          from pathlib import Path
+          import sys
+
+          base_href = sys.argv[1]
+          output = Path("build/web")
+          index = (output / "index.html").read_text(encoding="utf-8")
+          archive = output / "assets/source-android/app/src/main/assets/offline/ansagengenerator-offline-opus-data.zip"
+
+          assert f'<base href="{base_href}">' in index
+          assert 'href="manifest.json"' in index
+          assert 'src="flutter_bootstrap.js"' in index
+          assert archive.is_file() and archive.stat().st_size > 400_000_000
+          print(f"Pages artifact verified for {base_href}: {archive.stat().st_size} bytes offline archive")
+          PY
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
+        with:
+          path: build/web/
+
+  deploy:
+    name: Deploy GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
