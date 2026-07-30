@@ -198,7 +198,7 @@ jobs:
       - name: Resolve dependencies
         run: flutter pub get
 
-      - name: Build macOS x64 release
+      - name: Build macOS application release
         run: |
           flutter config --enable-macos-desktop
           flutter build macos --release
@@ -206,11 +206,11 @@ jobs:
       - name: Build unsigned iOS release
         run: flutter build ios --release --no-codesign
 
-      - name: Upload macOS x64 application bundle
+      - name: Upload macOS application bundle
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: ansagengenerator-macos-x64
-          path: build/macos/Build/Products/Release/
+          name: ansagengenerator-macos-app
+          path: build/macos/Build/Products/Release/*.app
           if-no-files-found: error
           retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
 
