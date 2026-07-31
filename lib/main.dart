@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'core/announcement_builder.dart';
+import 'core/information_options.dart';
 import 'core/in_train_sequence.dart';
 import 'core/station_search.dart';
 import 'data/announcement_audio_controller.dart';
@@ -110,25 +111,8 @@ class _GeneratorScreenState extends State<GeneratorScreen> {
   List<Map<String, dynamic>> _favorites = <Map<String, dynamic>>[];
   List<Map<String, dynamic>> _history = <Map<String, dynamic>>[];
 
-  static const _delayOptions = <String>[
-    '0 · keine',
-    '005.wav · ca. 5 min',
-    '010.wav · ca. 10 min',
-    '015.wav · ca. 15 min',
-    '030.wav · ca. 30 min',
-    '060.wav · ca. 60 min',
-    '210.wav · unbestimmt',
-  ];
-  static const _reasonOptions = <String>[
-    '0 · keiner',
-    '001.wav · Verzögerung Betriebsablauf',
-    '002.wav · Bauarbeiten',
-    '003.wav · Personen im Gleis',
-    '004.wav · technische Störung am Zug',
-    '008.wav · Stellwerksstörung/-ausfall',
-    '017.wav · Unwetter',
-    '042.wav · Umleitung',
-  ];
+  static const _delayOptions = InformationOptions.delays;
+  static const _reasonOptions = InformationOptions.reasons;
   static const _specialOptions = <String>[
     '001.wav · Gepäck',
     '002.wav · Rauchverbot',

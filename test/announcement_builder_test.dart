@@ -14,7 +14,7 @@ void main() {
           hour: '08',
           minute: '05',
           trainType: 'RE',
-          trainNumbers: const ['1234'],
+          trainNumbers: const ['1035'],
           via: '0',
         ),
       ).build();
@@ -25,14 +25,30 @@ void main() {
         'dt/gleise_zahlen/hoch/2.wav',
         'dt/module_3_1/012.wav',
         'dt/zuggattungen/hoch/re.wav',
-        'dt/gleise_zahlen/hoch/1.wav',
-        'dt/gleise_zahlen/hoch/2.wav',
+        'dt/gleise_zahlen/hoch/10.wav',
+        'dt/gleise_zahlen/hoch/35.wav',
       ]);
       expect(playlist, contains('dt/ziele/variante2/tief/8010324.wav'));
       expect(playlist, contains('dt/zeiten/stunden/hoch/08.wav'));
       expect(playlist, contains('dt/zeiten/minuten/tief/05.wav'));
     },
   );
+
+  test('groups a five-digit train number as two, one, two digits', () {
+    final playlist = AnnouncementBuilder(
+      draft: const AnnouncementDraft(
+        targetFile: '8010324.wav',
+        trainType: 'RE',
+        trainNumbers: <String>['10354'],
+      ),
+    ).build();
+
+    expect(playlist.sublist(5, 8), <String>[
+      'dt/gleise_zahlen/hoch/10.wav',
+      'dt/gleise_zahlen/hoch/3.wav',
+      'dt/gleise_zahlen/hoch/54.wav',
+    ]);
+  });
 
   test('does not emit optional sentinel values as audio', () {
     final playlist = AnnouncementBuilder(

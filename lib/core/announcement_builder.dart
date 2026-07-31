@@ -442,8 +442,27 @@ class AnnouncementBuilder {
       _number(out, _int(digits, 0), high: true);
       return;
     }
-    for (final digit in digits.split('').take(5)) {
-      out.add('$_lang/gleise_zahlen/hoch/$digit.wav');
+
+    // Operational train-number notation groups four digits as 2–2 and five
+    // digits as 2–1–2: 1035 → "10 35", 10354 → "10 3 54". Leading-zero
+    // groups remain digit-wise so no significant zero is dropped.
+    final groups = switch (digits.length) {
+      4 => <String>[digits.substring(0, 2), digits.substring(2, 4)],
+      5 => <String>[
+        digits.substring(0, 2),
+        digits.substring(2, 3),
+        digits.substring(3, 5),
+      ],
+      _ => digits.split('').take(5).toList(growable: false),
+    };
+    for (final group in groups) {
+      if (group.startsWith('0')) {
+        for (final digit in group.split('')) {
+          out.add('$_lang/gleise_zahlen/hoch/$digit.wav');
+        }
+      } else {
+        _number(out, _int(group, 0), high: true);
+      }
     }
   }
 
