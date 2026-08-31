@@ -28,14 +28,63 @@ public class InTrainSequenceSupportTest {
         assertTrue(InTrainSequenceSupport.requiresStation(Arrays.asList("next_station", "station_name", "train_ends")));
     }
 
-    @Test public void keepsNewHintAtomsStationIndependentAndInOrder() {
-        assertFalse(InTrainSequenceSupport.requiresStation(Arrays.asList("personal_belongings", "thank_you", "next_time_sbahn_rheinruhr", "platform_gap")));
+    @Test public void combinesLegacyEndStopBlocksIntoTheSuppliedClip() {
+        assertEquals("train_ends_all_exit", InTrainSequenceSupport.idForLabel("Dieser Zug endet dort · Fahrgäste bitte aussteigen"));
+        assertEquals("Dieser Zug endet dort · Fahrgäste bitte aussteigen", InTrainSequenceSupport.labelForId("train_ends"));
+        assertEquals(Arrays.asList("asset:/inzug/text/zug_endet_fahrgaeste_aussteigen.opus"),
+                InTrainSequenceSupport.toAssetPlaylist(Arrays.asList("train_ends", "all_exit"), ""));
+    }
+
+    @Test public void migratesSupersededPlatformGapBlockToItsReplacement() {
+        assertEquals("Hinweis · Abstand zur Bahnsteigkante", InTrainSequenceSupport.labelForId("platform_gap"));
+        assertTrue(InTrainSequenceSupport.isKnown("platform_gap"));
+        assertFalse(InTrainSequenceSupport.requiresStation(Arrays.asList("platform_gap")));
+        assertEquals(Arrays.asList("asset:/inzug/text/hinweis_abstand_zur_bahnsteigkante.opus"),
+                InTrainSequenceSupport.toAssetPlaylist(Arrays.asList("platform_gap"), ""));
+    }
+
+    @Test public void keepsRemainingHintAtomsStationIndependentAndInOrder() {
+        assertFalse(InTrainSequenceSupport.requiresStation(Arrays.asList("personal_belongings", "thank_you", "next_time_sbahn_rheinruhr")));
         assertEquals(Arrays.asList(
                         "asset:/inzug/text/hinweis_persoenliche_gegenstaende.opus",
                         "asset:/inzug/text/hinweis_vielen_dank_und_auf_wiedersehen.opus",
-                        "asset:/inzug/text/hinweis_bis_zum_naechsten_mal_s_bahn_rhein_ruhr.opus",
-                        "asset:/inzug/text/hinweis_bahnsteigkante.opus"),
-                InTrainSequenceSupport.toAssetPlaylist(Arrays.asList("personal_belongings", "thank_you", "next_time_sbahn_rheinruhr", "platform_gap"), ""));
+                        "asset:/inzug/text/hinweis_bis_zum_naechsten_mal_s_bahn_rhein_ruhr.opus"),
+                InTrainSequenceSupport.toAssetPlaylist(Arrays.asList("personal_belongings", "thank_you", "next_time_sbahn_rheinruhr"), ""));
+    }
+
+    @Test public void addsConstructionWorkNoticeAsStationIndependentBlock() {
+        assertEquals("construction_work_notice", InTrainSequenceSupport.idForLabel("Hinweis · Bauarbeiten und Fahrplanänderungen"));
+        assertEquals("Hinweis · Bauarbeiten und Fahrplanänderungen", InTrainSequenceSupport.labelForId("construction_work_notice"));
+        assertFalse(InTrainSequenceSupport.requiresStation(Arrays.asList("construction_work_notice")));
+        assertEquals(Arrays.asList("asset:/inzug/text/hinweis_bauarbeiten_fahrplanaenderungen.opus"),
+                InTrainSequenceSupport.toAssetPlaylist(Arrays.asList("construction_work_notice"), ""));
+    }
+
+    @Test public void addsAllSuppliedOperationalNoticesAsStationIndependentBlocks() {
+        assertEquals("step_extension_unavailable", InTrainSequenceSupport.idForLabel("Hinweis · Trittstufen fahren nicht aus"));
+        assertEquals("Hinweis · Trittstufen fahren nicht aus", InTrainSequenceSupport.labelForId("step_extension_unavailable"));
+        assertEquals("signal_repair_delay_notice", InTrainSequenceSupport.idForLabel("Hinweis · Verspätung wegen Signalreparatur"));
+        assertEquals("Hinweis · Verspätung wegen Signalreparatur", InTrainSequenceSupport.labelForId("signal_repair_delay_notice"));
+        assertEquals("door_area_clear_notice", InTrainSequenceSupport.idForLabel("Hinweis · Türbereich freihalten"));
+        assertEquals("Hinweis · Türbereich freihalten", InTrainSequenceSupport.labelForId("door_area_clear_notice"));
+        assertEquals("unscheduled_stop_notice", InTrainSequenceSupport.idForLabel("Hinweis · Außerplanmäßiger Halt"));
+        assertEquals("Hinweis · Außerplanmäßiger Halt", InTrainSequenceSupport.labelForId("unscheduled_stop_notice"));
+        assertEquals("platform_edge_gap_notice", InTrainSequenceSupport.idForLabel("Hinweis · Abstand zur Bahnsteigkante"));
+        assertEquals("Hinweis · Abstand zur Bahnsteigkante", InTrainSequenceSupport.labelForId("platform_edge_gap_notice"));
+        assertEquals("stabling_exit_notice", InTrainSequenceSupport.idForLabel("Hinweis · Weiterfahrt in die Abstellung"));
+        assertEquals("Hinweis · Weiterfahrt in die Abstellung", InTrainSequenceSupport.labelForId("stabling_exit_notice"));
+        assertEquals("corona_mask_notice", InTrainSequenceSupport.idForLabel("Hinweis · Corona · Abstand und medizinische Maske"));
+        assertEquals("Hinweis · Corona · Abstand und medizinische Maske", InTrainSequenceSupport.labelForId("corona_mask_notice"));
+        assertFalse(InTrainSequenceSupport.requiresStation(Arrays.asList("step_extension_unavailable", "signal_repair_delay_notice", "door_area_clear_notice", "unscheduled_stop_notice", "platform_edge_gap_notice", "stabling_exit_notice", "corona_mask_notice")));
+        assertEquals(Arrays.asList(
+                        "asset:/inzug/text/hinweis_trittstufen_fahren_nicht_aus.opus",
+                        "asset:/inzug/text/hinweis_signalreparatur_verzoegerung.opus",
+                        "asset:/inzug/text/hinweis_tuerbereich_freihalten.opus",
+                        "asset:/inzug/text/hinweis_ausserplanmaessiger_halt.opus",
+                        "asset:/inzug/text/hinweis_abstand_zur_bahnsteigkante.opus",
+                        "asset:/inzug/text/hinweis_weiterfahrt_in_die_abstellung.opus",
+                        "asset:/inzug/text/hinweis_corona_abstand_medizinische_maske.opus"),
+                InTrainSequenceSupport.toAssetPlaylist(Arrays.asList("step_extension_unavailable", "signal_repair_delay_notice", "door_area_clear_notice", "unscheduled_stop_notice", "platform_edge_gap_notice", "stabling_exit_notice", "corona_mask_notice"), ""));
     }
 
     @Test public void keepsStationPlaylistItemsSelfContainedAndInOrder() {

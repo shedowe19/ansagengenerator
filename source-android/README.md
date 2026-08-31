@@ -7,7 +7,11 @@ Native Android-App für Ansagen mit Bahnhofssuche, aktueller RL100-/RIL-100-List
 - **26 gelieferte Stationsansagen** sind im manuellen Im-Zug-Editor verfügbar: Ahlen (Westf), Bad Oeynhausen, Bielefeld Hbf, Bochum Hbf, Dormagen, Dortmund Hbf, Duisburg Hbf, Düsseldorf Flughafen/Hbf, Essen Hbf, Gütersloh Hbf, Hamm (Westf), Heessen, Herford, Kamen, Köln Hbf, Köln/Bonn Flughafen, Löhne (Westf), Minden (Westf), Mülheim (Ruhr) Hbf, Neubeckum, Neuss Hbf, Oelde, Porta Westfalica, Rheda-Wiedenbrück und Wattenscheid.
 - Die gelieferten neuen Fassungen für **Düsseldorf Hbf** und **Neuss Hbf** ersetzen die bisherigen Im-Zug-Clips. 24 weitere Stationen wurden über ihre eindeutigen IBNR-Dateipfade ergänzt.
 - **Hinweis · DB Regio Verabschiedung** steht zusätzlich als stationsunabhängiger, frei sortier- und wiederholbarer Baustein bereit.
-- Die APK enthält nun **433** hashgeprüfte Im-Zug-Opus-Assets: 420 Stationen sowie 13 Text-/Hinweisbausteine. Die Opus-Assets belegen **2.549.204 Bytes** statt 20.754.938 Bytes privater Build-WAVs.
+- Die APK enthält nun **439** hashgeprüfte Im-Zug-Opus-Assets: 420 Stationen sowie 19 Text-/Hinweisbausteine. Die Opus-Assets belegen **2.798.589 Bytes** statt 23.094.278 Bytes privater Build-WAVs.
+- Der bisher geteilte Endhalt-Hinweis ist als einzelner Baustein **„Dieser Zug endet dort · Fahrgäste bitte aussteigen“** mit dem gelieferten Originalclip ersetzt. Bestehende Vorlagen migrieren die beiden bisherigen, direkt aufeinanderfolgenden Bausteine zu einer Wiedergabe.
+- Der stationsunabhängige Baustein **„Hinweis · Bauarbeiten und Fahrplanänderungen“** enthält den gelieferten dreiteiligen Hinweis mit seinen originalen Sprechpausen.
+- Der ältere Baustein **„Höhenunterschied zur Bahnsteigkante“** ist vollständig durch **„Abstand zur Bahnsteigkante“** ersetzt; gespeicherte Vorlagen mit der alten ID werden beim Laden auf den neuen Clip migriert.
+- Sieben weitere stationsunabhängige Originalclips ergänzen die frei sortierbare Im-Zug-Liste: **Trittstufen fahren nicht aus**, **Verspätung wegen Signalreparatur**, **Türbereich freihalten**, **außerplanmäßiger Halt**, **Abstand zur Bahnsteigkante**, **Weiterfahrt in die Abstellung** sowie **Corona · Abstand und medizinische Maske**.
 
 ## v1.19 – Im-Zug-Assets als Ogg/Opus
 

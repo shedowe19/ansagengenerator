@@ -774,8 +774,9 @@ public class MainActivity extends Activity {
             else {
                 inTrainSequence.add("next_station");
                 inTrainSequence.add("station_name");
-                if ("Dieser Zug endet dort".equals(type)) inTrainSequence.add("train_ends");
-                if ("Alle aussteigen".equals(type)) inTrainSequence.add("all_exit");
+                if ("Dieser Zug endet dort · Fahrgäste bitte aussteigen".equals(type)
+                        || "Dieser Zug endet dort".equals(type)
+                        || "Alle aussteigen".equals(type)) inTrainSequence.add("train_ends_all_exit");
                 if (preset.optBoolean("inTrainExitLeft", false)) inTrainSequence.add("exit_left");
                 if (preset.optBoolean("inTrainExitRight", false)) inTrainSequence.add("exit_right");
             }

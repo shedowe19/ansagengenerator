@@ -53,7 +53,7 @@ tasks.register('verifyBundledInTrainAssets') {
     doLast {
         if (!inTrainAssetManifest.isFile()) throw new GradleException("Im-Zug-Opus-Manifest fehlt: ${inTrainAssetManifest}")
         def manifest = new groovy.json.JsonSlurper().parse(inTrainAssetManifest)
-        if (manifest.schema_version != 2 || manifest.format != 'ogg-opus' || manifest.bitrate != '32k' || manifest.entry_count != 433 || manifest.station_count != 420 || manifest.text_count != 13) {
+        if (manifest.schema_version != 2 || manifest.format != 'ogg-opus' || manifest.bitrate != '32k' || manifest.entry_count != 439 || manifest.station_count != 420 || manifest.text_count != 19) {
             throw new GradleException("Im-Zug-Opus-Manifest hat unerwartete Werte.")
         }
         def mappingFile = file('src/main/assets/inzug/inzug_station_mapping.json')
@@ -81,7 +81,7 @@ tasks.register('verifyBundledInTrainAssets') {
             if (bundledArchiveDigest(asset) != entry.target_sha256) throw new GradleException("Im-Zug-Opus-Asset hat eine falsche Prüfsumme: ${asset.name}")
             if (entry.kind == 'station' && !mappedCuratedStationTargets.contains(String.valueOf(entry.target))) throw new GradleException("Kuratiertes Opus-Stationsasset hat keine Im-Zug-Stationzuordnung: ${entry.target}")
         }
-        if (seenTargets.size() != 433) throw new GradleException("Im-Zug-Opus-Assetanzahl ist unvollständig.")
+        if (seenTargets.size() != 439) throw new GradleException("Im-Zug-Opus-Assetanzahl ist unvollständig.")
         if (!fileTree('src/main/assets/inzug').matching { include '**/*.wav' }.isEmpty()) throw new GradleException("WAV-Dateien dürfen nicht mehr als Im-Zug-APK-Assets enthalten sein.")
     }
 }
