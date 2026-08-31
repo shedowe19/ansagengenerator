@@ -4,11 +4,11 @@
   "format": "ogg-opus",
   "bitrate": "32k",
   "processing": "Boundary-preserving Ogg/Opus transcode only: 16 kHz mono input, no trimming, denoising or loudness processing.",
-  "entry_count": 433,
+  "entry_count": 439,
   "station_count": 420,
-  "text_count": 13,
-  "source_wav_bytes": 20754938,
-  "opus_bytes": 2549204,
+  "text_count": 19,
+  "source_wav_bytes": 23094278,
+  "opus_bytes": 2798589,
   "entries": [
     {
       "source": "station_name_only/station_name_ahlen_westf.wav",
@@ -8834,84 +8834,42 @@
       "source": "text/ausstieg_fahrtrichtung_links.wav",
       "target": "text/ausstieg_fahrtrichtung_links.opus",
       "kind": "text",
-      "source_sha256": "5a499eb438454f9590eb7a60196e71c5c7dedd0a4c2aebd4e710c5917a868db3",
+      "source_sha256": "e8382db4ee780c436d37e78d5770d391e1370e3eed105f3f2dbee53cbeb94abb",
       "source_audio": {
         "codec": "pcm_s16le",
         "sample_rate": 16000,
         "channels": 1,
         "bits_per_sample": 16,
-        "duration_seconds": 2.66
+        "duration_seconds": 3.24
       },
-      "target_sha256": "6f1cedf5d6f94d8dff9e3505813e3395569b899500257f922c78a7fa24afcd86",
+      "target_sha256": "1a83c65ec6589b2d3f4dbb914f2a70b192e4fc1fed5ad25d5b91ccf9d928ef0a",
       "target_audio": {
         "codec": "opus",
         "sample_rate": 48000,
         "channels": 1,
         "bits_per_sample": 0,
-        "duration_seconds": 2.6665
+        "duration_seconds": 3.2465
       }
     },
     {
       "source": "text/ausstieg_fahrtrichtung_rechts.wav",
       "target": "text/ausstieg_fahrtrichtung_rechts.opus",
       "kind": "text",
-      "source_sha256": "d7ce57becb3e1e75dedde55be3a3bd5931ae464fa0135d9fed6c8e5bc4d880a6",
+      "source_sha256": "49694bd34b9101e9f3d21eabaf04d0bb03443a03e14c7dd7c96ba70d6a4abe59",
       "source_audio": {
         "codec": "pcm_s16le",
         "sample_rate": 16000,
         "channels": 1,
         "bits_per_sample": 16,
-        "duration_seconds": 2.91
+        "duration_seconds": 3.552
       },
-      "target_sha256": "ef5031409d3aa71119a190d35c0a90699f9fb7688976fb204d1d54487f91f1be",
+      "target_sha256": "a8125d4faf701eaee4e09a59b23e28391126eb7c2efd0d3d1a55dc3f4d5c61a0",
       "target_audio": {
         "codec": "opus",
         "sample_rate": 48000,
         "channels": 1,
         "bits_per_sample": 0,
-        "duration_seconds": 2.9165
-      }
-    },
-    {
-      "source": "text/dieser_zug_endet_dort.wav",
-      "target": "text/dieser_zug_endet_dort.opus",
-      "kind": "text",
-      "source_sha256": "94b43b8c8f238f474e7be8ec343a456450ba74bde99d2f11108cf3a08cc95911",
-      "source_audio": {
-        "codec": "pcm_s16le",
-        "sample_rate": 16000,
-        "channels": 1,
-        "bits_per_sample": 16,
-        "duration_seconds": 1.55
-      },
-      "target_sha256": "111214fa2f05ebc1ea3da4ed13bb1b6fa27861291407311bbb39ece04233736f",
-      "target_audio": {
-        "codec": "opus",
-        "sample_rate": 48000,
-        "channels": 1,
-        "bits_per_sample": 0,
-        "duration_seconds": 1.5565
-      }
-    },
-    {
-      "source": "text/fahrgaeste_bitte_alle_aussteigen.wav",
-      "target": "text/fahrgaeste_bitte_alle_aussteigen.opus",
-      "kind": "text",
-      "source_sha256": "6bd96b67435ebb8fa0540e5a185977263af28976e2b2ea8ef9a6d69689f1febe",
-      "source_audio": {
-        "codec": "pcm_s16le",
-        "sample_rate": 16000,
-        "channels": 1,
-        "bits_per_sample": 16,
-        "duration_seconds": 2.05
-      },
-      "target_sha256": "3c8d52581a68d6303a89f741a72a33299fd9dfab2072ab3b46a46617ae167c27",
-      "target_audio": {
-        "codec": "opus",
-        "sample_rate": 48000,
-        "channels": 1,
-        "bits_per_sample": 0,
-        "duration_seconds": 2.0565
+        "duration_seconds": 3.5585
       }
     },
     {
@@ -8936,24 +8894,66 @@
       }
     },
     {
-      "source": "text/hinweis_bahnsteigkante.wav",
-      "target": "text/hinweis_bahnsteigkante.opus",
+      "source": "text/hinweis_abstand_zur_bahnsteigkante.wav",
+      "target": "text/hinweis_abstand_zur_bahnsteigkante.opus",
       "kind": "text",
-      "source_sha256": "8f3f4c32f0612b8798dcf1f6b1579047a6deb03642ad96e0ed071d06e6d7e6ba",
+      "source_sha256": "7c47109a921078b3ea3e12741de6fe654d19ab45de1d45141e1e36ce0f473801",
       "source_audio": {
         "codec": "pcm_s16le",
         "sample_rate": 16000,
         "channels": 1,
         "bits_per_sample": 16,
-        "duration_seconds": 5.602875
+        "duration_seconds": 4.656
       },
-      "target_sha256": "8ac36758cf1f10c14b70ef7d3867b01f08079b7708778bc8198a4973df085ba4",
+      "target_sha256": "ba560b699a95fee51bc8f7f42882a793ea477cb817e64502e9d03930ad3b4aa9",
       "target_audio": {
         "codec": "opus",
         "sample_rate": 48000,
         "channels": 1,
         "bits_per_sample": 0,
-        "duration_seconds": 5.609375
+        "duration_seconds": 4.6625
+      }
+    },
+    {
+      "source": "text/hinweis_ausserplanmaessiger_halt.wav",
+      "target": "text/hinweis_ausserplanmaessiger_halt.opus",
+      "kind": "text",
+      "source_sha256": "598723045d726b535160cd01a3d5c9f3d67b21dbbd674241df653cf04dc532ed",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 11.472
+      },
+      "target_sha256": "b38415f633b6cfebc7b2f00b8c97dc585caa8b299360ccd561689f2a7afcd962",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 11.4785
+      }
+    },
+    {
+      "source": "text/hinweis_bauarbeiten_fahrplanaenderungen.wav",
+      "target": "text/hinweis_bauarbeiten_fahrplanaenderungen.opus",
+      "kind": "text",
+      "source_sha256": "09f9de67a66b45595655a6a919f8772eba328db13022dd40f5cafe9033961c1d",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 12.432
+      },
+      "target_sha256": "198f8f0d217c55b6e77fbee05fff332806be950f8acf961e5c87023477d33c30",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 12.4385
       }
     },
     {
@@ -8975,6 +8975,27 @@
         "channels": 1,
         "bits_per_sample": 0,
         "duration_seconds": 3.315813
+      }
+    },
+    {
+      "source": "text/hinweis_corona_abstand_medizinische_maske.wav",
+      "target": "text/hinweis_corona_abstand_medizinische_maske.opus",
+      "kind": "text",
+      "source_sha256": "c41cfe1bb0c7b8f152aed94fac6763e81679518efbbb82770632ef4ba12e1a8b",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 12.024
+      },
+      "target_sha256": "a626eff7388d7da11898218b72081623dd3185708bf4f937fcbee3fead94ae79",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 12.0305
       }
     },
     {
@@ -9062,6 +9083,69 @@
       }
     },
     {
+      "source": "text/hinweis_signalreparatur_verzoegerung.wav",
+      "target": "text/hinweis_signalreparatur_verzoegerung.opus",
+      "kind": "text",
+      "source_sha256": "9b83d54131209357c74d59c84214d60e1289e0d6147739b72e5fb03e0b5b20df",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 12.0
+      },
+      "target_sha256": "8c59e27f335bc51fb81da6f43e8ac1474536c2156acb3e0ea082af7760714104",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 12.0065
+      }
+    },
+    {
+      "source": "text/hinweis_trittstufen_fahren_nicht_aus.wav",
+      "target": "text/hinweis_trittstufen_fahren_nicht_aus.opus",
+      "kind": "text",
+      "source_sha256": "8ccac32dd8893b41da76ca9724f0151dc2aedf160f45b12f349eca3f9b840b73",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 7.104
+      },
+      "target_sha256": "df507de0a2add4b9ea3ed41bacd914fca59093de4fdf73af85407715445a00b9",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 7.1105
+      }
+    },
+    {
+      "source": "text/hinweis_tuerbereich_freihalten.wav",
+      "target": "text/hinweis_tuerbereich_freihalten.opus",
+      "kind": "text",
+      "source_sha256": "f7cfcc31e41aafc9527c39b923c28ec642d7bfc37c32f40b387b4a98933b68ee",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 7.296
+      },
+      "target_sha256": "ef223fbc1a0064c4883b922049e856ae37a0d3bf40af3135e09c7a4324b8d276",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 7.3025
+      }
+    },
+    {
       "source": "text/hinweis_vielen_dank_und_auf_wiedersehen.wav",
       "target": "text/hinweis_vielen_dank_und_auf_wiedersehen.opus",
       "kind": "text",
@@ -9083,6 +9167,27 @@
       }
     },
     {
+      "source": "text/hinweis_weiterfahrt_in_die_abstellung.wav",
+      "target": "text/hinweis_weiterfahrt_in_die_abstellung.opus",
+      "kind": "text",
+      "source_sha256": "57eb6437e16fcb5bf0e6e556f7eae3fd1febe49a899f743e3ca26d2e923ffe37",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 8.88
+      },
+      "target_sha256": "748a412623a6a42718fdac6a0b5c5fe9a3445b5b5615a5ccef83b4ede4858fab",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 8.8865
+      }
+    },
+    {
       "source": "text/naechste_station.wav",
       "target": "text/naechste_station.opus",
       "kind": "text",
@@ -9101,6 +9206,27 @@
         "channels": 1,
         "bits_per_sample": 0,
         "duration_seconds": 1.3665
+      }
+    },
+    {
+      "source": "text/zug_endet_fahrgaeste_aussteigen.wav",
+      "target": "text/zug_endet_fahrgaeste_aussteigen.opus",
+      "kind": "text",
+      "source_sha256": "447dcce216d4672f83f84dfc2302f389c81ae192799cb4930ee29b0bd2982f79",
+      "source_audio": {
+        "codec": "pcm_s16le",
+        "sample_rate": 16000,
+        "channels": 1,
+        "bits_per_sample": 16,
+        "duration_seconds": 5.208
+      },
+      "target_sha256": "e498f84f8b58f3d8abf181b3e7778539788dc6e909ca08e44ea673513c50170f",
+      "target_audio": {
+        "codec": "opus",
+        "sample_rate": 48000,
+        "channels": 1,
+        "bits_per_sample": 0,
+        "duration_seconds": 5.2145
       }
     }
   ]

@@ -430,9 +430,11 @@ class _GeneratorScreenState extends State<GeneratorScreen> {
       _inTrainSequence
         ..clear()
         ..addAll(
-          (preset['inTrain'] as List? ?? const <Object>[])
-              .map((value) => value.toString())
-              .where(InTrainSequence.isKnown),
+          InTrainSequence.migrateLegacySequence(
+            (preset['inTrain'] as List? ?? const <Object>[]).map(
+              (value) => value.toString(),
+            ),
+          ).where(InTrainSequence.isKnown),
         );
       _pauseAfterStation = preset['pauseAfterStation'] != false;
     });

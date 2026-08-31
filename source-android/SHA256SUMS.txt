@@ -1,3 +1,3 @@
 # Die historische Debug-APK liegt als GitHub-Release-Artefakt vor, nicht im Quellbaum.
-b235b5c48df7c17ce94992e3387d8ee53c20802da690efeb13fe5e8b8c721c07  app/src/main/assets/inzug/inzug_opus_manifest.json
+c2157f9f13b6b42debffe7c7210be62a45e037a809b7a8b7703174a464cb0d9c  app/src/main/assets/inzug/inzug_opus_manifest.json
 80ada82a559fa5a40085cfd7c10aeae483991be68ec4ca0073150755489e4214  app/src/main/assets/offline/ansagengenerator-offline-opus-data.zip

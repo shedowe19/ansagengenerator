@@ -5,7 +5,7 @@
 - 26 vorhandene Original-Stationsclips der manuellen Im-Zug-Streckenplaylist wurden über ihre bestehenden IBNR-Dateipfade vollständig durch die gelieferten Fassungen ersetzt.
 - Der zusätzliche stationsunabhängige Baustein **Hinweis · DB Regio Verabschiedung** lässt sich frei zwischen Stationen und anderen Hinweisen einfügen, wiederholen und sortieren.
 - Die Verarbeitung erhielt Schnittgrenzen, Stimme und Inhalt unverändert: vollständiger Decode, SHA-256-Prüfung und ausschließlich PCM-16/Mono/16-kHz-Normalisierung der privaten Build-Quellen vor der reproduzierbaren Opus-Konvertierung.
-- Der Build prüft jetzt 98 Opus-Hashes, 85 eindeutige Stationzuordnungen und 13 Text-/Hinweisbausteine. Die kuratierten APK-Audioassets belegen 771.891 Bytes.
+- Der Build prüft jetzt 439 Opus-Hashes, 420 eindeutige Stationzuordnungen und 19 Text-/Hinweisbausteine. Die kuratierten APK-Audioassets belegen 2.798.589 Bytes.
 
 # Release Notes – v1.19
 
