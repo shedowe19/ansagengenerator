@@ -43,7 +43,11 @@ python3 "$repo_root/scripts/build_opus_offline_library.py" \
 actual_size=$(stat -c '%s' "$output")
 test "$actual_size" = "$expected_opus_size"
 printf '%s  %s\n' "$expected_opus" "$output" | sha256sum -c -
-rm -f "$destination"/*.zip
-cp --reflink=auto "$output" "$destination/ansagengenerator-offline-opus-data.zip"
+parts_manifest="$destination/ansagengenerator-offline-opus-data.parts.json"
+python3 "$repo_root/../tool/offline_archive_parts.py" split \
+  --input "$output" --manifest "$parts_manifest" \
+  --archive-name ansagengenerator-offline-opus-data.zip
+python3 "$repo_root/../tool/offline_archive_parts.py" assemble \
+  --manifest "$parts_manifest"
 printf '%s  %s\n' "$expected_opus" "$destination/ansagengenerator-offline-opus-data.zip" | sha256sum -c -
-printf 'Prepared verified Ogg/Opus library in %s\n' "$destination"
+printf 'Prepared verified Git-native Ogg/Opus library parts in %s\n' "$destination"

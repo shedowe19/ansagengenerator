@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Builds the release and exercises real ZIP64 range-loading plus WAV export in Chromium.
 set -euo pipefail
+python3 tool/offline_archive_parts.py assemble --manifest source-android/app/src/main/assets/offline/ansagengenerator-offline-opus-data.parts.json
 
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$root"

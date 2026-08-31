@@ -138,4 +138,11 @@ export ANDROID_SDK_ROOT=/root/android-sdk
   --max-workers=1 -Dorg.gradle.jvmargs='-Xmx8g -Dfile.encoding=UTF-8'
 ```
 
-Für das eingebettete Opus-Archiv muss `app/src/main/assets/offline/ansagengenerator-offline-opus-data.zip` vorhanden sein. Es wird bewusst nicht in Git eingecheckt; `scripts/prepare-embedded-offline-assets.sh` lädt die verifizierte Originalquelle, kodiert sie mit Opus 32 kbit/s und prüft anschließend jede Prüfsumme.
+Das eingebettete Opus-Archiv wird bewusst nicht als einzelner Git-Blob gespeichert: Fünf reguläre, jeweils maximal 95-MB große Teile und `app/src/main/assets/offline/ansagengenerator-offline-opus-data.parts.json` liegen im Repository. Vor Build oder Test wird das byte-identische ZIP ohne Git LFS rekonstruiert:
+
+```bash
+python3 ../tool/offline_archive_parts.py assemble \
+  --manifest app/src/main/assets/offline/ansagengenerator-offline-opus-data.parts.json
+```
+
+`verifyBundledOfflineArchive` führt dieselbe Rekonstruktion vor dem nativen Android-Build aus und prüft danach Größe sowie SHA-256. `scripts/prepare-embedded-offline-assets.sh` bleibt der Autorenweg zum Neubau aus der verifizierten Originalquelle und schreibt anschließend ebenfalls die regulären Git-Teile.

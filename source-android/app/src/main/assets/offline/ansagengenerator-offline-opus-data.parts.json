@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "purpose": "Git-native split source for the byte-identical offline Ogg/Opus ZIP library; no Git LFS required.",
+  "archive": {
+    "name": "ansagengenerator-offline-opus-data.zip",
+    "size": 467116673,
+    "sha256": "80ada82a559fa5a40085cfd7c10aeae483991be68ec4ca0073150755489e4214",
+    "entry_count": 87902
+  },
+  "part_size_bytes": 95000000,
+  "parts": [
+    {
+      "name": "ansagengenerator-offline-opus-data.zip.part-000",
+      "size": 95000000,
+      "sha256": "efc9bbf690977628ea9dfd5f334f0c80b25f6004326aa695163c06d035c355af"
+    },
+    {
+      "name": "ansagengenerator-offline-opus-data.zip.part-001",
+      "size": 95000000,
+      "sha256": "dfc58f12d20b0fbafebb983c194756c88d9143536aee11c1af4418620234283f"
+    },
+    {
+      "name": "ansagengenerator-offline-opus-data.zip.part-002",
+      "size": 95000000,
+      "sha256": "871b42185e7778f7f4e633b9d85a880efd097ac380f740ebee74ee5247919034"
+    },
+    {
+      "name": "ansagengenerator-offline-opus-data.zip.part-003",
+      "size": 95000000,
+      "sha256": "beec640f60fadb1f090eb0bb0ba70943bff85be62b7a38651dce121efd723f5e"
+    },
+    {
+      "name": "ansagengenerator-offline-opus-data.zip.part-004",
+      "size": 87116673,
+      "sha256": "c3852d05b9fd3d6899e6154a7570ffb9548e871b69a57e549b393aa008d2f67e"
+    }
+  ]
+}

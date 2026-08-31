@@ -55,5 +55,8 @@ app.*.map.json
 /source-android/dist/
 /source-android/local.properties
 
+# The assembled 467-MB ZIP is generated from tracked sub-100-MB parts.
+/source-android/app/src/main/assets/offline/ansagengenerator-offline-opus-data.zip
+
 # Private original WAV cuts are deliberately not part of the repository.
 /source-android/sources/inzug-wav/

@@ -2,5 +2,4 @@
 * text=auto eol=lf
 *.bat text eol=crlf
 
-# The production offline audio data pack is intentionally stored once via Git LFS.
-source-android/app/src/main/assets/offline/ansagengenerator-offline-opus-data.zip filter=lfs diff=lfs merge=lfs -text
+source-android/app/src/main/assets/offline/ansagengenerator-offline-opus-data.zip.part-* -text

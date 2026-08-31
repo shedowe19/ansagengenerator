@@ -46,6 +46,8 @@ bash tool/test_web_offline_audio.sh
 ## Lokales Bauen
 
 ```bash
+python3 tool/offline_archive_parts.py assemble \
+  --manifest source-android/app/src/main/assets/offline/ansagengenerator-offline-opus-data.parts.json
 flutter pub get
 flutter analyze
 flutter test
@@ -63,7 +65,7 @@ Die Web-Ausgabe liegt unter `build/web/`.
 
 ## GitHub-Auslieferung
 
-Der öffentliche GitHub-Quellstand versioniert die kompakte ZIP64-Offlinebibliothek gezielt mit **Git LFS**. Lokale Flutter-/Gradle-Caches, IDE-Dateien, maschinenbezogene SDK-Pfade, historische Debug-Builds sowie die privaten WAV-Rohschnitte bleiben ausgeschlossen.
+Der öffentliche GitHub-Quellstand benötigt **kein Git LFS**: Die 467-MB-ZIP64-Offlinebibliothek liegt als fünf reguläre, jeweils maximal 95-MB große Git-Teile plus Prüfsummenmanifest vor. `tool/offline_archive_parts.py assemble` prüft jedes Teil und rekonstruiert das byte-identische, bewusst ignorierte ZIP vor Tests und Builds atomar. Lokale Flutter-/Gradle-Caches, das generierte Gesamtarchiv, IDE-Dateien, maschinenbezogene SDK-Pfade, historische Debug-Builds sowie die privaten WAV-Rohschnitte bleiben ausgeschlossen.
 
 ### GitHub Pages
 
@@ -82,7 +84,7 @@ Die GitHub-Artefakte bleiben 14 Tage abrufbar. Die Windows-Anwendung besteht aus
 ## Verifizierter Stand
 
 - `flutter analyze`: ohne Befund
-- 32 Unit-/Widget- und ZIP64-Regressionstests: grün, einschließlich eines echten Zugriffs auf das ZIP64-LFS-Archiv
+- Unit-/Widget- und ZIP64-Regressionstests: grün, einschließlich eines echten Zugriffs auf das aus regulären Git-Teilen rekonstruierten ZIP64-Archiv
 - Chromium-Browsertest: reale HTTP-Range-Abrufe, Blob-Quelle, Ogg/Opus-Decodierung und WAV-Downloadpfad grün
 - Android SDK 36 / JDK 21: geprüft
 - Debug-APK: Paket `de.shedowe.ansagengenerator`, Version `1.20.7` (Build 30), Android API 24–36, v2-signiert
