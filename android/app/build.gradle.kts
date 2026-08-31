@@ -41,6 +41,42 @@ kotlin {
     }
 }
 
+val offlineArchiveDirectory = rootProject.projectDir.parentFile.resolve(
+    "source-android/app/src/main/assets/offline",
+)
+val offlineArchiveManifest = offlineArchiveDirectory.resolve(
+    "ansagengenerator-offline-opus-data.parts.json",
+)
+val offlineArchiveOutput = offlineArchiveDirectory.resolve(
+    "ansagengenerator-offline-opus-data.zip",
+)
+val assembleOfflineArchive by tasks.registering(Exec::class) {
+    group = "build setup"
+    description = "Reconstructs the verified offline ZIP from regular Git parts."
+    inputs.file(offlineArchiveManifest)
+    inputs.files(
+        fileTree(offlineArchiveDirectory) {
+            include("ansagengenerator-offline-opus-data.zip.part-*")
+        },
+    )
+    outputs.file(offlineArchiveOutput)
+    commandLine(
+        "python3",
+        rootProject.projectDir.parentFile.resolve("tool/offline_archive_parts.py").absolutePath,
+        "assemble",
+        "--manifest",
+        offlineArchiveManifest.absolutePath,
+        "--output",
+        offlineArchiveOutput.absolutePath,
+    )
+}
+
+tasks.configureEach {
+    if (name.startsWith("compileFlutterBuild")) {
+        dependsOn(assembleOfflineArchive)
+    }
+}
+
 flutter {
     source = "../.."
 }

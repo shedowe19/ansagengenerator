@@ -25,10 +25,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source and LFS data
+      - name: Checkout source
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-        with:
-          lfs: true
+
+      - name: Assemble verified offline archive from Git parts
+        run: python3 tool/offline_archive_parts.py assemble --manifest source-android/app/src/main/assets/offline/ansagengenerator-offline-opus-data.parts.json
 
       - name: Configure GitHub Pages
         id: pages
@@ -45,6 +46,7 @@ jobs:
           flutter pub get
           flutter analyze
           flutter test
+          python3 tool/test_offline_archive_parts.py
 
       - name: Build Pages release
         run: |

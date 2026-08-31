@@ -36,8 +36,20 @@ def bundledArchiveDigest = { File archive ->
     }
     digest.digest().collect { String.format('%02x', it & 0xff) }.join()
 }
+def offlinePartsManifest = file('src/main/assets/offline/ansagengenerator-offline-opus-data.parts.json')
+def assembleBundledOfflineArchive = tasks.register('assembleBundledOfflineArchive') {
+    inputs.file(offlinePartsManifest)
+    inputs.files(fileTree('src/main/assets/offline') { include 'ansagengenerator-offline-opus-data.zip.part-*' })
+    outputs.file(file('src/main/assets/offline/ansagengenerator-offline-opus-data.zip'))
+    doLast {
+        exec {
+            commandLine 'python3', '../../tool/offline_archive_parts.py', 'assemble', '--manifest', offlinePartsManifest.absolutePath
+        }
+    }
+}
 def inTrainAssetManifest = file('src/main/assets/inzug/inzug_opus_manifest.json')
 tasks.register('verifyBundledOfflineArchive') {
+    dependsOn(assembleBundledOfflineArchive)
     inputs.files(bundledOfflineArchives.collect { it.file })
     doLast {
         bundledOfflineArchives.each { archive ->
