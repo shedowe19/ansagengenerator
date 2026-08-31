@@ -7,7 +7,7 @@ Native Android-App für Ansagen mit Bahnhofssuche, aktueller RL100-/RIL-100-List
 - **26 gelieferte Stationsansagen** sind im manuellen Im-Zug-Editor verfügbar: Ahlen (Westf), Bad Oeynhausen, Bielefeld Hbf, Bochum Hbf, Dormagen, Dortmund Hbf, Duisburg Hbf, Düsseldorf Flughafen/Hbf, Essen Hbf, Gütersloh Hbf, Hamm (Westf), Heessen, Herford, Kamen, Köln Hbf, Köln/Bonn Flughafen, Löhne (Westf), Minden (Westf), Mülheim (Ruhr) Hbf, Neubeckum, Neuss Hbf, Oelde, Porta Westfalica, Rheda-Wiedenbrück und Wattenscheid.
 - Die gelieferten neuen Fassungen für **Düsseldorf Hbf** und **Neuss Hbf** ersetzen die bisherigen Im-Zug-Clips. 24 weitere Stationen wurden über ihre eindeutigen IBNR-Dateipfade ergänzt.
 - **Hinweis · DB Regio Verabschiedung** steht zusätzlich als stationsunabhängiger, frei sortier- und wiederholbarer Baustein bereit.
-- Die APK enthält nun **98** hashgeprüfte Im-Zug-Opus-Assets: 85 Stationen sowie 13 Text-/Hinweisbausteine. Die Opus-Assets belegen **771.891 Bytes** statt 5.867.348 Bytes privater Build-WAVs.
+- Die APK enthält nun **433** hashgeprüfte Im-Zug-Opus-Assets: 420 Stationen sowie 13 Text-/Hinweisbausteine. Die Opus-Assets belegen **2.549.204 Bytes** statt 20.754.938 Bytes privater Build-WAVs.
 
 ## v1.19 – Im-Zug-Assets als Ogg/Opus
 
@@ -122,7 +122,7 @@ python3 scripts/build_opus_intrain_assets.py \
   --bitrate 32k
 ```
 
-Das Skript konvertiert ausschließlich Audioformat und Ogg-Metadaten. Schnittgrenzen, Stimme und Inhalt bleiben unverändert. Es prüft jeden Opus-Clip durch vollständiges Dekodieren; `verifyBundledInTrainAssets` validiert beim Android-Build danach jede Asset-Prüfsumme, alle 85 Stationszuordnungen und das Fehlen von WAV-Dateien im APK-Assetbaum.
+Das Skript konvertiert ausschließlich Audioformat und Ogg-Metadaten. Schnittgrenzen, Stimme und Inhalt bleiben unverändert. Es prüft jeden Opus-Clip durch vollständiges Dekodieren; `verifyBundledInTrainAssets` validiert beim Android-Build danach jede Asset-Prüfsumme, alle 420 Stationszuordnungen und das Fehlen von WAV-Dateien im APK-Assetbaum.
 
 ## Build
 

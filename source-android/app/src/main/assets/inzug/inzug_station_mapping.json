@@ -554,5 +554,2015 @@
     "raw": "Ahlen (Westf)",
     "filepath": "8000441.wav",
     "clip": "station_name_ahlen_westf.opus"
+  },
+  {
+    "station": "Albersweiler (Pfalz)",
+    "raw": "Albersweiler (Pfalz)",
+    "filepath": "8000466.wav",
+    "clip": "station_name_albersweiler_pfalz.opus"
+  },
+  {
+    "station": "Albig",
+    "raw": "Albig",
+    "filepath": "8000468.wav",
+    "clip": "station_name_albig.opus"
+  },
+  {
+    "station": "Albsheim(Eis)",
+    "raw": "Albsheim(Eis)",
+    "filepath": "8070096.wav",
+    "clip": "station_name_albsheim_eis.opus"
+  },
+  {
+    "station": "Alsenz",
+    "raw": "Alsenz",
+    "filepath": "8000505.wav",
+    "clip": "station_name_alsenz.opus"
+  },
+  {
+    "station": "Altenbamberg",
+    "raw": "Altenbamberg",
+    "filepath": "8000517.wav",
+    "clip": "station_name_altenbamberg.opus"
+  },
+  {
+    "station": "Altenbeken",
+    "raw": "Altenbeken",
+    "filepath": "8000004.wav",
+    "clip": "station_name_altenbeken.opus"
+  },
+  {
+    "station": "Altenglan",
+    "raw": "Altenglan",
+    "filepath": "8000491.wav",
+    "clip": "station_name_altenglan.opus"
+  },
+  {
+    "station": "Alzey",
+    "raw": "Alzey",
+    "filepath": "8000007.wav",
+    "clip": "station_name_alzey.opus"
+  },
+  {
+    "station": "Alzey Süd",
+    "raw": "Alzey Süd",
+    "filepath": "8000558.wav",
+    "clip": "station_name_alzey_sued.opus"
+  },
+  {
+    "station": "Alzey West",
+    "raw": "Alzey West",
+    "filepath": "8007474.wav",
+    "clip": "station_name_alzey_west.opus"
+  },
+  {
+    "station": "Andernach",
+    "raw": "Andernach",
+    "filepath": "8000331.wav",
+    "clip": "station_name_andernach.opus"
+  },
+  {
+    "station": "Annweiler am Trifels",
+    "raw": "Annweiler am Trifels",
+    "filepath": "8000582.wav",
+    "clip": "station_name_annweiler_am_trifels.opus"
+  },
+  {
+    "station": "Annweiler-Sarnstall",
+    "raw": "Annweiler-Sarnstall",
+    "filepath": "8005257.wav",
+    "clip": "station_name_annweiler_sarnstall.opus"
+  },
+  {
+    "station": "Armsheim",
+    "raw": "Armsheim",
+    "filepath": "8000602.wav",
+    "clip": "station_name_armsheim.opus"
+  },
+  {
+    "station": "Asselheim",
+    "raw": "Asselheim",
+    "filepath": "8000625.wav",
+    "clip": "station_name_asselheim.opus"
+  },
+  {
+    "station": "Bad Bergzabern",
+    "raw": "Bad Bergzabern",
+    "filepath": "8000691.wav",
+    "clip": "station_name_bad_bergzabern.opus"
+  },
+  {
+    "station": "Bad Dürkheim",
+    "raw": "Bad Dürkheim",
+    "filepath": "8000698.wav",
+    "clip": "station_name_bad_duerkheim.opus"
+  },
+  {
+    "station": "Bad Dürkheim-Trift",
+    "raw": "Bad Dürkheim-Trift",
+    "filepath": "8000708.wav",
+    "clip": "station_name_bad_duerkheim_trift.opus"
+  },
+  {
+    "station": "Bad Ems",
+    "raw": "Bad Ems",
+    "filepath": "8000701.wav",
+    "clip": "station_name_bad_ems.opus"
+  },
+  {
+    "station": "Bad Ems West",
+    "raw": "Bad Ems West",
+    "filepath": "8000702.wav",
+    "clip": "station_name_bad_ems_west.opus"
+  },
+  {
+    "station": "Bad Kreuznach",
+    "raw": "Bad Kreuznach",
+    "filepath": "8000021.wav",
+    "clip": "station_name_bad_kreuznach.opus"
+  },
+  {
+    "station": "Bad Münder (Deister)",
+    "raw": "Bad Münder (Deister)",
+    "filepath": "8000725.wav",
+    "clip": "station_name_bad_muender_deister.opus"
+  },
+  {
+    "station": "Bad Münster am Stein",
+    "raw": "Bad Münster am Stein",
+    "filepath": "8000726.wav",
+    "clip": "station_name_bad_muenster_am_stein.opus"
+  },
+  {
+    "station": "Bad Nenndorf",
+    "raw": "Bad Nenndorf",
+    "filepath": "8000022.wav",
+    "clip": "station_name_bad_nenndorf.opus"
+  },
+  {
+    "station": "Bad Pyrmont",
+    "raw": "Bad Pyrmont",
+    "filepath": "8000735.wav",
+    "clip": "station_name_bad_pyrmont.opus"
+  },
+  {
+    "station": "Balduinstein",
+    "raw": "Balduinstein",
+    "filepath": "8000786.wav",
+    "clip": "station_name_balduinstein.opus"
+  },
+  {
+    "station": "Bantorf",
+    "raw": "Bantorf",
+    "filepath": "8000797.wav",
+    "clip": "station_name_bantorf.opus"
+  },
+  {
+    "station": "Barbelroth",
+    "raw": "Barbelroth",
+    "filepath": "8000802.wav",
+    "clip": "station_name_barbelroth.opus"
+  },
+  {
+    "station": "Barnten",
+    "raw": "Barnten",
+    "filepath": "8000808.wav",
+    "clip": "station_name_barnten.opus"
+  },
+  {
+    "station": "Barsinghausen",
+    "raw": "Barsinghausen",
+    "filepath": "8000812.wav",
+    "clip": "station_name_barsinghausen.opus"
+  },
+  {
+    "station": "Beckingen (Saar)",
+    "raw": "Beckingen (Saar)",
+    "filepath": "8000840.wav",
+    "clip": "station_name_beckingen_saar.opus"
+  },
+  {
+    "station": "Bennemühlen",
+    "raw": "Bennemühlen",
+    "filepath": "8000871.wav",
+    "clip": "station_name_bennemuehlen.opus"
+  },
+  {
+    "station": "Bennigsen",
+    "raw": "Bennigsen",
+    "filepath": "8000872.wav",
+    "clip": "station_name_bennigsen.opus"
+  },
+  {
+    "station": "Bensheim",
+    "raw": "Bensheim",
+    "filepath": "8000031.wav",
+    "clip": "station_name_bensheim.opus"
+  },
+  {
+    "station": "Berg(Pfalz)",
+    "raw": "Berg(Pfalz)",
+    "filepath": "8000890.wav",
+    "clip": "station_name_berg_pfalz.opus"
+  },
+  {
+    "station": "Besseringen",
+    "raw": "Besseringen",
+    "filepath": "8000926.wav",
+    "clip": "station_name_besseringen.opus"
+  },
+  {
+    "station": "Biblis",
+    "raw": "Biblis",
+    "filepath": "8000503.wav",
+    "clip": "station_name_biblis.opus"
+  },
+  {
+    "station": "Bierbach",
+    "raw": "Bierbach",
+    "filepath": "8000357.wav",
+    "clip": "station_name_bierbach.opus"
+  },
+  {
+    "station": "Bingen (Rhein) Hbf",
+    "raw": "Bingen (Rhein) Hbf",
+    "filepath": "8000039.wav",
+    "clip": "station_name_bingen_rhein_hbf.opus"
+  },
+  {
+    "station": "Bingen (Rhein) Stadt",
+    "raw": "Bingen (Rhein) Stadt",
+    "filepath": "8000976.wav",
+    "clip": "station_name_bingen_rhein_stadt.opus"
+  },
+  {
+    "station": "Birkenau",
+    "raw": "Birkenau",
+    "filepath": "8000984.wav",
+    "clip": "station_name_birkenau.opus"
+  },
+  {
+    "station": "Bissendorf",
+    "raw": "Bissendorf",
+    "filepath": "8001000.wav",
+    "clip": "station_name_bissendorf.opus"
+  },
+  {
+    "station": "Blieskastel-Lautzkirchen",
+    "raw": "Blieskastel-Lautzkirchen",
+    "filepath": "8001027.wav",
+    "clip": "station_name_blieskastel_lautzkirchen.opus"
+  },
+  {
+    "station": "Bobenheim",
+    "raw": "Bobenheim",
+    "filepath": "8001032.wav",
+    "clip": "station_name_bobenheim.opus"
+  },
+  {
+    "station": "Bobstadt",
+    "raw": "Bobstadt",
+    "filepath": "8001034.wav",
+    "clip": "station_name_bobstadt.opus"
+  },
+  {
+    "station": "Bockenheim-Kindenheim",
+    "raw": "Bockenheim-Kindenheim",
+    "filepath": "8001043.wav",
+    "clip": "station_name_bockenheim_kindenheim.opus"
+  },
+  {
+    "station": "Boppard Hbf",
+    "raw": "Boppard Hbf",
+    "filepath": "8000045.wav",
+    "clip": "station_name_boppard_hbf.opus"
+  },
+  {
+    "station": "Bous (Saar)",
+    "raw": "Bous (Saar)",
+    "filepath": "8001110.wav",
+    "clip": "station_name_bous_saar.opus"
+  },
+  {
+    "station": "Bretzenheim (Nahe)",
+    "raw": "Bretzenheim (Nahe)",
+    "filepath": "8001177.wav",
+    "clip": "station_name_bretzenheim_nahe.opus"
+  },
+  {
+    "station": "Bruchmühlbach-Miesau",
+    "raw": "Bruchmühlbach-Miesau",
+    "filepath": "8001200.wav",
+    "clip": "station_name_bruchmuehlbach_miesau.opus"
+  },
+  {
+    "station": "Bruchweiler",
+    "raw": "Bruchweiler",
+    "filepath": "8079080.wav",
+    "clip": "station_name_bruchweiler.opus"
+  },
+  {
+    "station": "Bundental Rumbach",
+    "raw": "Bundental Rumbach",
+    "filepath": "8079087.wav",
+    "clip": "station_name_bundental_rumbach.opus"
+  },
+  {
+    "station": "Burbach Mitte",
+    "raw": "Burbach Mitte",
+    "filepath": "8001302.wav",
+    "clip": "station_name_burbach_mitte.opus"
+  },
+  {
+    "station": "Busenberg-Schindhard",
+    "raw": "Busenberg-Schindhard",
+    "filepath": "8079118.wav",
+    "clip": "station_name_busenberg_schindhard.opus"
+  },
+  {
+    "station": "Böhl-Iggelheim",
+    "raw": "Böhl-Iggelheim",
+    "filepath": "8001057.wav",
+    "clip": "station_name_boehl_iggelheim.opus"
+  },
+  {
+    "station": "Bückeburg",
+    "raw": "Bückeburg",
+    "filepath": "8001245.wav",
+    "clip": "station_name_bueckeburg.opus"
+  },
+  {
+    "station": "Bürstadt",
+    "raw": "Bürstadt",
+    "filepath": "8000360.wav",
+    "clip": "station_name_buerstadt.opus"
+  },
+  {
+    "station": "Contwig",
+    "raw": "Contwig",
+    "filepath": "8001341.wav",
+    "clip": "station_name_contwig.opus"
+  },
+  {
+    "station": "Dahn",
+    "raw": "Dahn",
+    "filepath": "8079085.wav",
+    "clip": "station_name_dahn.opus"
+  },
+  {
+    "station": "Dahn Süd",
+    "raw": "Dahn Süd",
+    "filepath": "8079081.wav",
+    "clip": "station_name_dahn_sued.opus"
+  },
+  {
+    "station": "Dausenau",
+    "raw": "Dausenau",
+    "filepath": "8001389.wav",
+    "clip": "station_name_dausenau.opus"
+  },
+  {
+    "station": "Dedensen-Gümmer",
+    "raw": "Dedensen-Gümmer",
+    "filepath": "8001393.wav",
+    "clip": "station_name_dedensen_guemmer.opus"
+  },
+  {
+    "station": "Deidesheim",
+    "raw": "Deidesheim",
+    "filepath": "8001399.wav",
+    "clip": "station_name_deidesheim.opus"
+  },
+  {
+    "station": "Dellfeld",
+    "raw": "Dellfeld",
+    "filepath": "8001406.wav",
+    "clip": "station_name_dellfeld.opus"
+  },
+  {
+    "station": "Dellfeld Ort",
+    "raw": "Dellfeld Ort",
+    "filepath": "8001407.wav",
+    "clip": "station_name_dellfeld_ort.opus"
+  },
+  {
+    "station": "Diez",
+    "raw": "Diez",
+    "filepath": "8001457.wav",
+    "clip": "station_name_diez.opus"
+  },
+  {
+    "station": "Dillingen (Saar)",
+    "raw": "Dillingen (Saar)",
+    "filepath": "8000075.wav",
+    "clip": "station_name_dillingen_saar.opus"
+  },
+  {
+    "station": "Ebertsheim",
+    "raw": "Ebertsheim",
+    "filepath": "8001638.wav",
+    "clip": "station_name_ebertsheim.opus"
+  },
+  {
+    "station": "Edenkoben",
+    "raw": "Edenkoben",
+    "filepath": "8001663.wav",
+    "clip": "station_name_edenkoben.opus"
+  },
+  {
+    "station": "Edesheim (Pfalz)",
+    "raw": "Edesheim (Pfalz)",
+    "filepath": "8001665.wav",
+    "clip": "station_name_edesheim_pfalz.opus"
+  },
+  {
+    "station": "Egestorf (Deister)",
+    "raw": "Egestorf (Deister)",
+    "filepath": "8001675.wav",
+    "clip": "station_name_egestorf_deister.opus"
+  },
+  {
+    "station": "Eilvese",
+    "raw": "Eilvese",
+    "filepath": "8001713.wav",
+    "clip": "station_name_eilvese.opus"
+  },
+  {
+    "station": "Einsiedlerhof",
+    "raw": "Einsiedlerhof",
+    "filepath": "8001720.wav",
+    "clip": "station_name_einsiedlerhof.opus"
+  },
+  {
+    "station": "Einöd(Saar)",
+    "raw": "Einöd(Saar)",
+    "filepath": "8000371.wav",
+    "clip": "station_name_einoed_saar.opus"
+  },
+  {
+    "station": "Eisenbach-Matzenbach",
+    "raw": "Eisenbach-Matzenbach",
+    "filepath": "8001727.wav",
+    "clip": "station_name_eisenbach_matzenbach.opus"
+  },
+  {
+    "station": "Eisenberg (Pfalz)",
+    "raw": "Eisenberg (Pfalz)",
+    "filepath": "8001728.wav",
+    "clip": "station_name_eisenberg_pfalz.opus"
+  },
+  {
+    "station": "Eiswoog",
+    "raw": "Eiswoog",
+    "filepath": "8001732.wav",
+    "clip": "station_name_eiswoog.opus"
+  },
+  {
+    "station": "Emmerke",
+    "raw": "Emmerke",
+    "filepath": "8001775.wav",
+    "clip": "station_name_emmerke.opus"
+  },
+  {
+    "station": "Emmerthal",
+    "raw": "Emmerthal",
+    "filepath": "8001777.wav",
+    "clip": "station_name_emmerthal.opus"
+  },
+  {
+    "station": "Empelde",
+    "raw": "Empelde",
+    "filepath": "8001781.wav",
+    "clip": "station_name_empelde.opus"
+  },
+  {
+    "station": "Enkenbach",
+    "raw": "Enkenbach",
+    "filepath": "8000372.wav",
+    "clip": "station_name_enkenbach.opus"
+  },
+  {
+    "station": "Ensdorf (Saar)",
+    "raw": "Ensdorf (Saar)",
+    "filepath": "8001799.wav",
+    "clip": "station_name_ensdorf_saar.opus"
+  },
+  {
+    "station": "Eppelsheim (Rheinhess)",
+    "raw": "Eppelsheim (Rheinhess)",
+    "filepath": "8001813.wav",
+    "clip": "station_name_eppelsheim_rheinhess.opus"
+  },
+  {
+    "station": "Erpolzheim",
+    "raw": "Erpolzheim",
+    "filepath": "8001860.wav",
+    "clip": "station_name_erpolzheim.opus"
+  },
+  {
+    "station": "Fachingen (Lahn)",
+    "raw": "Fachingen (Lahn)",
+    "filepath": "8001950.wav",
+    "clip": "station_name_fachingen_lahn.opus"
+  },
+  {
+    "station": "Flomersheim",
+    "raw": "Flomersheim",
+    "filepath": "8002014.wav",
+    "clip": "station_name_flomersheim.opus"
+  },
+  {
+    "station": "Frankenstein (Pfalz)",
+    "raw": "Frankenstein (Pfalz)",
+    "filepath": "8002036.wav",
+    "clip": "station_name_frankenstein_pfalz.opus"
+  },
+  {
+    "station": "Frankenthal Hbf",
+    "raw": "Frankenthal Hbf",
+    "filepath": "8000332.wav",
+    "clip": "station_name_frankenthal_hbf.opus"
+  },
+  {
+    "station": "Freimersheim (Rheinhessen)",
+    "raw": "Freimersheim (Rheinhessen)",
+    "filepath": "8000340.wav",
+    "clip": "station_name_freimersheim_rheinhessen.opus"
+  },
+  {
+    "station": "Freinsheim",
+    "raw": "Freinsheim",
+    "filepath": "8000374.wav",
+    "clip": "station_name_freinsheim.opus"
+  },
+  {
+    "station": "Fremersdorf",
+    "raw": "Fremersdorf",
+    "filepath": "8002083.wav",
+    "clip": "station_name_fremersdorf.opus"
+  },
+  {
+    "station": "Friedrichssegen",
+    "raw": "Friedrichssegen",
+    "filepath": "8002114.wav",
+    "clip": "station_name_friedrichssegen.opus"
+  },
+  {
+    "station": "Fürth (Odenw)",
+    "raw": "Fürth (Odenw)",
+    "filepath": "8002150.wav",
+    "clip": "station_name_fuerth_odenw.opus"
+  },
+  {
+    "station": "Galgenschanze",
+    "raw": "Galgenschanze",
+    "filepath": "8002175.wav",
+    "clip": "station_name_galgenschanze.opus"
+  },
+  {
+    "station": "Gau Bickelheim",
+    "raw": "Gau Bickelheim",
+    "filepath": "8002191.wav",
+    "clip": "station_name_gau_bickelheim.opus"
+  },
+  {
+    "station": "Gensingen-Horrweiler",
+    "raw": "Gensingen-Horrweiler",
+    "filepath": "8000121.wav",
+    "clip": "station_name_gensingen_horrweiler.opus"
+  },
+  {
+    "station": "Gießen",
+    "raw": "Gießen",
+    "filepath": "8000124.wav",
+    "clip": "station_name_giessen.opus"
+  },
+  {
+    "station": "Glan-Münchweiler",
+    "raw": "Glan-Münchweiler",
+    "filepath": "8002286.wav",
+    "clip": "station_name_glan_muenchweiler.opus"
+  },
+  {
+    "station": "Godramstein",
+    "raw": "Godramstein",
+    "filepath": "8002300.wav",
+    "clip": "station_name_godramstein.opus"
+  },
+  {
+    "station": "Grünstadt",
+    "raw": "Grünstadt",
+    "filepath": "8000137.wav",
+    "clip": "station_name_gruenstadt.opus"
+  },
+  {
+    "station": "Grünstadt Nord",
+    "raw": "Grünstadt Nord",
+    "filepath": "8002444.wav",
+    "clip": "station_name_gruenstadt_nord.opus"
+  },
+  {
+    "station": "Gundersheim (Rheinhess)",
+    "raw": "Gundersheim (Rheinhess)",
+    "filepath": "8002473.wav",
+    "clip": "station_name_gundersheim_rheinhess.opus"
+  },
+  {
+    "station": "Hagen (Han)",
+    "raw": "Hagen (Han)",
+    "filepath": "8002507.wav",
+    "clip": "station_name_hagen_han.opus"
+  },
+  {
+    "station": "Hagenbach",
+    "raw": "Hagenbach",
+    "filepath": "8002515.wav",
+    "clip": "station_name_hagenbach.opus"
+  },
+  {
+    "station": "Hameln",
+    "raw": "Hameln",
+    "filepath": "8000148.wav",
+    "clip": "station_name_hameln.opus"
+  },
+  {
+    "station": "Hannover Bismarckstraße",
+    "raw": "Hannover Bismarckstraße",
+    "filepath": "8002580.wav",
+    "clip": "station_name_hannover_bismarckstrasse.opus"
+  },
+  {
+    "station": "Hannover Flughafen",
+    "raw": "Hannover Flughafen",
+    "filepath": "8002589.wav",
+    "clip": "station_name_hannover_flughafen.opus"
+  },
+  {
+    "station": "Hannover Hbf",
+    "raw": "Hannover Hbf",
+    "filepath": "8000152.wav",
+    "clip": "station_name_hannover_hbf.opus"
+  },
+  {
+    "station": "Hannover Messe/Laatzen",
+    "raw": "Hannover Messe/Laatzen",
+    "filepath": "8003487.wav",
+    "clip": "station_name_hannover_messe_laatzen.opus"
+  },
+  {
+    "station": "Hannover-Bornum",
+    "raw": "Hannover-Bornum",
+    "filepath": "8002581.wav",
+    "clip": "station_name_hannover_bornum.opus"
+  },
+  {
+    "station": "Hannover-Ledeburg",
+    "raw": "Hannover-Ledeburg",
+    "filepath": "8079097.wav",
+    "clip": "station_name_hannover_ledeburg.opus"
+  },
+  {
+    "station": "Hannover-Leinhausen",
+    "raw": "Hannover-Leinhausen",
+    "filepath": "8002585.wav",
+    "clip": "station_name_hannover_leinhausen.opus"
+  },
+  {
+    "station": "Hannover-Linden/Fischerhof",
+    "raw": "Hannover-Linden/Fischerhof",
+    "filepath": "8002586.wav",
+    "clip": "station_name_hannover_linden_fischerhof.opus"
+  },
+  {
+    "station": "Hannover-Nordstadt",
+    "raw": "Hannover-Nordstadt",
+    "filepath": "8079095.wav",
+    "clip": "station_name_hannover_nordstadt.opus"
+  },
+  {
+    "station": "Hannover-Vinnhorst",
+    "raw": "Hannover-Vinnhorst",
+    "filepath": "8006089.wav",
+    "clip": "station_name_hannover_vinnhorst.opus"
+  },
+  {
+    "station": "Hassel (Saar)",
+    "raw": "Hassel (Saar)",
+    "filepath": "8002625.wav",
+    "clip": "station_name_hassel_saar.opus"
+  },
+  {
+    "station": "Haßloch (Pfalz)",
+    "raw": "Haßloch (Pfalz)",
+    "filepath": "8002632.wav",
+    "clip": "station_name_hassloch_pfalz.opus"
+  },
+  {
+    "station": "Haste",
+    "raw": "Haste",
+    "filepath": "8002634.wav",
+    "clip": "station_name_haste.opus"
+  },
+  {
+    "station": "Hauenstein (Pfalz)",
+    "raw": "Hauenstein (Pfalz)",
+    "filepath": "8002649.wav",
+    "clip": "station_name_hauenstein_pfalz.opus"
+  },
+  {
+    "station": "Hauenstein Mitte",
+    "raw": "Hauenstein Mitte",
+    "filepath": "8002648.wav",
+    "clip": "station_name_hauenstein_mitte.opus"
+  },
+  {
+    "station": "Hauptstuhl",
+    "raw": "Hauptstuhl",
+    "filepath": "8002655.wav",
+    "clip": "station_name_hauptstuhl.opus"
+  },
+  {
+    "station": "Heinzenhausen",
+    "raw": "Heinzenhausen",
+    "filepath": "8002724.wav",
+    "clip": "station_name_heinzenhausen.opus"
+  },
+  {
+    "station": "Hemmersdorf (Saar)",
+    "raw": "Hemmersdorf (Saar)",
+    "filepath": "8002746.wav",
+    "clip": "station_name_hemmersdorf_saar.opus"
+  },
+  {
+    "station": "Herxheim am Berg",
+    "raw": "Herxheim am Berg",
+    "filepath": "8002798.wav",
+    "clip": "station_name_herxheim_am_berg.opus"
+  },
+  {
+    "station": "Hildesheim Hbf",
+    "raw": "Hildesheim Hbf",
+    "filepath": "8000169.wav",
+    "clip": "station_name_hildesheim_hbf.opus"
+  },
+  {
+    "station": "Hinterweidenthal",
+    "raw": "Hinterweidenthal",
+    "filepath": "8002847.wav",
+    "clip": "station_name_hinterweidenthal.opus"
+  },
+  {
+    "station": "Hinterweidenthal Ort",
+    "raw": "Hinterweidenthal Ort",
+    "filepath": "8079088.wav",
+    "clip": "station_name_hinterweidenthal_ort.opus"
+  },
+  {
+    "station": "Hinterweidenthal Ost",
+    "raw": "Hinterweidenthal Ost",
+    "filepath": "8079147.wav",
+    "clip": "station_name_hinterweidenthal_ost.opus"
+  },
+  {
+    "station": "Hirschhorn (Pfalz)",
+    "raw": "Hirschhorn (Pfalz)",
+    "filepath": "8002858.wav",
+    "clip": "station_name_hirschhorn_pfalz.opus"
+  },
+  {
+    "station": "Hochspeyer",
+    "raw": "Hochspeyer",
+    "filepath": "8002875.wav",
+    "clip": "station_name_hochspeyer.opus"
+  },
+  {
+    "station": "Hochstätten (Pfalz)",
+    "raw": "Hochstätten (Pfalz)",
+    "filepath": "8002879.wav",
+    "clip": "station_name_hochstaetten_pfalz.opus"
+  },
+  {
+    "station": "Hofheim (Ried)",
+    "raw": "Hofheim (Ried)",
+    "filepath": "8002934.wav",
+    "clip": "station_name_hofheim_ried.opus"
+  },
+  {
+    "station": "Hohensülzen",
+    "raw": "Hohensülzen",
+    "filepath": "8002958.wav",
+    "clip": "station_name_hohensuelzen.opus"
+  },
+  {
+    "station": "Holtensen/Linderte",
+    "raw": "Holtensen/Linderte",
+    "filepath": "8002969.wav",
+    "clip": "station_name_holtensen_linderte.opus"
+  },
+  {
+    "station": "Homburg (Saar) Hbf",
+    "raw": "Homburg (Saar) Hbf",
+    "filepath": "8000176.wav",
+    "clip": "station_name_homburg_saar_hbf.opus"
+  },
+  {
+    "station": "Höhmühlbach",
+    "raw": "Höhmühlbach",
+    "filepath": "8002895.wav",
+    "clip": "station_name_hoehmuehlbach.opus"
+  },
+  {
+    "station": "Imsweiler",
+    "raw": "Imsweiler",
+    "filepath": "8003070.wav",
+    "clip": "station_name_imsweiler.opus"
+  },
+  {
+    "station": "Insheim",
+    "raw": "Insheim",
+    "filepath": "8003080.wav",
+    "clip": "station_name_insheim.opus"
+  },
+  {
+    "station": "Kaisersesch",
+    "raw": "Kaisersesch",
+    "filepath": "8003148.wav",
+    "clip": "station_name_kaisersesch.opus"
+  },
+  {
+    "station": "Kaiserslautern Hbf",
+    "raw": "Kaiserslautern Hbf",
+    "filepath": "8000189.wav",
+    "clip": "station_name_kaiserslautern_hbf.opus"
+  },
+  {
+    "station": "Kaiserslautern Pfaffwerk",
+    "raw": "Kaiserslautern Pfaffwerk",
+    "filepath": "8003150.wav",
+    "clip": "station_name_kaiserslautern_pfaffwerk.opus"
+  },
+  {
+    "station": "Kaiserslautern West",
+    "raw": "Kaiserslautern West",
+    "filepath": "8003151.wav",
+    "clip": "station_name_kaiserslautern_west.opus"
+  },
+  {
+    "station": "Kandel",
+    "raw": "Kandel",
+    "filepath": "8003172.wav",
+    "clip": "station_name_kandel.opus"
+  },
+  {
+    "station": "Kanzem",
+    "raw": "Kanzem",
+    "filepath": "8003173.wav",
+    "clip": "station_name_kanzem.opus"
+  },
+  {
+    "station": "Kapellen-Drusweiler",
+    "raw": "Kapellen-Drusweiler",
+    "filepath": "8003175.wav",
+    "clip": "station_name_kapellen_drusweiler.opus"
+  },
+  {
+    "station": "Kapsweyer",
+    "raw": "Kapsweyer",
+    "filepath": "8007859.wav",
+    "clip": "station_name_kapsweyer.opus"
+  },
+  {
+    "station": "Karlsruhe Hbf",
+    "raw": "Karlsruhe Hbf",
+    "filepath": "8000191.wav",
+    "clip": "station_name_karlsruhe_hbf.opus"
+  },
+  {
+    "station": "Karlsruhe West",
+    "raw": "Karlsruhe West",
+    "filepath": "8003183.wav",
+    "clip": "station_name_karlsruhe_west.opus"
+  },
+  {
+    "station": "Karlsruhe-Knielingen",
+    "raw": "Karlsruhe-Knielingen",
+    "filepath": "8003186.wav",
+    "clip": "station_name_karlsruhe_knielingen.opus"
+  },
+  {
+    "station": "Karlsruhe-Mühlburg",
+    "raw": "Karlsruhe-Mühlburg",
+    "filepath": "8003187.wav",
+    "clip": "station_name_karlsruhe_muehlburg.opus"
+  },
+  {
+    "station": "Karthaus",
+    "raw": "Karthaus",
+    "filepath": "8000402.wav",
+    "clip": "station_name_karthaus.opus"
+  },
+  {
+    "station": "Katzweiler",
+    "raw": "Katzweiler",
+    "filepath": "8003215.wav",
+    "clip": "station_name_katzweiler.opus"
+  },
+  {
+    "station": "Kennelgarten",
+    "raw": "Kennelgarten",
+    "filepath": "8003232.wav",
+    "clip": "station_name_kennelgarten.opus"
+  },
+  {
+    "station": "Kindsbach",
+    "raw": "Kindsbach",
+    "filepath": "8003257.wav",
+    "clip": "station_name_kindsbach.opus"
+  },
+  {
+    "station": "Kirchdorf (Deister)",
+    "raw": "Kirchdorf (Deister)",
+    "filepath": "8003267.wav",
+    "clip": "station_name_kirchdorf_deister.opus"
+  },
+  {
+    "station": "Kirchheim (Weinstr)",
+    "raw": "Kirchheim (Weinstr)",
+    "filepath": "8003285.wav",
+    "clip": "station_name_kirchheim_weinstr.opus"
+  },
+  {
+    "station": "Kirchheimbolanden",
+    "raw": "Kirchheimbolanden",
+    "filepath": "8000652.wav",
+    "clip": "station_name_kirchheimbolanden.opus"
+  },
+  {
+    "station": "Kirchhorsten",
+    "raw": "Kirchhorsten",
+    "filepath": "8003286.wav",
+    "clip": "station_name_kirchhorsten.opus"
+  },
+  {
+    "station": "Kirkel",
+    "raw": "Kirkel",
+    "filepath": "8003294.wav",
+    "clip": "station_name_kirkel.opus"
+  },
+  {
+    "station": "Knöringen-Essingen",
+    "raw": "Knöringen-Essingen",
+    "filepath": "8003349.wav",
+    "clip": "station_name_knoeringen_essingen.opus"
+  },
+  {
+    "station": "Koblenz Hbf",
+    "raw": "Koblenz Hbf",
+    "filepath": "8000206.wav",
+    "clip": "station_name_koblenz_hbf.opus"
+  },
+  {
+    "station": "Koblenz Stadtmitte",
+    "raw": "Koblenz Stadtmitte",
+    "filepath": "8003341.wav",
+    "clip": "station_name_koblenz_stadtmitte.opus"
+  },
+  {
+    "station": "Konz",
+    "raw": "Konz",
+    "filepath": "8003402.wav",
+    "clip": "station_name_konz.opus"
+  },
+  {
+    "station": "Kottenheim",
+    "raw": "Kottenheim",
+    "filepath": "8003415.wav",
+    "clip": "station_name_kottenheim.opus"
+  },
+  {
+    "station": "Kreimbach-Kaulbach",
+    "raw": "Kreimbach-Kaulbach",
+    "filepath": "8003429.wav",
+    "clip": "station_name_kreimbach_kaulbach.opus"
+  },
+  {
+    "station": "Kruft",
+    "raw": "Kruft",
+    "filepath": "8003455.wav",
+    "clip": "station_name_kruft.opus"
+  },
+  {
+    "station": "Kusel",
+    "raw": "Kusel",
+    "filepath": "8003481.wav",
+    "clip": "station_name_kusel.opus"
+  },
+  {
+    "station": "Ladenburg",
+    "raw": "Ladenburg",
+    "filepath": "8003489.wav",
+    "clip": "station_name_ladenburg.opus"
+  },
+  {
+    "station": "Lambrecht (Pfalz)",
+    "raw": "Lambrecht (Pfalz)",
+    "filepath": "8003497.wav",
+    "clip": "station_name_lambrecht_pfalz.opus"
+  },
+  {
+    "station": "Lambsheim",
+    "raw": "Lambsheim",
+    "filepath": "8003498.wav",
+    "clip": "station_name_lambsheim.opus"
+  },
+  {
+    "station": "Lampertheim",
+    "raw": "Lampertheim",
+    "filepath": "8003503.wav",
+    "clip": "station_name_lampertheim.opus"
+  },
+  {
+    "station": "Lampertsmühle-Otterbach",
+    "raw": "Lampertsmühle-Otterbach",
+    "filepath": "8003504.wav",
+    "clip": "station_name_lampertsmuehle_otterbach.opus"
+  },
+  {
+    "station": "Landau (Pfalz) Hbf",
+    "raw": "Landau (Pfalz) Hbf",
+    "filepath": "8000216.wav",
+    "clip": "station_name_landau_pfalz_hbf.opus"
+  },
+  {
+    "station": "Landau (Pfalz) West",
+    "raw": "Landau (Pfalz) West",
+    "filepath": "8003508.wav",
+    "clip": "station_name_landau_pfalz_west.opus"
+  },
+  {
+    "station": "Landau(Pfalz) Süd",
+    "raw": "Landau(Pfalz) Süd",
+    "filepath": "8003507.wav",
+    "clip": "station_name_landau_pfalz_sued.opus"
+  },
+  {
+    "station": "Landstuhl",
+    "raw": "Landstuhl",
+    "filepath": "8003515.wav",
+    "clip": "station_name_landstuhl.opus"
+  },
+  {
+    "station": "Langenhagen Mitte",
+    "raw": "Langenhagen Mitte",
+    "filepath": "8003545.wav",
+    "clip": "station_name_langenhagen_mitte.opus"
+  },
+  {
+    "station": "Langenhagen Pferdemarkt",
+    "raw": "Langenhagen Pferdemarkt",
+    "filepath": "8003542.wav",
+    "clip": "station_name_langenhagen_pferdemarkt.opus"
+  },
+  {
+    "station": "Langenhagen-Kaltenweide",
+    "raw": "Langenhagen-Kaltenweide",
+    "filepath": "8003165.wav",
+    "clip": "station_name_langenhagen_kaltenweide.opus"
+  },
+  {
+    "station": "Langenlonsheim",
+    "raw": "Langenlonsheim",
+    "filepath": "8000585.wav",
+    "clip": "station_name_langenlonsheim.opus"
+  },
+  {
+    "station": "Laubenheim (Nahe)",
+    "raw": "Laubenheim (Nahe)",
+    "filepath": "8003568.wav",
+    "clip": "station_name_laubenheim_nahe.opus"
+  },
+  {
+    "station": "Laurenburg (Lahn)",
+    "raw": "Laurenburg (Lahn)",
+    "filepath": "8003593.wav",
+    "clip": "station_name_laurenburg_lahn.opus"
+  },
+  {
+    "station": "Lauterbourg",
+    "raw": "Lauterbourg",
+    "filepath": "8700353.wav",
+    "clip": "station_name_lauterbourg.opus"
+  },
+  {
+    "station": "Lauterecken-Grumbach",
+    "raw": "Lauterecken-Grumbach",
+    "filepath": "8000547.wav",
+    "clip": "station_name_lauterecken_grumbach.opus"
+  },
+  {
+    "station": "Lemmie",
+    "raw": "Lemmie",
+    "filepath": "8003635.wav",
+    "clip": "station_name_lemmie.opus"
+  },
+  {
+    "station": "Letter",
+    "raw": "Letter",
+    "filepath": "8003659.wav",
+    "clip": "station_name_letter.opus"
+  },
+  {
+    "station": "Limbach(b Homburg,Saar)",
+    "raw": "Limbach(b Homburg,Saar)",
+    "filepath": "8003684.wav",
+    "clip": "station_name_limbach_b_homburg_saar.opus"
+  },
+  {
+    "station": "Limburg (Lahn)",
+    "raw": "Limburg (Lahn)",
+    "filepath": "8000229.wav",
+    "clip": "station_name_limburg_lahn.opus"
+  },
+  {
+    "station": "Lindhorst (Schaumb-Lippe)",
+    "raw": "Lindhorst (Schaumb-Lippe)",
+    "filepath": "8003699.wav",
+    "clip": "station_name_lindhorst_schaumb_lippe.opus"
+  },
+  {
+    "station": "Linsburg",
+    "raw": "Linsburg",
+    "filepath": "8003705.wav",
+    "clip": "station_name_linsburg.opus"
+  },
+  {
+    "station": "Lohnweiler",
+    "raw": "Lohnweiler",
+    "filepath": "8003739.wav",
+    "clip": "station_name_lohnweiler.opus"
+  },
+  {
+    "station": "Lorsch",
+    "raw": "Lorsch",
+    "filepath": "8003755.wav",
+    "clip": "station_name_lorsch.opus"
+  },
+  {
+    "station": "Ludwigshafen (Rhein) Hbf",
+    "raw": "Ludwigshafen (Rhein) Hbf",
+    "filepath": "8000236.wav",
+    "clip": "station_name_ludwigshafen_rhein_hbf.opus"
+  },
+  {
+    "station": "Ludwigshafen (Rhein) Mitte",
+    "raw": "Ludwigshafen (Rhein) Mitte",
+    "filepath": "8003759.wav",
+    "clip": "station_name_ludwigshafen_rhein_mitte.opus"
+  },
+  {
+    "station": "Ludwigshafen BASF Mitte",
+    "raw": "Ludwigshafen BASF Mitte",
+    "filepath": "8000308.wav",
+    "clip": "station_name_ludwigshafen_basf_mitte.opus"
+  },
+  {
+    "station": "Ludwigshafen BASF Süd",
+    "raw": "Ludwigshafen BASF Süd",
+    "filepath": "8002056.wav",
+    "clip": "station_name_ludwigshafen_basf_sued.opus"
+  },
+  {
+    "station": "Ludwigshafen(Rhein) BASF Nord",
+    "raw": "Ludwigshafen(Rhein) BASF Nord",
+    "filepath": "8087060.wav",
+    "clip": "station_name_ludwigshafen_rhein_basf_nord.opus"
+  },
+  {
+    "station": "Ludwigshafen-Oggersheim",
+    "raw": "Ludwigshafen-Oggersheim",
+    "filepath": "8003766.wav",
+    "clip": "station_name_ludwigshafen_oggersheim.opus"
+  },
+  {
+    "station": "Luisenthal (Saar)",
+    "raw": "Luisenthal (Saar)",
+    "filepath": "8003796.wav",
+    "clip": "station_name_luisenthal_saar.opus"
+  },
+  {
+    "station": "Lörzenbach-Fahrenbach",
+    "raw": "Lörzenbach-Fahrenbach",
+    "filepath": "8003731.wav",
+    "clip": "station_name_loerzenbach_fahrenbach.opus"
+  },
+  {
+    "station": "Lügde",
+    "raw": "Lügde",
+    "filepath": "8003784.wav",
+    "clip": "station_name_luegde.opus"
+  },
+  {
+    "station": "Maikammer-Kirrweiler",
+    "raw": "Maikammer-Kirrweiler",
+    "filepath": "8003809.wav",
+    "clip": "station_name_maikammer_kirrweiler.opus"
+  },
+  {
+    "station": "Mannheim Hbf",
+    "raw": "Mannheim Hbf",
+    "filepath": "8000244.wav",
+    "clip": "station_name_mannheim_hbf.opus"
+  },
+  {
+    "station": "Mannheim-Friedrichsfeld",
+    "raw": "Mannheim-Friedrichsfeld",
+    "filepath": "8000631.wav",
+    "clip": "station_name_mannheim_friedrichsfeld.opus"
+  },
+  {
+    "station": "Mannheim-Käfertal",
+    "raw": "Mannheim-Käfertal",
+    "filepath": "8003843.wav",
+    "clip": "station_name_mannheim_kaefertal.opus"
+  },
+  {
+    "station": "Mannheim-Waldhof",
+    "raw": "Mannheim-Waldhof",
+    "filepath": "8003848.wav",
+    "clip": "station_name_mannheim_waldhof.opus"
+  },
+  {
+    "station": "Maximiliansau West",
+    "raw": "Maximiliansau West",
+    "filepath": "8084067.wav",
+    "clip": "station_name_maximiliansau_west.opus"
+  },
+  {
+    "station": "Maximiliansau-Im Rüsten",
+    "raw": "Maximiliansau-Im Rüsten",
+    "filepath": "8003911.wav",
+    "clip": "station_name_maximiliansau_im_ruesten.opus"
+  },
+  {
+    "station": "Mayen Ost",
+    "raw": "Mayen Ost",
+    "filepath": "8000248.wav",
+    "clip": "station_name_mayen_ost.opus"
+  },
+  {
+    "station": "Mayen West",
+    "raw": "Mayen West",
+    "filepath": "8003924.wav",
+    "clip": "station_name_mayen_west.opus"
+  },
+  {
+    "station": "Mellendorf",
+    "raw": "Mellendorf",
+    "filepath": "8003957.wav",
+    "clip": "station_name_mellendorf.opus"
+  },
+  {
+    "station": "Mendig",
+    "raw": "Mendig",
+    "filepath": "8004393.wav",
+    "clip": "station_name_mendig.opus"
+  },
+  {
+    "station": "Mertesheim",
+    "raw": "Mertesheim",
+    "filepath": "8003988.wav",
+    "clip": "station_name_mertesheim.opus"
+  },
+  {
+    "station": "Merzig (Saar)",
+    "raw": "Merzig (Saar)",
+    "filepath": "8003992.wav",
+    "clip": "station_name_merzig_saar.opus"
+  },
+  {
+    "station": "Merzig(Saar) Stadtmitte",
+    "raw": "Merzig(Saar) Stadtmitte",
+    "filepath": "8003991.wav",
+    "clip": "station_name_merzig_saar_stadtmitte.opus"
+  },
+  {
+    "station": "Mettlach",
+    "raw": "Mettlach",
+    "filepath": "8004004.wav",
+    "clip": "station_name_mettlach.opus"
+  },
+  {
+    "station": "Miesenbach",
+    "raw": "Miesenbach",
+    "filepath": "8007482.wav",
+    "clip": "station_name_miesenbach.opus"
+  },
+  {
+    "station": "Miesenheim",
+    "raw": "Miesenheim",
+    "filepath": "8004020.wav",
+    "clip": "station_name_miesenheim.opus"
+  },
+  {
+    "station": "Monreal",
+    "raw": "Monreal",
+    "filepath": "8004078.wav",
+    "clip": "station_name_monreal.opus"
+  },
+  {
+    "station": "Monsheim",
+    "raw": "Monsheim",
+    "filepath": "8000663.wav",
+    "clip": "station_name_monsheim.opus"
+  },
+  {
+    "station": "Moosbachtal",
+    "raw": "Moosbachtal",
+    "filepath": "8079265.wav",
+    "clip": "station_name_moosbachtal.opus"
+  },
+  {
+    "station": "Mußbach",
+    "raw": "Mußbach",
+    "filepath": "8004189.wav",
+    "clip": "station_name_mussbach.opus"
+  },
+  {
+    "station": "Mörlenbach",
+    "raw": "Mörlenbach",
+    "filepath": "8004066.wav",
+    "clip": "station_name_moerlenbach.opus"
+  },
+  {
+    "station": "Münchweiler (Rodalb)",
+    "raw": "Münchweiler (Rodalb)",
+    "filepath": "8004166.wav",
+    "clip": "station_name_muenchweiler_rodalb.opus"
+  },
+  {
+    "station": "Münster-Sarmsheim",
+    "raw": "Münster-Sarmsheim",
+    "filepath": "8004172.wav",
+    "clip": "station_name_muenster_sarmsheim.opus"
+  },
+  {
+    "station": "Nassau (Lahn)",
+    "raw": "Nassau (Lahn)",
+    "filepath": "8004206.wav",
+    "clip": "station_name_nassau_lahn.opus"
+  },
+  {
+    "station": "Neidenfels",
+    "raw": "Neidenfels",
+    "filepath": "8079146.wav",
+    "clip": "station_name_neidenfels.opus"
+  },
+  {
+    "station": "Neuburg(Rhein)",
+    "raw": "Neuburg(Rhein)",
+    "filepath": "8004257.wav",
+    "clip": "station_name_neuburg_rhein.opus"
+  },
+  {
+    "station": "Neustadt (Weinstr) Hbf",
+    "raw": "Neustadt (Weinstr) Hbf",
+    "filepath": "8000275.wav",
+    "clip": "station_name_neustadt_weinstr_hbf.opus"
+  },
+  {
+    "station": "Neustadt am Rübenberge",
+    "raw": "Neustadt am Rübenberge",
+    "filepath": "8004322.wav",
+    "clip": "station_name_neustadt_am_ruebenberge.opus"
+  },
+  {
+    "station": "Neustadt-Böbig",
+    "raw": "Neustadt-Böbig",
+    "filepath": "8004489.wav",
+    "clip": "station_name_neustadt_boebig.opus"
+  },
+  {
+    "station": "Niedaltdorf",
+    "raw": "Niedaltdorf",
+    "filepath": "8004344.wav",
+    "clip": "station_name_niedaltdorf.opus"
+  },
+  {
+    "station": "Nieder Flörsheim-Dalsheim",
+    "raw": "Nieder Flörsheim-Dalsheim",
+    "filepath": "8004345.wav",
+    "clip": "station_name_nieder_floersheim_dalsheim.opus"
+  },
+  {
+    "station": "Niederlahnstein",
+    "raw": "Niederlahnstein",
+    "filepath": "8000278.wav",
+    "clip": "station_name_niederlahnstein.opus"
+  },
+  {
+    "station": "Niedermohr",
+    "raw": "Niedermohr",
+    "filepath": "8004396.wav",
+    "clip": "station_name_niedermohr.opus"
+  },
+  {
+    "station": "Nienburg (Weser)",
+    "raw": "Nienburg (Weser)",
+    "filepath": "8000279.wav",
+    "clip": "station_name_nienburg_weser.opus"
+  },
+  {
+    "station": "Nievern",
+    "raw": "Nievern",
+    "filepath": "8004435.wav",
+    "clip": "station_name_nievern.opus"
+  },
+  {
+    "station": "Obermohr",
+    "raw": "Obermohr",
+    "filepath": "8004557.wav",
+    "clip": "station_name_obermohr.opus"
+  },
+  {
+    "station": "Obernhof(Lahn)",
+    "raw": "Obernhof(Lahn)",
+    "filepath": "8004567.wav",
+    "clip": "station_name_obernhof_lahn.opus"
+  },
+  {
+    "station": "Oberwesel",
+    "raw": "Oberwesel",
+    "filepath": "8004601.wav",
+    "clip": "station_name_oberwesel.opus"
+  },
+  {
+    "station": "Olsbrücken",
+    "raw": "Olsbrücken",
+    "filepath": "8004677.wav",
+    "clip": "station_name_olsbruecken.opus"
+  },
+  {
+    "station": "Paderborn Hbf",
+    "raw": "Paderborn Hbf",
+    "filepath": "8000297.wav",
+    "clip": "station_name_paderborn_hbf.opus"
+  },
+  {
+    "station": "Pfeddersheim",
+    "raw": "Pfeddersheim",
+    "filepath": "8004788.wav",
+    "clip": "station_name_pfeddersheim.opus"
+  },
+  {
+    "station": "Pirmasens Hbf",
+    "raw": "Pirmasens Hbf",
+    "filepath": "8004822.wav",
+    "clip": "station_name_pirmasens_hbf.opus"
+  },
+  {
+    "station": "Pirmasens Nord",
+    "raw": "Pirmasens Nord",
+    "filepath": "8000876.wav",
+    "clip": "station_name_pirmasens_nord.opus"
+  },
+  {
+    "station": "Plaidt",
+    "raw": "Plaidt",
+    "filepath": "8004826.wav",
+    "clip": "station_name_plaidt.opus"
+  },
+  {
+    "station": "Poggenhagen",
+    "raw": "Poggenhagen",
+    "filepath": "8004851.wav",
+    "clip": "station_name_poggenhagen.opus"
+  },
+  {
+    "station": "Rammelsbach",
+    "raw": "Rammelsbach",
+    "filepath": "8004929.wav",
+    "clip": "station_name_rammelsbach.opus"
+  },
+  {
+    "station": "Ramsen",
+    "raw": "Ramsen",
+    "filepath": "8004935.wav",
+    "clip": "station_name_ramsen.opus"
+  },
+  {
+    "station": "Ramstein",
+    "raw": "Ramstein",
+    "filepath": "8004938.wav",
+    "clip": "station_name_ramstein.opus"
+  },
+  {
+    "station": "Reckweilerhof",
+    "raw": "Reckweilerhof",
+    "filepath": "8004975.wav",
+    "clip": "station_name_reckweilerhof.opus"
+  },
+  {
+    "station": "Rehweiler",
+    "raw": "Rehweiler",
+    "filepath": "8004993.wav",
+    "clip": "station_name_rehweiler.opus"
+  },
+  {
+    "station": "Reisen (Hess)",
+    "raw": "Reisen (Hess)",
+    "filepath": "8005026.wav",
+    "clip": "station_name_reisen_hess.opus"
+  },
+  {
+    "station": "Rentrisch",
+    "raw": "Rentrisch",
+    "filepath": "8005044.wav",
+    "clip": "station_name_rentrisch.opus"
+  },
+  {
+    "station": "Rethen (Leine)",
+    "raw": "Rethen (Leine)",
+    "filepath": "8005047.wav",
+    "clip": "station_name_rethen_leine.opus"
+  },
+  {
+    "station": "Riedrode",
+    "raw": "Riedrode",
+    "filepath": "8005089.wav",
+    "clip": "station_name_riedrode.opus"
+  },
+  {
+    "station": "Rieschweiler",
+    "raw": "Rieschweiler",
+    "filepath": "8005094.wav",
+    "clip": "station_name_rieschweiler.opus"
+  },
+  {
+    "station": "Rimbach",
+    "raw": "Rimbach",
+    "filepath": "8005098.wav",
+    "clip": "station_name_rimbach.opus"
+  },
+  {
+    "station": "Rinnthal",
+    "raw": "Rinnthal",
+    "filepath": "8005103.wav",
+    "clip": "station_name_rinnthal.opus"
+  },
+  {
+    "station": "Rockenhausen",
+    "raw": "Rockenhausen",
+    "filepath": "8005111.wav",
+    "clip": "station_name_rockenhausen.opus"
+  },
+  {
+    "station": "Rodalben",
+    "raw": "Rodalben",
+    "filepath": "8005113.wav",
+    "clip": "station_name_rodalben.opus"
+  },
+  {
+    "station": "Rohrbach(Pfalz)",
+    "raw": "Rohrbach(Pfalz)",
+    "filepath": "8005146.wav",
+    "clip": "station_name_rohrbach_pfalz.opus"
+  },
+  {
+    "station": "Ronnenberg",
+    "raw": "Ronnenberg",
+    "filepath": "8005160.wav",
+    "clip": "station_name_ronnenberg.opus"
+  },
+  {
+    "station": "Roßbach (Pfalz)",
+    "raw": "Roßbach (Pfalz)",
+    "filepath": "8005172.wav",
+    "clip": "station_name_rossbach_pfalz.opus"
+  },
+  {
+    "station": "Saarbrücken Hbf",
+    "raw": "Saarbrücken Hbf",
+    "filepath": "8000323.wav",
+    "clip": "station_name_saarbruecken_hbf.opus"
+  },
+  {
+    "station": "Saarbrücken Ost",
+    "raw": "Saarbrücken Ost",
+    "filepath": "8005241.wav",
+    "clip": "station_name_saarbruecken_ost.opus"
+  },
+  {
+    "station": "Saarbrücken-Burbach",
+    "raw": "Saarbrücken-Burbach",
+    "filepath": "8005243.wav",
+    "clip": "station_name_saarbruecken_burbach.opus"
+  },
+  {
+    "station": "Saarburg (Bz Trier)",
+    "raw": "Saarburg (Bz Trier)",
+    "filepath": "8005245.wav",
+    "clip": "station_name_saarburg_bz_trier.opus"
+  },
+  {
+    "station": "Saarhölzbach",
+    "raw": "Saarhölzbach",
+    "filepath": "8005246.wav",
+    "clip": "station_name_saarhoelzbach.opus"
+  },
+  {
+    "station": "Saarlouis Hbf",
+    "raw": "Saarlouis Hbf",
+    "filepath": "8005247.wav",
+    "clip": "station_name_saarlouis_hbf.opus"
+  },
+  {
+    "station": "Sarstedt",
+    "raw": "Sarstedt",
+    "filepath": "8005292.wav",
+    "clip": "station_name_sarstedt.opus"
+  },
+  {
+    "station": "Schafbrücke",
+    "raw": "Schafbrücke",
+    "filepath": "8005306.wav",
+    "clip": "station_name_schafbruecke.opus"
+  },
+  {
+    "station": "Schaidt(Pfalz)",
+    "raw": "Schaidt(Pfalz)",
+    "filepath": "8007857.wav",
+    "clip": "station_name_schaidt_pfalz.opus"
+  },
+  {
+    "station": "Scheidt (Saar)",
+    "raw": "Scheidt (Saar)",
+    "filepath": "8005332.wav",
+    "clip": "station_name_scheidt_saar.opus"
+  },
+  {
+    "station": "Schieder",
+    "raw": "Schieder",
+    "filepath": "8005340.wav",
+    "clip": "station_name_schieder.opus"
+  },
+  {
+    "station": "Schoden-Ockfen",
+    "raw": "Schoden-Ockfen",
+    "filepath": "8005392.wav",
+    "clip": "station_name_schoden_ockfen.opus"
+  },
+  {
+    "station": "Schopp",
+    "raw": "Schopp",
+    "filepath": "8005423.wav",
+    "clip": "station_name_schopp.opus"
+  },
+  {
+    "station": "Schweighofen",
+    "raw": "Schweighofen",
+    "filepath": "8007860.wav",
+    "clip": "station_name_schweighofen.opus"
+  },
+  {
+    "station": "Seelze",
+    "raw": "Seelze",
+    "filepath": "8005507.wav",
+    "clip": "station_name_seelze.opus"
+  },
+  {
+    "station": "Serrig",
+    "raw": "Serrig",
+    "filepath": "8005539.wav",
+    "clip": "station_name_serrig.opus"
+  },
+  {
+    "station": "Siebeldingen-Birkweiler",
+    "raw": "Siebeldingen-Birkweiler",
+    "filepath": "8005551.wav",
+    "clip": "station_name_siebeldingen_birkweiler.opus"
+  },
+  {
+    "station": "Siersburg",
+    "raw": "Siersburg",
+    "filepath": "8005562.wav",
+    "clip": "station_name_siersburg.opus"
+  },
+  {
+    "station": "Sprendlingen (Rheinhess)",
+    "raw": "Sprendlingen (Rheinhess)",
+    "filepath": "8005637.wav",
+    "clip": "station_name_sprendlingen_rheinhess.opus"
+  },
+  {
+    "station": "Springe",
+    "raw": "Springe",
+    "filepath": "8005638.wav",
+    "clip": "station_name_springe.opus"
+  },
+  {
+    "station": "St Goar",
+    "raw": "St Goar",
+    "filepath": "8005645.wav",
+    "clip": "station_name_st_goar.opus"
+  },
+  {
+    "station": "St Ingbert",
+    "raw": "St Ingbert",
+    "filepath": "8005649.wav",
+    "clip": "station_name_st_ingbert.opus"
+  },
+  {
+    "station": "Stadthagen",
+    "raw": "Stadthagen",
+    "filepath": "8005662.wav",
+    "clip": "station_name_stadthagen.opus"
+  },
+  {
+    "station": "Stambach",
+    "raw": "Stambach",
+    "filepath": "8005673.wav",
+    "clip": "station_name_stambach.opus"
+  },
+  {
+    "station": "Steinalben",
+    "raw": "Steinalben",
+    "filepath": "8005689.wav",
+    "clip": "station_name_steinalben.opus"
+  },
+  {
+    "station": "Steinfeld (Pfalz)",
+    "raw": "Steinfeld (Pfalz)",
+    "filepath": "8007858.wav",
+    "clip": "station_name_steinfeld_pfalz.opus"
+  },
+  {
+    "station": "Steinheim (Westf)",
+    "raw": "Steinheim (Westf)",
+    "filepath": "8005708.wav",
+    "clip": "station_name_steinheim_westf.opus"
+  },
+  {
+    "station": "Steinweiler",
+    "raw": "Steinweiler",
+    "filepath": "8005713.wav",
+    "clip": "station_name_steinweiler.opus"
+  },
+  {
+    "station": "Steinwenden",
+    "raw": "Steinwenden",
+    "filepath": "8005715.wav",
+    "clip": "station_name_steinwenden.opus"
+  },
+  {
+    "station": "Straßburg",
+    "raw": "Straßburg",
+    "filepath": "8700023.wav",
+    "clip": "station_name_strassburg.opus"
+  },
+  {
+    "station": "Taben",
+    "raw": "Taben",
+    "filepath": "8005812.wav",
+    "clip": "station_name_taben.opus"
+  },
+  {
+    "station": "Thaleischweiler-Fröschen",
+    "raw": "Thaleischweiler-Fröschen",
+    "filepath": "8005843.wav",
+    "clip": "station_name_thaleischweiler_froeschen.opus"
+  },
+  {
+    "station": "Theisbergstegen",
+    "raw": "Theisbergstegen",
+    "filepath": "8005857.wav",
+    "clip": "station_name_theisbergstegen.opus"
+  },
+  {
+    "station": "Thür",
+    "raw": "Thür",
+    "filepath": "8005865.wav",
+    "clip": "station_name_thuer.opus"
+  },
+  {
+    "station": "Trier Hbf",
+    "raw": "Trier Hbf",
+    "filepath": "8000134.wav",
+    "clip": "station_name_trier_hbf.opus"
+  },
+  {
+    "station": "Trier Süd",
+    "raw": "Trier Süd",
+    "filepath": "8005905.wav",
+    "clip": "station_name_trier_sued.opus"
+  },
+  {
+    "station": "Untersulzbach",
+    "raw": "Untersulzbach",
+    "filepath": "8006019.wav",
+    "clip": "station_name_untersulzbach.opus"
+  },
+  {
+    "station": "Urmersbach",
+    "raw": "Urmersbach",
+    "filepath": "8007357.wav",
+    "clip": "station_name_urmersbach.opus"
+  },
+  {
+    "station": "Urmitz",
+    "raw": "Urmitz",
+    "filepath": "8006035.wav",
+    "clip": "station_name_urmitz.opus"
+  },
+  {
+    "station": "Vogelweh",
+    "raw": "Vogelweh",
+    "filepath": "8006100.wav",
+    "clip": "station_name_vogelweh.opus"
+  },
+  {
+    "station": "Völklingen",
+    "raw": "Völklingen",
+    "filepath": "8000175.wav",
+    "clip": "station_name_voelklingen.opus"
+  },
+  {
+    "station": "Völksen/Eldagsen",
+    "raw": "Völksen/Eldagsen",
+    "filepath": "8001741.wav",
+    "clip": "station_name_voelksen_eldagsen.opus"
+  },
+  {
+    "station": "Wachenheim (Pfalz)",
+    "raw": "Wachenheim (Pfalz)",
+    "filepath": "8006125.wav",
+    "clip": "station_name_wachenheim_pfalz.opus"
+  },
+  {
+    "station": "Wahlheim(Kr Alzey)",
+    "raw": "Wahlheim(Kr Alzey)",
+    "filepath": "8000327.wav",
+    "clip": "station_name_wahlheim_kr_alzey.opus"
+  },
+  {
+    "station": "Waldfischbach",
+    "raw": "Waldfischbach",
+    "filepath": "8006156.wav",
+    "clip": "station_name_waldfischbach.opus"
+  },
+  {
+    "station": "Wallertheim",
+    "raw": "Wallertheim",
+    "filepath": "8006183.wav",
+    "clip": "station_name_wallertheim.opus"
+  },
+  {
+    "station": "Weetzen",
+    "raw": "Weetzen",
+    "filepath": "8000342.wav",
+    "clip": "station_name_weetzen.opus"
+  },
+  {
+    "station": "Weidenthal",
+    "raw": "Weidenthal",
+    "filepath": "8006261.wav",
+    "clip": "station_name_weidenthal.opus"
+  },
+  {
+    "station": "Weilburg",
+    "raw": "Weilburg",
+    "filepath": "8000218.wav",
+    "clip": "station_name_weilburg.opus"
+  },
+  {
+    "station": "Weinheim (Bergstr)",
+    "raw": "Weinheim (Bergstr)",
+    "filepath": "8000377.wav",
+    "clip": "station_name_weinheim_bergstr.opus"
+  },
+  {
+    "station": "Weinheim-Lützelsachsen",
+    "raw": "Weinheim-Lützelsachsen",
+    "filepath": "8003792.wav",
+    "clip": "station_name_weinheim_luetzelsachsen.opus"
+  },
+  {
+    "station": "Weisenheim (Sand)",
+    "raw": "Weisenheim (Sand)",
+    "filepath": "8006292.wav",
+    "clip": "station_name_weisenheim_sand.opus"
+  },
+  {
+    "station": "Weißenthurm",
+    "raw": "Weißenthurm",
+    "filepath": "8006303.wav",
+    "clip": "station_name_weissenthurm.opus"
+  },
+  {
+    "station": "Welgesheim-Zotzenheim",
+    "raw": "Welgesheim-Zotzenheim",
+    "filepath": "8006312.wav",
+    "clip": "station_name_welgesheim_zotzenheim.opus"
+  },
+  {
+    "station": "Wennigsen (Deister)",
+    "raw": "Wennigsen (Deister)",
+    "filepath": "8006336.wav",
+    "clip": "station_name_wennigsen_deister.opus"
+  },
+  {
+    "station": "Wetzlar",
+    "raw": "Wetzlar",
+    "filepath": "8000383.wav",
+    "clip": "station_name_wetzlar.opus"
+  },
+  {
+    "station": "Wilgartswiesen",
+    "raw": "Wilgartswiesen",
+    "filepath": "8006441.wav",
+    "clip": "station_name_wilgartswiesen.opus"
+  },
+  {
+    "station": "Wiltingen (Saar)",
+    "raw": "Wiltingen (Saar)",
+    "filepath": "8006461.wav",
+    "clip": "station_name_wiltingen_saar.opus"
+  },
+  {
+    "station": "Winden (Pfalz)",
+    "raw": "Winden (Pfalz)",
+    "filepath": "8006468.wav",
+    "clip": "station_name_winden_pfalz.opus"
+  },
+  {
+    "station": "Winninghausen",
+    "raw": "Winninghausen",
+    "filepath": "8006482.wav",
+    "clip": "station_name_winninghausen.opus"
+  },
+  {
+    "station": "Winnweiler",
+    "raw": "Winnweiler",
+    "filepath": "8006483.wav",
+    "clip": "station_name_winnweiler.opus"
+  },
+  {
+    "station": "Wissembourg",
+    "raw": "Wissembourg",
+    "filepath": "8700382.wav",
+    "clip": "station_name_wissembourg.opus"
+  },
+  {
+    "station": "Wolfstein",
+    "raw": "Wolfstein",
+    "filepath": "8006555.wav",
+    "clip": "station_name_wolfstein.opus"
+  },
+  {
+    "station": "Worms Hbf",
+    "raw": "Worms Hbf",
+    "filepath": "8000257.wav",
+    "clip": "station_name_worms_hbf.opus"
+  },
+  {
+    "station": "Wunstorf",
+    "raw": "Wunstorf",
+    "filepath": "8000268.wav",
+    "clip": "station_name_wunstorf.opus"
+  },
+  {
+    "station": "Wörth (Rhein)",
+    "raw": "Wörth (Rhein)",
+    "filepath": "8000254.wav",
+    "clip": "station_name_woerth_rhein.opus"
+  },
+  {
+    "station": "Wörth(Rhein) Mozartstraße",
+    "raw": "Wörth(Rhein) Mozartstraße",
+    "filepath": "8006536.wav",
+    "clip": "station_name_woerth_rhein_mozartstrasse.opus"
+  },
+  {
+    "station": "Würzbach (Saar)",
+    "raw": "Würzbach (Saar)",
+    "filepath": "8006581.wav",
+    "clip": "station_name_wuerzbach_saar.opus"
+  },
+  {
+    "station": "Zotzenbach",
+    "raw": "Zotzenbach",
+    "filepath": "8006672.wav",
+    "clip": "station_name_zotzenbach.opus"
+  },
+  {
+    "station": "Zweibrücken Hbf",
+    "raw": "Zweibrücken Hbf",
+    "filepath": "8006680.wav",
+    "clip": "station_name_zweibruecken_hbf.opus"
+  },
+  {
+    "station": "Zweibrücken-Rosengarten",
+    "raw": "Zweibrücken-Rosengarten",
+    "filepath": "8006682.wav",
+    "clip": "station_name_zweibruecken_rosengarten.opus"
   }
 ]
